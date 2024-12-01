@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?><database name="stareau" schema="stareau_principale" type="PostgreSQL - 15.8 (Debian 15.8-0+deb12u1)">
+   <tables>
+      <table name="canalisation" remarks="table mère des éléments linéaire" schema="stareau_principale" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="type_reseau" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="canalisation_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_type_reseau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="1" name="fictif" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="etat_service" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="canalisation_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_etat_service"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="insee_commune" nullable="false" remarks="" size="2147483647" type="c_insee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="localisation" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="maitre_ouvrage" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="exploitant" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="entreprise_pose" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="precision_xy" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="canalisation_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="precision_z" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="canalisation_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="an_pose_sup" nullable="false" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="an_pose_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="an_service_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="an_service_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="an_abandon_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="an_abandon_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="an_rehab_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="an_rehab_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="18" name="date_creation" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="origine_creation" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="canalisation_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="CURRENT_TIMESTAMP" digits="6" id="20" name="date_maj" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="origine_maj" nullable="true" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="canalisation_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="lien_doc1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="lien_doc2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="commentaire" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="gen_random_uuid()" digits="0" id="25" name="id_canalisation" nullable="false" remarks="identifiant canalisation" size="2147483647" type="text" typeCode="12">
+            <child column="id_canalisation" foreignKey="aep_affleurant_canalisation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_affleurant"/>
+            <child column="fk_canalisation" foreignKey="mm_aep_cana_protection_fk_1" implied="false" onDeleteCascade="false" schema="stareau_aep" table="mm_aep_cana_protection"/>
+            <child column="id_canalisation" foreignKey="ass_affleurant_canalisation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_affleurant"/>
+            <child column="fk_canalisation" foreignKey="mm_ass_cana_protection_fk_1" implied="false" onDeleteCascade="false" schema="stareau_ass" table="mm_ass_cana_protection"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="geom" nullable="false" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="mode_circulation" nullable="false" remarks="*mode de circulation*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="canalisation_mode_circulation_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_mode_circulation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="type_pose" nullable="false" remarks="*type de pose*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="canalisation_type_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_type_pose"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="raison_pose" nullable="false" remarks="*raison de la pose*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="canalisation_raison_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_raison_pose"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="materiau" nullable="false" remarks="*matériau constitutif*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="canalisation_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_materiau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="revetement_interieur" nullable="false" remarks="*revêtement intérieur*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="canalisation_revetement_interieur_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_revetement_interieur"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="diametre_equivalent" nullable="false" remarks="diamètre nominal ou équivalent" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="8" id="33" name="longueur_terrain" nullable="true" remarks="longueur réelle terrain" size="8" type="float4" typeCode="7"/>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="34" name="sensible" nullable="true" remarks="ouvrage sensible DT-DICT" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="noeudterminal" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="noeudinitial" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="id_canalisation" sequenceNumberInPK="1"/>
+         <index name="pk_canalisation" unique="true">
+            <column ascending="true" name="id_canalisation"/>
+         </index>
+         <index name="sidx_canalisation_geom" unique="false">
+            <column ascending="true" name="geom"/>
+         </index>
+         <checkConstraint constraint="(((an_abandon_sup)::integer &gt;= (an_abandon_inf)::integer))" name="donnee_abandon_check"/>
+         <checkConstraint constraint="(((an_pose_sup)::integer &gt;= (an_pose_inf)::integer))" name="donnee_pose_check"/>
+         <checkConstraint constraint="(((an_rehab_sup)::integer &gt;= (an_rehab_inf)::integer))" name="donnee_rehab_check"/>
+         <checkConstraint constraint="(((an_service_sup)::integer &gt;= (an_service_inf)::integer))" name="donnee_service_check"/>
+      </table>
+      <table name="champ_commun" remarks="table des champs communs à toutes les tables" schema="stareau_principale" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="type_reseau" nullable="false" remarks="*type de réseau*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="champ_commun_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_type_reseau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="1" name="fictif" nullable="true" remarks="élément fictif" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="etat_service" nullable="false" remarks="*état de service*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="champ_commun_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_etat_service"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="insee_commune" nullable="false" remarks="insee de la commune" size="2147483647" type="c_insee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="localisation" nullable="true" remarks="adresse, nom de la rue principale, ou localisation relative du patrimoine" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="maitre_ouvrage" nullable="false" remarks="maître d'ouvrage" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="exploitant" nullable="false" remarks="exploitant actuel" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="entreprise_pose" nullable="true" remarks="entreprise de pose" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="precision_xy" nullable="false" remarks="*classe de précision XY*" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="champ_commun_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="precision_z" nullable="false" remarks="*classe de précision Z*" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="champ_commun_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="an_pose_sup" nullable="false" remarks="année marquant la fin de la période de pose" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="an_pose_inf" nullable="true" remarks="année marquant le début de la période de pose" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="an_service_sup" nullable="true" remarks="année marquant la fin de la période de mise en service" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="an_service_inf" nullable="true" remarks="année marquant le début de la période de mise en service" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="an_abandon_sup" nullable="true" remarks="année marquant la fin de la période d'arrêt définitif" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="an_abandon_inf" nullable="true" remarks="année marquant le début de la période d'arrêt définitif" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="an_rehab_sup" nullable="true" remarks="année marquant la fin de la période de réhabilitation" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="an_rehab_inf" nullable="true" remarks="année marquant le début de la période de mise en service" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="18" name="date_creation" nullable="false" remarks="date de la création de l'objet sig" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="origine_creation" nullable="false" remarks="*document source de la création*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="champ_commun_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="CURRENT_TIMESTAMP" digits="6" id="20" name="date_maj" nullable="false" remarks="date de mise à jour de l'objet sig" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="origine_maj" nullable="true" remarks="*document source de la mise à jour*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="champ_commun_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="lien_doc1" nullable="true" remarks="lien vers document" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="lien_doc2" nullable="true" remarks="lien 2 vers document" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="commentaire" nullable="true" remarks="commentaire ou remarque" size="2147483647" type="text" typeCode="12"/>
+         <checkConstraint constraint="(((an_abandon_sup)::integer &gt;= (an_abandon_inf)::integer))" name="donnee_abandon_check"/>
+         <checkConstraint constraint="(((an_pose_sup)::integer &gt;= (an_pose_inf)::integer))" name="donnee_pose_check"/>
+         <checkConstraint constraint="(((an_rehab_sup)::integer &gt;= (an_rehab_inf)::integer))" name="donnee_rehab_check"/>
+         <checkConstraint constraint="(((an_service_sup)::integer &gt;= (an_service_inf)::integer))" name="donnee_service_check"/>
+      </table>
+      <table name="dimension" remarks="table mère des dimensions des éléments" schema="stareau_principale" type="TABLE">
+         <column autoUpdated="false" defaultValue="'circulaire'::text" digits="0" id="0" name="forme" nullable="false" remarks="*forme générale de l'objet*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="dimension_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_forme"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="lien_detail" nullable="true" remarks="lien vers fichier descriptif des formes complexes" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="2" name="hauteur_interieure" nullable="true" remarks="hauteur max intérieure" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="3" name="hauteur_exterieure" nullable="true" remarks="hauteur max extérieure" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="4" name="largeur_interieure" nullable="true" remarks="largeur max intérieure" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="5" name="largeur_exterieure" nullable="true" remarks="largeur max extérieure" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="6" name="longueur_interieure" nullable="true" remarks="longueur max intérieure" size="17" type="float8" typeCode="8"/>
+         <column autoUpdated="false" defaultValue="null" digits="17" id="7" name="longueur_exterieure" nullable="true" remarks="longueur max extérieure" size="17" type="float8" typeCode="8"/>
+         <checkConstraint constraint="(((hauteur_exterieure)::real &gt;= (hauteur_interieure)::real))" name="donnee_hauteur_check"/>
+         <checkConstraint constraint="(((largeur_exterieure)::real &gt;= (largeur_interieure)::real))" name="donnee_largeur_check"/>
+         <checkConstraint constraint="(((longueur_exterieure)::real &gt;= (longueur_interieure)::real))" name="donnee_longueur_check"/>
+      </table>
+      <table name="emprise" remarks="table mère des éléments ayant une surface réelle ou projetée au sol" schema="stareau_principale" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="type_reseau" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="emprise_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_type_reseau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="1" name="fictif" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="etat_service" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="emprise_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_etat_service"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="insee_commune" nullable="false" remarks="" size="2147483647" type="c_insee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="localisation" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="maitre_ouvrage" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="exploitant" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="entreprise_pose" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="precision_xy" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="emprise_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="precision_z" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="emprise_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="an_pose_sup" nullable="false" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="an_pose_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="an_service_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="an_service_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="an_abandon_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="an_abandon_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="an_rehab_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="an_rehab_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="18" name="date_creation" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="origine_creation" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="emprise_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="CURRENT_TIMESTAMP" digits="6" id="20" name="date_maj" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="origine_maj" nullable="true" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="emprise_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="lien_doc1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="lien_doc2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="commentaire" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="gen_random_uuid()" digits="0" id="25" name="id_emprise" nullable="false" remarks="identifiant emprise" size="2147483647" type="text" typeCode="12">
+            <child column="id_emprise" foreignKey="aep_affleurant_emprise_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_affleurant"/>
+            <child column="id_emprise" foreignKey="ass_affleurant_emprise_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_affleurant"/>
+            <child column="id_emprise" foreignKey="mm_emprise_ponctuel_emprise_fk" implied="false" onDeleteCascade="true" schema="stareau_principale" table="mm_emprise_ponctuel"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="visible" nullable="false" remarks="*visible de la surface ?*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="emprise_visible_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_oui_non"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="geom" nullable="false" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
+         <primaryKey column="id_emprise" sequenceNumberInPK="1"/>
+         <index name="pk_emprise" unique="true">
+            <column ascending="true" name="id_emprise"/>
+         </index>
+         <index name="sidx_emprise_geom" unique="false">
+            <column ascending="true" name="geom"/>
+         </index>
+         <checkConstraint constraint="(((an_abandon_sup)::integer &gt;= (an_abandon_inf)::integer))" name="donnee_abandon_check"/>
+         <checkConstraint constraint="(((an_pose_sup)::integer &gt;= (an_pose_inf)::integer))" name="donnee_pose_check"/>
+         <checkConstraint constraint="(((an_rehab_sup)::integer &gt;= (an_rehab_inf)::integer))" name="donnee_rehab_check"/>
+         <checkConstraint constraint="(((an_service_sup)::integer &gt;= (an_service_inf)::integer))" name="donnee_service_check"/>
+      </table>
+      <table name="mm_emprise_ponctuel" remarks="table many-many entre éléments surfaciques et éléments ponctuels" schema="stareau_principale" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="id_emprise" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="id_emprise" foreignKey="mm_emprise_ponctuel_emprise_fk" implied="false" onDeleteCascade="true" schema="stareau_principale" table="emprise"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="id_noeud_reseau" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="id_noeud_reseau" foreignKey="mm_emprise_ponctuel_noeud_reseau_fk" implied="false" onDeleteCascade="true" schema="stareau_principale" table="noeud_reseau"/>
+         </column>
+      </table>
+      <table name="noeud_reseau" remarks="table mère des éléments ponctuels" schema="stareau_principale" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="type_reseau" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="noeud_reseau_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_type_reseau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="1" name="fictif" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="etat_service" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="noeud_reseau_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_etat_service"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="insee_commune" nullable="false" remarks="" size="2147483647" type="c_insee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="localisation" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="maitre_ouvrage" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="exploitant" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="entreprise_pose" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="precision_xy" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="noeud_reseau_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="precision_z" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="noeud_reseau_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="an_pose_sup" nullable="false" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="an_pose_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="an_service_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="an_service_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="an_abandon_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="an_abandon_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="an_rehab_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="an_rehab_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="18" name="date_creation" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="origine_creation" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="noeud_reseau_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="CURRENT_TIMESTAMP" digits="6" id="20" name="date_maj" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="origine_maj" nullable="true" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="noeud_reseau_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="lien_doc1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="lien_doc2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="commentaire" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="gen_random_uuid()" digits="0" id="25" name="id_noeud_reseau" nullable="false" remarks="identifiant noeud" size="2147483647" type="text" typeCode="12">
+            <child column="id_noeud_reseau" foreignKey="aep_affleurant_noeud_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_affleurant"/>
+            <child column="noeudinitial" foreignKey="aep_canalisation_noeud_initial_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="noeudterminal" foreignKey="aep_canalisation_noeud_terminal_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="noeudinitial" foreignKey="aep_canalisation_noeud_initial_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="noeudterminal" foreignKey="aep_canalisation_noeud_terminal_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="id_noeud_reseau" foreignKey="ass_affleurant_noeud_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_affleurant"/>
+            <child column="noeudinitial" foreignKey="ass_canalisation_noeud_initial_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="noeudterminal" foreignKey="ass_canalisation_noeud_terminal_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="noeudinitial" foreignKey="ass_canalisation_noeud_initial_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="noeudterminal" foreignKey="ass_canalisation_noeud_terminal_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="id_noeud_reseau" foreignKey="mm_emprise_ponctuel_noeud_reseau_fk" implied="false" onDeleteCascade="true" schema="stareau_principale" table="mm_emprise_ponctuel"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="geom" nullable="false" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
+         <primaryKey column="id_noeud_reseau" sequenceNumberInPK="1"/>
+         <index name="pk_noeud_reseau" unique="true">
+            <column ascending="true" name="id_noeud_reseau"/>
+         </index>
+         <index name="sidx_noeud_geom" unique="false">
+            <column ascending="true" name="geom"/>
+         </index>
+         <checkConstraint constraint="(((an_abandon_sup)::integer &gt;= (an_abandon_inf)::integer))" name="donnee_abandon_check"/>
+         <checkConstraint constraint="(((an_pose_sup)::integer &gt;= (an_pose_inf)::integer))" name="donnee_pose_check"/>
+         <checkConstraint constraint="(((an_rehab_sup)::integer &gt;= (an_rehab_inf)::integer))" name="donnee_rehab_check"/>
+         <checkConstraint constraint="(((an_service_sup)::integer &gt;= (an_service_inf)::integer))" name="donnee_service_check"/>
+      </table>
+   </tables>
+</database>

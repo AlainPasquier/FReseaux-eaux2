@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>com_origine - stareau.stareau_valeur</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../../index.html" class="navbar-brand"><b>stareau</b></a><span class="navbar-brand" style="padding-left: 0">.stareau_valeur</span>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>com_origine</h1><p><span id="recordNumber">-1</span> rows</p><br />
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-text-o"></i>
+                            <h3 id="Description" class="box-title">Description</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div><!-- /.box-header -->
+                        <div class="box-body clearfix">
+                            <p>com_origine</p>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="code">code</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="aep_affleurant.origine_creation references com_origine.code via aep_affleurant_origine_creation_fk"><a href='../../stareau_aep/tables/aep_affleurant.html'>aep_affleurant</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_affleurant_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_affleurant.origine_maj references com_origine.code via aep_affleurant_origine_maj_fk"><a href='../../stareau_aep/tables/aep_affleurant.html'>aep_affleurant</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_affleurant_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_appareillage.origine_creation references com_origine.code via aep_appareillage_origine_creation_fk"><a href='../../stareau_aep/tables/aep_appareillage.html'>aep_appareillage</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_appareillage_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_appareillage.origine_maj references com_origine.code via aep_appareillage_origine_maj_fk"><a href='../../stareau_aep/tables/aep_appareillage.html'>aep_appareillage</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_appareillage_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_canalisation.origine_creation references com_origine.code via aep_canalisation_origine_creation_fk"><a href='../../stareau_aep/tables/aep_canalisation.html'>aep_canalisation</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_canalisation_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_canalisation.origine_maj references com_origine.code via aep_canalisation_origine_maj_fk"><a href='../../stareau_aep/tables/aep_canalisation.html'>aep_canalisation</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_canalisation_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_captage.origine_creation references com_origine.code via aep_captage_origine_creation_fk"><a href='../../stareau_aep/tables/aep_captage.html'>aep_captage</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_captage_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_captage.origine_maj references com_origine.code via aep_captage_origine_maj_fk"><a href='../../stareau_aep/tables/aep_captage.html'>aep_captage</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_captage_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_genie_civil.origine_creation references com_origine.code via aep_genie_civil_origine_creation_fk"><a href='../../stareau_aep/tables/aep_genie_civil.html'>aep_genie_civil</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_genie_civil_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_genie_civil.origine_maj references com_origine.code via aep_genie_civil_origine_maj_fk"><a href='../../stareau_aep/tables/aep_genie_civil.html'>aep_genie_civil</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_genie_civil_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_perimetre_gestion.origine_creation references com_origine.code via aep_perimetre_gestion_origine_creation_fk"><a href='../../stareau_aep/tables/aep_perimetre_gestion.html'>aep_perimetre_gestion</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_perimetre_gestion_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_perimetre_gestion.origine_maj references com_origine.code via aep_perimetre_gestion_origine_maj_fk"><a href='../../stareau_aep/tables/aep_perimetre_gestion.html'>aep_perimetre_gestion</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_perimetre_gestion_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_piece.origine_creation references com_origine.code via aep_piece_origine_creation_fk"><a href='../../stareau_aep/tables/aep_piece.html'>aep_piece</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_piece_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_piece.origine_maj references com_origine.code via aep_piece_origine_maj_fk"><a href='../../stareau_aep/tables/aep_piece.html'>aep_piece</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_piece_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_piece_hors_topo.origine_creation references com_origine.code via aep_piece_hors_topo_origine_creation_fk"><a href='../../stareau_aep/tables/aep_piece_hors_topo.html'>aep_piece_hors_topo</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_piece_hors_topo_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_piece_hors_topo.origine_maj references com_origine.code via aep_piece_hors_topo_origine_maj_fk"><a href='../../stareau_aep/tables/aep_piece_hors_topo.html'>aep_piece_hors_topo</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_piece_hors_topo_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_point_mesure.origine_creation references com_origine.code via aep_point_mesure_origine_creation_fk"><a href='../../stareau_aep/tables/aep_point_mesure.html'>aep_point_mesure</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_point_mesure_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_point_mesure.origine_maj references com_origine.code via aep_point_mesure_origine_maj_fk"><a href='../../stareau_aep/tables/aep_point_mesure.html'>aep_point_mesure</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_point_mesure_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_pompage.origine_creation references com_origine.code via aep_pompage_origine_creation_fk"><a href='../../stareau_aep/tables/aep_pompage.html'>aep_pompage</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_pompage_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_pompage.origine_maj references com_origine.code via aep_pompage_origine_maj_fk"><a href='../../stareau_aep/tables/aep_pompage.html'>aep_pompage</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_pompage_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_protection_mecanique.origine_creation references com_origine.code via aep_protection_mecanique_origine_creation_fk"><a href='../../stareau_aep/tables/aep_protection_mecanique.html'>aep_protection_mecanique</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_protection_mecanique_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_protection_mecanique.origine_maj references com_origine.code via aep_protection_mecanique_origine_maj_fk"><a href='../../stareau_aep/tables/aep_protection_mecanique.html'>aep_protection_mecanique</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_protection_mecanique_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_regulation.origine_creation references com_origine.code via aep_regulation_origine_creation_fk"><a href='../../stareau_aep/tables/aep_regulation.html'>aep_regulation</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_regulation_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_regulation.origine_maj references com_origine.code via aep_regulation_origine_maj_fk"><a href='../../stareau_aep/tables/aep_regulation.html'>aep_regulation</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_regulation_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_reservoir.origine_creation references com_origine.code via aep_reservoir_origine_creation_fk"><a href='../../stareau_aep/tables/aep_reservoir.html'>aep_reservoir</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_reservoir_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_reservoir.origine_maj references com_origine.code via aep_reservoir_origine_maj_fk"><a href='../../stareau_aep/tables/aep_reservoir.html'>aep_reservoir</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_reservoir_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_station_alerte.origine_creation references com_origine.code via aep_station_alerte_origine_creation_fk"><a href='../../stareau_aep/tables/aep_station_alerte.html'>aep_station_alerte</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_station_alerte_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_station_alerte.origine_maj references com_origine.code via aep_station_alerte_origine_maj_fk"><a href='../../stareau_aep/tables/aep_station_alerte.html'>aep_station_alerte</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_station_alerte_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_traitement.origine_creation references com_origine.code via aep_traitement_origine_creation_fk"><a href='../../stareau_aep/tables/aep_traitement.html'>aep_traitement</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_traitement_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_traitement.origine_maj references com_origine.code via aep_traitement_origine_maj_fk"><a href='../../stareau_aep/tables/aep_traitement.html'>aep_traitement</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_traitement_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_vanne.origine_creation references com_origine.code via aep_vanne_origine_creation_fk"><a href='../../stareau_aep/tables/aep_vanne.html'>aep_vanne</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_vanne_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_vanne.origine_maj references com_origine.code via aep_vanne_origine_maj_fk"><a href='../../stareau_aep/tables/aep_vanne.html'>aep_vanne</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_vanne_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_canalisation_branchement.origine_creation references com_origine.code via aep_canalisation_branchement_origine_creation_fk"><a href='../../stareau_aep_brcht/tables/aep_canalisation_branchement.html'>aep_canalisation_branchement</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_canalisation_branchement_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_canalisation_branchement.origine_maj references com_origine.code via aep_canalisation_branchement_origine_maj_fk"><a href='../../stareau_aep_brcht/tables/aep_canalisation_branchement.html'>aep_canalisation_branchement</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_canalisation_branchement_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_piece_branchement.origine_creation references com_origine.code via aep_piece_branchement_origine_creation_fk"><a href='../../stareau_aep_brcht/tables/aep_piece_branchement.html'>aep_piece_branchement</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_piece_branchement_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_piece_branchement.origine_maj references com_origine.code via aep_piece_branchement_origine_maj_fk"><a href='../../stareau_aep_brcht/tables/aep_piece_branchement.html'>aep_piece_branchement</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_piece_branchement_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_point_livraison.origine_creation references com_origine.code via aep_point_livraison_origine_creation_fk"><a href='../../stareau_aep_brcht/tables/aep_point_livraison.html'>aep_point_livraison</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_point_livraison_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_point_livraison.origine_maj references com_origine.code via aep_point_livraison_origine_maj_fk"><a href='../../stareau_aep_brcht/tables/aep_point_livraison.html'>aep_point_livraison</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_point_livraison_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_raccord.origine_creation references com_origine.code via aep_raccord_origine_creation_fk"><a href='../../stareau_aep_brcht/tables/aep_raccord.html'>aep_raccord</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_raccord_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_raccord.origine_maj references com_origine.code via aep_raccord_origine_maj_fk"><a href='../../stareau_aep_brcht/tables/aep_raccord.html'>aep_raccord</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_raccord_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_vanne_branchement.origine_creation references com_origine.code via aep_vanne_branchement_origine_creation_fk"><a href='../../stareau_aep_brcht/tables/aep_vanne_branchement.html'>aep_vanne_branchement</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">aep_vanne_branchement_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="aep_vanne_branchement.origine_maj references com_origine.code via aep_vanne_branchement_origine_maj_fk"><a href='../../stareau_aep_brcht/tables/aep_vanne_branchement.html'>aep_vanne_branchement</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">aep_vanne_branchement_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_affleurant.origine_creation references com_origine.code via ass_affleurant_origine_creation_fk"><a href='../../stareau_ass/tables/ass_affleurant.html'>ass_affleurant</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_affleurant_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_affleurant.origine_maj references com_origine.code via ass_affleurant_origine_maj_fk"><a href='../../stareau_ass/tables/ass_affleurant.html'>ass_affleurant</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_affleurant_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_bassin.origine_creation references com_origine.code via ass_bassin_origine_creation_fk"><a href='../../stareau_ass/tables/ass_bassin.html'>ass_bassin</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_bassin_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_bassin.origine_maj references com_origine.code via ass_bassin_origine_maj_fk"><a href='../../stareau_ass/tables/ass_bassin.html'>ass_bassin</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_bassin_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_canalisation.origine_creation references com_origine.code via ass_canalisation_origine_creation_fk"><a href='../../stareau_ass/tables/ass_canalisation.html'>ass_canalisation</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_canalisation_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_canalisation.origine_maj references com_origine.code via ass_canalisation_origine_maj_fk"><a href='../../stareau_ass/tables/ass_canalisation.html'>ass_canalisation</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_canalisation_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_chambre_depollution.origine_creation references com_origine.code via ass_chambre_depollution_origine_creation_fk"><a href='../../stareau_ass/tables/ass_chambre_depollution.html'>ass_chambre_depollution</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_chambre_depollution_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_chambre_depollution.origine_maj references com_origine.code via ass_chambre_depollution_origine_maj_fk"><a href='../../stareau_ass/tables/ass_chambre_depollution.html'>ass_chambre_depollution</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_chambre_depollution_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_equipement.origine_creation references com_origine.code via ass_equipement_origine_creation_fk"><a href='../../stareau_ass/tables/ass_equipement.html'>ass_equipement</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_equipement_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_equipement.origine_maj references com_origine.code via ass_equipement_origine_maj_fk"><a href='../../stareau_ass/tables/ass_equipement.html'>ass_equipement</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_equipement_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_exutoire.origine_creation references com_origine.code via ass_exutoire_origine_creation_fk"><a href='../../stareau_ass/tables/ass_exutoire.html'>ass_exutoire</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_exutoire_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_exutoire.origine_maj references com_origine.code via ass_exutoire_origine_maj_fk"><a href='../../stareau_ass/tables/ass_exutoire.html'>ass_exutoire</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_exutoire_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_genie_civil.origine_creation references com_origine.code via ass_genie_civil_origine_creation_fk"><a href='../../stareau_ass/tables/ass_genie_civil.html'>ass_genie_civil</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_genie_civil_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_genie_civil.origine_maj references com_origine.code via ass_genie_civil_origine_maj_fk"><a href='../../stareau_ass/tables/ass_genie_civil.html'>ass_genie_civil</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_genie_civil_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_gestion_epl_ligne.origine_creation references com_origine.code via ass_gestion_epl_ligne_origine_creation_fk"><a href='../../stareau_ass/tables/ass_gestion_epl_ligne.html'>ass_gestion_epl_ligne</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_gestion_epl_ligne_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_gestion_epl_ligne.origine_maj references com_origine.code via ass_gestion_epl_ligne_origine_maj_fk"><a href='../../stareau_ass/tables/ass_gestion_epl_ligne.html'>ass_gestion_epl_ligne</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_gestion_epl_ligne_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_gestion_epl_point.origine_creation references com_origine.code via ass_gestion_epl_point_origine_creation_fk"><a href='../../stareau_ass/tables/ass_gestion_epl_point.html'>ass_gestion_epl_point</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_gestion_epl_point_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_gestion_epl_point.origine_maj references com_origine.code via ass_gestion_epl_point_origine_maj_fk"><a href='../../stareau_ass/tables/ass_gestion_epl_point.html'>ass_gestion_epl_point</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_gestion_epl_point_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_gestion_epl_surface.origine_creation references com_origine.code via ass_gestion_epl_surface_origine_creation_fk"><a href='../../stareau_ass/tables/ass_gestion_epl_surface.html'>ass_gestion_epl_surface</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_gestion_epl_surface_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_gestion_epl_surface.origine_maj references com_origine.code via ass_gestion_epl_surface_origine_maj_fk"><a href='../../stareau_ass/tables/ass_gestion_epl_surface.html'>ass_gestion_epl_surface</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_gestion_epl_surface_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_ouvrage_special_ligne.origine_creation references com_origine.code via ass_ouvrage_special_ligne_origine_creation_fk"><a href='../../stareau_ass/tables/ass_ouvrage_special_ligne.html'>ass_ouvrage_special_ligne</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_ouvrage_special_ligne_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_ouvrage_special_ligne.origine_maj references com_origine.code via ass_ouvrage_special_ligne_origine_maj_fk"><a href='../../stareau_ass/tables/ass_ouvrage_special_ligne.html'>ass_ouvrage_special_ligne</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_ouvrage_special_ligne_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_ouvrage_special_point.origine_creation references com_origine.code via ass_ouvrage_special_point_origine_creation_fk"><a href='../../stareau_ass/tables/ass_ouvrage_special_point.html'>ass_ouvrage_special_point</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_ouvrage_special_point_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_ouvrage_special_point.origine_maj references com_origine.code via ass_ouvrage_special_point_origine_maj_fk"><a href='../../stareau_ass/tables/ass_ouvrage_special_point.html'>ass_ouvrage_special_point</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_ouvrage_special_point_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_ouvrage_special_surface.origine_creation references com_origine.code via ass_ouvrage_special_surface_origine_creation_fk"><a href='../../stareau_ass/tables/ass_ouvrage_special_surface.html'>ass_ouvrage_special_surface</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_ouvrage_special_surface_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_ouvrage_special_surface.origine_maj references com_origine.code via ass_ouvrage_special_surface_origine_maj_fk"><a href='../../stareau_ass/tables/ass_ouvrage_special_surface.html'>ass_ouvrage_special_surface</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_ouvrage_special_surface_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_perimetre_gestion.origine_creation references com_origine.code via ass_perimetre_gestion_origine_creation_fk"><a href='../../stareau_ass/tables/ass_perimetre_gestion.html'>ass_perimetre_gestion</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_perimetre_gestion_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_perimetre_gestion.origine_maj references com_origine.code via ass_perimetre_gestion_origine_maj_fk"><a href='../../stareau_ass/tables/ass_perimetre_gestion.html'>ass_perimetre_gestion</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_perimetre_gestion_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_piece.origine_creation references com_origine.code via ass_piece_origine_creation_fk"><a href='../../stareau_ass/tables/ass_piece.html'>ass_piece</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_piece_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_piece.origine_maj references com_origine.code via ass_piece_origine_maj_fk"><a href='../../stareau_ass/tables/ass_piece.html'>ass_piece</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_piece_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_piece_hors_topo.origine_creation references com_origine.code via ass_piece_hors_topo_origine_creation_fk"><a href='../../stareau_ass/tables/ass_piece_hors_topo.html'>ass_piece_hors_topo</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_piece_hors_topo_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_piece_hors_topo.origine_maj references com_origine.code via ass_piece_hors_topo_origine_maj_fk"><a href='../../stareau_ass/tables/ass_piece_hors_topo.html'>ass_piece_hors_topo</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_piece_hors_topo_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_point_mesure.origine_creation references com_origine.code via ass_point_mesure_origine_creation_fk"><a href='../../stareau_ass/tables/ass_point_mesure.html'>ass_point_mesure</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_point_mesure_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_point_mesure.origine_maj references com_origine.code via ass_point_mesure_origine_maj_fk"><a href='../../stareau_ass/tables/ass_point_mesure.html'>ass_point_mesure</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_point_mesure_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_point_prelevement.origine_creation references com_origine.code via ass_point_prelevement_origine_creation_fk"><a href='../../stareau_ass/tables/ass_point_prelevement.html'>ass_point_prelevement</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_point_prelevement_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_point_prelevement.origine_maj references com_origine.code via ass_point_prelevement_origine_maj_fk"><a href='../../stareau_ass/tables/ass_point_prelevement.html'>ass_point_prelevement</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_point_prelevement_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_pompage.origine_creation references com_origine.code via ass_pompage_origine_creation_fk"><a href='../../stareau_ass/tables/ass_pompage.html'>ass_pompage</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_pompage_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_pompage.origine_maj references com_origine.code via ass_pompage_origine_maj_fk"><a href='../../stareau_ass/tables/ass_pompage.html'>ass_pompage</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_pompage_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_pretraitement.origine_creation references com_origine.code via ass_pretraitement_origine_creation_fk"><a href='../../stareau_ass/tables/ass_pretraitement.html'>ass_pretraitement</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_pretraitement_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_pretraitement.origine_maj references com_origine.code via ass_pretraitement_origine_maj_fk"><a href='../../stareau_ass/tables/ass_pretraitement.html'>ass_pretraitement</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_pretraitement_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_protection_mecanique.origine_creation references com_origine.code via ass_protection_mecanique_origine_creation_fk"><a href='../../stareau_ass/tables/ass_protection_mecanique.html'>ass_protection_mecanique</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_protection_mecanique_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_protection_mecanique.origine_maj references com_origine.code via ass_protection_mecanique_origine_maj_fk"><a href='../../stareau_ass/tables/ass_protection_mecanique.html'>ass_protection_mecanique</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_protection_mecanique_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_regard.origine_creation references com_origine.code via ass_regard_origine_creation_fk"><a href='../../stareau_ass/tables/ass_regard.html'>ass_regard</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_regard_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_regard.origine_maj references com_origine.code via ass_regard_origine_maj_fk"><a href='../../stareau_ass/tables/ass_regard.html'>ass_regard</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_regard_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_traitement.origine_creation references com_origine.code via ass_traitement_origine_creation_fk"><a href='../../stareau_ass/tables/ass_traitement.html'>ass_traitement</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_traitement_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_traitement.origine_maj references com_origine.code via ass_traitement_origine_maj_fk"><a href='../../stareau_ass/tables/ass_traitement.html'>ass_traitement</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_traitement_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_canalisation_branchement.origine_creation references com_origine.code via ass_canalisation_branchement_origine_creation_fk"><a href='../../stareau_ass_brcht/tables/ass_canalisation_branchement.html'>ass_canalisation_branchement</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_canalisation_branchement_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_canalisation_branchement.origine_maj references com_origine.code via ass_canalisation_branchement_origine_maj_fk"><a href='../../stareau_ass_brcht/tables/ass_canalisation_branchement.html'>ass_canalisation_branchement</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_canalisation_branchement_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_engouffrement_ligne.origine_creation references com_origine.code via ass_engouffrement_ligne_origine_creation_fk"><a href='../../stareau_ass_brcht/tables/ass_engouffrement_ligne.html'>ass_engouffrement_ligne</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_engouffrement_ligne_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_engouffrement_ligne.origine_maj references com_origine.code via ass_engouffrement_ligne_origine_maj_fk"><a href='../../stareau_ass_brcht/tables/ass_engouffrement_ligne.html'>ass_engouffrement_ligne</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_engouffrement_ligne_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_engouffrement_point.origine_creation references com_origine.code via ass_engouffrement_point_origine_creation_fk"><a href='../../stareau_ass_brcht/tables/ass_engouffrement_point.html'>ass_engouffrement_point</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_engouffrement_point_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_engouffrement_point.origine_maj references com_origine.code via ass_engouffrement_point_origine_maj_fk"><a href='../../stareau_ass_brcht/tables/ass_engouffrement_point.html'>ass_engouffrement_point</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_engouffrement_point_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_engouffrement_surface.origine_creation references com_origine.code via ass_engouffrement_surface_origine_creation_fk"><a href='../../stareau_ass_brcht/tables/ass_engouffrement_surface.html'>ass_engouffrement_surface</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_engouffrement_surface_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_engouffrement_surface.origine_maj references com_origine.code via ass_engouffrement_surface_origine_maj_fk"><a href='../../stareau_ass_brcht/tables/ass_engouffrement_surface.html'>ass_engouffrement_surface</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_engouffrement_surface_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_point_collecte.origine_creation references com_origine.code via ass_point_collecte_origine_creation_fk"><a href='../../stareau_ass_brcht/tables/ass_point_collecte.html'>ass_point_collecte</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_point_collecte_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_point_collecte.origine_maj references com_origine.code via ass_point_collecte_origine_maj_fk"><a href='../../stareau_ass_brcht/tables/ass_point_collecte.html'>ass_point_collecte</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_point_collecte_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_raccord.origine_creation references com_origine.code via ass_raccord_origine_creation_fk"><a href='../../stareau_ass_brcht/tables/ass_raccord.html'>ass_raccord</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">ass_raccord_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ass_raccord.origine_maj references com_origine.code via ass_raccord_origine_maj_fk"><a href='../../stareau_ass_brcht/tables/ass_raccord.html'>ass_raccord</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">ass_raccord_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="piezometre.origine_creation references com_origine.code via piezometre_origine_creation_fk"><a href='../../stareau_commun/tables/piezometre.html'>piezometre</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">piezometre_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="piezometre.origine_maj references com_origine.code via piezometre_origine_maj_fk"><a href='../../stareau_commun/tables/piezometre.html'>piezometre</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">piezometre_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pluviometre.origine_creation references com_origine.code via pluviometre_origine_creation_fk"><a href='../../stareau_commun/tables/pluviometre.html'>pluviometre</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">pluviometre_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="pluviometre.origine_maj references com_origine.code via pluviometre_origine_maj_fk"><a href='../../stareau_commun/tables/pluviometre.html'>pluviometre</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">pluviometre_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="point_geolocalisation.origine_creation references com_origine.code via point_geolocalisation_origine_creation_fk"><a href='../../stareau_commun/tables/point_geolocalisation.html'>point_geolocalisation</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">point_geolocalisation_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="point_geolocalisation.origine_maj references com_origine.code via point_geolocalisation_origine_maj_fk"><a href='../../stareau_commun/tables/point_geolocalisation.html'>point_geolocalisation</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">point_geolocalisation_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="canalisation.origine_creation references com_origine.code via canalisation_origine_creation_fk"><a href='../../stareau_principale/tables/canalisation.html'>canalisation</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">canalisation_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="canalisation.origine_maj references com_origine.code via canalisation_origine_maj_fk"><a href='../../stareau_principale/tables/canalisation.html'>canalisation</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">canalisation_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="champ_commun.origine_creation references com_origine.code via champ_commun_origine_creation_fk"><a href='../../stareau_principale/tables/champ_commun.html'>champ_commun</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">champ_commun_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="champ_commun.origine_maj references com_origine.code via champ_commun_origine_maj_fk"><a href='../../stareau_principale/tables/champ_commun.html'>champ_commun</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">champ_commun_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="emprise.origine_creation references com_origine.code via emprise_origine_creation_fk"><a href='../../stareau_principale/tables/emprise.html'>emprise</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">emprise_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="emprise.origine_maj references com_origine.code via emprise_origine_maj_fk"><a href='../../stareau_principale/tables/emprise.html'>emprise</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">emprise_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="noeud_reseau.origine_creation references com_origine.code via noeud_reseau_origine_creation_fk"><a href='../../stareau_principale/tables/noeud_reseau.html'>noeud_reseau</a><span class='relatedKey'>.origine_creation</span></td>
+                                                <td class="constraint detail">noeud_reseau_origine_creation_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="noeud_reseau.origine_maj references com_origine.code via noeud_reseau_origine_maj_fk"><a href='../../stareau_principale/tables/noeud_reseau.html'>noeud_reseau</a><span class='relatedKey'>.origine_maj</span></td>
+                                                <td class="constraint detail">noeud_reseau_origine_maj_fk</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="valeur">valeur</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="description">description</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-sitemap"></i>
+                            <h3 id="Indexes" class="box-title">Indexes</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
+                                <thead>
+                                <tr>
+                                    <th>Constraint Name</th>
+                                    <th>Type</th>
+                                    <th>Sort</th>
+                                    <th>Column(s)</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> com_origine_pk</td>
+                                    <td>Primary key</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>code</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-code-fork"></i>
+                            <h3 id="Relationships" class="box-title">Relationships</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="nav-tabs-custom"><!-- Tabs within a box -->
+                                <h5>Close relationships within degrees of separation</h5>
+                                <ul class="nav nav-tabs pull-left ui-sortable-handle">
+                                    <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
+                                    <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                </ul>
+                                <div class="tab-content no-padding">
+                                    <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="../../stareau_aep/tables/aep_affleurant.html" target="_top" title="stareau_aep.aep_affleurant" alt="" coords="433,5,735,328">
+<area shape="rect" id="node2" href="com_origine.html" target="_top" title="com_origine" alt="" coords="5,10623,299,10780">
+<area shape="rect" id="node3" href="../../stareau_aep/tables/aep_appareillage.html" target="_top" title="stareau_aep.aep_appareillage" alt="" coords="423,345,745,668">
+<area shape="rect" id="node4" href="../../stareau_aep/tables/aep_canalisation.html" target="_top" title="stareau_aep.aep_canalisation" alt="" coords="425,685,743,1243">
+<area shape="rect" id="node5" href="../../stareau_aep/tables/aep_captage.html" target="_top" title="stareau_aep.aep_captage" alt="" coords="441,1260,727,1583">
+<area shape="rect" id="node6" href="../../stareau_aep/tables/aep_genie_civil.html" target="_top" title="stareau_aep.aep_genie_civil" alt="" coords="432,1600,736,1923">
+<area shape="rect" id="node7" href="../../stareau_aep/tables/aep_perimetre_gestion.html" target="_top" title="stareau_aep.aep_perimetre_gestion" alt="" coords="400,1940,768,2292">
+<area shape="rect" id="node8" href="../../stareau_aep/tables/aep_piece.html" target="_top" title="stareau_aep.aep_piece" alt="" coords="453,2309,715,2603">
+<area shape="rect" id="node9" href="../../stareau_aep/tables/aep_piece_hors_topo.html" target="_top" title="stareau_aep.aep_piece_hors_topo" alt="" coords="409,2620,759,2913">
+<area shape="rect" id="node10" href="../../stareau_aep/tables/aep_point_mesure.html" target="_top" title="stareau_aep.aep_point_mesure" alt="" coords="419,2931,749,3283">
+<area shape="rect" id="node11" href="../../stareau_aep/tables/aep_pompage.html" target="_top" title="stareau_aep.aep_pompage" alt="" coords="436,3300,732,3652">
+<area shape="rect" id="node12" href="../../stareau_aep/tables/aep_protection_mecanique.html" target="_top" title="stareau_aep.aep_protection_mecanique" alt="" coords="384,3669,784,4021">
+<area shape="rect" id="node13" href="../../stareau_aep/tables/aep_regulation.html" target="_top" title="stareau_aep.aep_regulation" alt="" coords="431,4039,737,4391">
+<area shape="rect" id="node14" href="../../stareau_aep/tables/aep_reservoir.html" target="_top" title="stareau_aep.aep_reservoir" alt="" coords="437,4408,731,4760">
+<area shape="rect" id="node15" href="../../stareau_aep/tables/aep_station_alerte.html" target="_top" title="stareau_aep.aep_station_alerte" alt="" coords="418,4777,750,5071">
+<area shape="rect" id="node16" href="../../stareau_aep/tables/aep_traitement.html" target="_top" title="stareau_aep.aep_traitement" alt="" coords="429,5088,739,5440">
+<area shape="rect" id="node17" href="../../stareau_aep/tables/aep_vanne.html" target="_top" title="stareau_aep.aep_vanne" alt="" coords="449,5457,719,5927">
+<area shape="rect" id="node18" href="../../stareau_aep_brcht/tables/aep_canalisation_branchement.html" target="_top" title="stareau_aep_brcht.aep_canalisation_branchement" alt="" coords="343,5944,825,6443">
+<area shape="rect" id="node19" href="../../stareau_aep_brcht/tables/aep_piece_branchement.html" target="_top" title="stareau_aep_brcht.aep_piece_branchement" alt="" coords="370,6460,798,6753">
+<area shape="rect" id="node20" href="../../stareau_aep_brcht/tables/aep_point_livraison.html" target="_top" title="stareau_aep_brcht.aep_point_livraison" alt="" coords="390,6771,778,7093">
+<area shape="rect" id="node21" href="../../stareau_aep_brcht/tables/aep_raccord.html" target="_top" title="stareau_aep_brcht.aep_raccord" alt="" coords="419,7111,749,7375">
+<area shape="rect" id="node22" href="../../stareau_aep_brcht/tables/aep_vanne_branchement.html" target="_top" title="stareau_aep_brcht.aep_vanne_branchement" alt="" coords="367,7392,801,7744">
+<area shape="rect" id="node23" href="../../stareau_ass/tables/ass_affleurant.html" target="_top" title="stareau_ass.ass_affleurant" alt="" coords="437,7761,731,8084">
+<area shape="rect" id="node24" href="../../stareau_ass/tables/ass_bassin.html" target="_top" title="stareau_ass.ass_bassin" alt="" coords="451,8101,717,8512">
+<area shape="rect" id="node25" href="../../stareau_ass/tables/ass_canalisation.html" target="_top" title="stareau_ass.ass_canalisation" alt="" coords="429,8529,739,9057">
+<area shape="rect" id="node26" href="../../stareau_ass/tables/ass_chambre_depollution.html" target="_top" title="stareau_ass.ass_chambre_depollution" alt="" coords="393,9075,775,9456">
+<area shape="rect" id="node27" href="../../stareau_ass/tables/ass_equipement.html" target="_top" title="stareau_ass.ass_equipement" alt="" coords="429,9473,739,9825">
+<area shape="rect" id="node28" href="../../stareau_ass/tables/ass_exutoire.html" target="_top" title="stareau_ass.ass_exutoire" alt="" coords="443,9843,725,10136">
+<area shape="rect" id="node29" href="../../stareau_ass/tables/ass_genie_civil.html" target="_top" title="stareau_ass.ass_genie_civil" alt="" coords="436,10153,732,10476">
+<area shape="rect" id="node30" href="../../stareau_ass/tables/ass_gestion_epl_ligne.html" target="_top" title="stareau_ass.ass_gestion_epl_ligne" alt="" coords="409,10493,759,10845">
+<area shape="rect" id="node31" href="../../stareau_ass/tables/ass_gestion_epl_point.html" target="_top" title="stareau_ass.ass_gestion_epl_point" alt="" coords="407,10863,761,11215">
+<area shape="rect" id="node32" href="../../stareau_ass/tables/ass_gestion_epl_surface.html" target="_top" title="stareau_ass.ass_gestion_epl_surface" alt="" coords="399,11232,769,11584">
+<area shape="rect" id="node33" href="../../stareau_ass/tables/ass_ouvrage_special_ligne.html" target="_top" title="stareau_ass.ass_ouvrage_special_ligne" alt="" coords="390,11601,778,11924">
+<area shape="rect" id="node34" href="../../stareau_ass/tables/ass_ouvrage_special_point.html" target="_top" title="stareau_ass.ass_ouvrage_special_point" alt="" coords="389,11941,779,12264">
+<area shape="rect" id="node35" href="../../stareau_ass/tables/ass_ouvrage_special_surface.html" target="_top" title="stareau_ass.ass_ouvrage_special_surface" alt="" coords="381,12281,787,12604">
+<area shape="rect" id="node36" href="../../stareau_ass/tables/ass_perimetre_gestion.html" target="_top" title="stareau_ass.ass_perimetre_gestion" alt="" coords="404,12621,764,12944">
+<area shape="rect" id="node37" href="../../stareau_ass/tables/ass_piece.html" target="_top" title="stareau_ass.ass_piece" alt="" coords="456,12961,712,13255">
+<area shape="rect" id="node38" href="../../stareau_ass/tables/ass_piece_hors_topo.html" target="_top" title="stareau_ass.ass_piece_hors_topo" alt="" coords="413,13272,755,13565">
+<area shape="rect" id="node39" href="../../stareau_ass/tables/ass_point_mesure.html" target="_top" title="stareau_ass.ass_point_mesure" alt="" coords="423,13583,745,13935">
+<area shape="rect" id="node40" href="../../stareau_ass/tables/ass_point_prelevement.html" target="_top" title="stareau_ass.ass_point_prelevement" alt="" coords="401,13952,767,14275">
+<area shape="rect" id="node41" href="../../stareau_ass/tables/ass_pompage.html" target="_top" title="stareau_ass.ass_pompage" alt="" coords="439,14292,729,14673">
+<area shape="rect" id="node42" href="../../stareau_ass/tables/ass_pretraitement.html" target="_top" title="stareau_ass.ass_pretraitement" alt="" coords="420,14691,748,15013">
+<area shape="rect" id="node43" href="../../stareau_ass/tables/ass_protection_mecanique.html" target="_top" title="stareau_ass.ass_protection_mecanique" alt="" coords="387,15031,781,15383">
+<area shape="rect" id="node44" href="../../stareau_ass/tables/ass_regard.html" target="_top" title="stareau_ass.ass_regard" alt="" coords="450,15400,718,15811">
+<area shape="rect" id="node45" href="../../stareau_ass/tables/ass_traitement.html" target="_top" title="stareau_ass.ass_traitement" alt="" coords="433,15828,735,16151">
+<area shape="rect" id="node46" href="../../stareau_ass_brcht/tables/ass_canalisation_branchement.html" target="_top" title="stareau_ass_brcht.ass_canalisation_branchement" alt="" coords="346,16168,822,16667">
+<area shape="rect" id="node47" href="../../stareau_ass_brcht/tables/ass_engouffrement_ligne.html" target="_top" title="stareau_ass_brcht.ass_engouffrement_ligne" alt="" coords="368,16684,800,17212">
+<area shape="rect" id="node48" href="../../stareau_ass_brcht/tables/ass_engouffrement_point.html" target="_top" title="stareau_ass_brcht.ass_engouffrement_point" alt="" coords="367,17229,801,17611">
+<area shape="rect" id="node49" href="../../stareau_ass_brcht/tables/ass_engouffrement_surface.html" target="_top" title="stareau_ass_brcht.ass_engouffrement_surface" alt="" coords="358,17628,810,18039">
+<area shape="rect" id="node50" href="../../stareau_ass_brcht/tables/ass_point_collecte.html" target="_top" title="stareau_ass_brcht.ass_point_collecte" alt="" coords="397,18056,771,18437">
+<area shape="rect" id="node51" href="../../stareau_ass_brcht/tables/ass_raccord.html" target="_top" title="stareau_ass_brcht.ass_raccord" alt="" coords="422,18455,746,18748">
+<area shape="rect" id="node52" href="../../stareau_commun/tables/piezometre.html" target="_top" title="stareau_commun.piezometre" alt="" coords="425,18765,743,19029">
+<area shape="rect" id="node53" href="../../stareau_commun/tables/pluviometre.html" target="_top" title="stareau_commun.pluviometre" alt="" coords="421,19047,747,19340">
+<area shape="rect" id="node54" href="../../stareau_commun/tables/point_geolocalisation.html" target="_top" title="stareau_commun.point_geolocalisation" alt="" coords="385,19357,783,19621">
+<area shape="rect" id="node55" href="../../stareau_principale/tables/canalisation.html" target="_top" title="stareau_principale.canalisation" alt="" coords="417,19639,751,20049">
+<area shape="rect" id="node56" href="../../stareau_principale/tables/champ_commun.html" target="_top" title="stareau_principale.champ_commun" alt="" coords="400,20067,768,20331">
+<area shape="rect" id="node57" href="../../stareau_principale/tables/emprise.html" target="_top" title="stareau_principale.emprise" alt="" coords="433,20348,735,20641">
+<area shape="rect" id="node58" href="../../stareau_principale/tables/noeud_reseau.html" target="_top" title="stareau_principale.noeud_reseau" alt="" coords="410,20659,758,20923">
+</map>
+                                        <a name='diagram'><img id="oneDegreeImg" src="../diagrams/tables/com_origine.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="../../stareau_aep/tables/aep_affleurant.html" target="_top" title="stareau_aep.aep_affleurant" alt="" coords="449,7164,751,7487">
+<area shape="rect" id="node2" href="com_etat_service.html" target="_top" title="com_etat_service" alt="" coords="50,10684,270,10772">
+<area shape="rect" id="node3" href="com_forme.html" target="_top" title="com_forme" alt="" coords="74,5613,246,5701">
+<area shape="rect" id="node4" href="com_origine.html" target="_top" title="com_origine" alt="" coords="13,10895,307,11052">
+<area shape="rect" id="node5" href="com_precision.html" target="_top" title="com_precision" alt="" coords="61,10789,259,10877">
+<area shape="rect" id="node6" href="com_type_affleurant.html" target="_top" title="com_type_affleurant" alt="" coords="37,7541,283,7629">
+<area shape="rect" id="node7" href="com_type_reseau.html" target="_top" title="com_type_reseau" alt="" coords="50,10515,270,10603">
+<area shape="rect" id="node8" href="../../stareau_aep/tables/aep_appareillage.html" target="_top" title="stareau_aep.aep_appareillage" alt="" coords="439,14884,761,15207">
+<area shape="rect" id="node9" href="com_oui_non.html" target="_top" title="com_oui_non" alt="" coords="67,15816,253,15904">
+<area shape="rect" id="node10" href="aep_type_appareillage.html" target="_top" title="aep_type_appareillage" alt="" coords="29,15063,291,15151">
+<area shape="rect" id="node11" href="../../stareau_aep/tables/aep_canalisation.html" target="_top" title="stareau_aep.aep_canalisation" alt="" coords="441,5,759,563">
+<area shape="rect" id="node12" href="aep_contenu_canalisation.html" target="_top" title="aep_contenu_canalisation" alt="" coords="15,692,305,780">
+<area shape="rect" id="node13" href="aep_fonction_canalisation.html" target="_top" title="aep_fonction_canalisation" alt="" coords="15,352,305,440">
+<area shape="rect" id="node14" href="com_materiau.html" target="_top" title="com_materiau" alt="" coords="61,3089,259,3177">
+<area shape="rect" id="node15" href="com_mode_circulation.html" target="_top" title="com_mode_circulation" alt="" coords="29,1559,291,1647">
+<area shape="rect" id="node16" href="com_raison_pose.html" target="_top" title="com_raison_pose" alt="" coords="51,1776,269,1864">
+<area shape="rect" id="node17" href="com_revetement_interieur.html" target="_top" title="com_revetement_interieur" alt="" coords="12,1891,308,1979">
+<area shape="rect" id="node18" href="com_type_pose.html" target="_top" title="com_type_pose" alt="" coords="58,1667,262,1755">
+<area shape="rect" id="node19" href="aep_type_pression.html" target="_top" title="aep_type_pression" alt="" coords="45,457,275,545">
+<area shape="rect" id="node20" href="../../stareau_aep/tables/aep_captage.html" target="_top" title="stareau_aep.aep_captage" alt="" coords="457,7844,743,8167">
+<area shape="rect" id="node21" href="aep_type_captage.html" target="_top" title="aep_type_captage" alt="" coords="47,7985,273,8073">
+<area shape="rect" id="node22" href="aep_type_ressource.html" target="_top" title="aep_type_ressource" alt="" coords="40,8091,280,8179">
+<area shape="rect" id="node23" href="../../stareau_aep/tables/aep_genie_civil.html" target="_top" title="stareau_aep.aep_genie_civil" alt="" coords="448,9485,752,9808">
+<area shape="rect" id="node24" href="../../stareau_aep/tables/aep_perimetre_gestion.html" target="_top" title="stareau_aep.aep_perimetre_gestion" alt="" coords="416,19375,784,19727">
+<area shape="rect" id="node25" href="com_type_acces.html" target="_top" title="com_type_acces" alt="" coords="55,19887,265,19975">
+<area shape="rect" id="node26" href="com_type_perimetre.html" target="_top" title="com_type_perimetre" alt="" coords="37,19649,283,19737">
+<area shape="rect" id="node27" href="../../stareau_aep/tables/aep_piece.html" target="_top" title="stareau_aep.aep_piece" alt="" coords="469,9175,731,9468">
+<area shape="rect" id="node28" href="aep_type_piece.html" target="_top" title="aep_type_piece" alt="" coords="58,9043,262,9131">
+<area shape="rect" id="node29" href="../../stareau_aep/tables/aep_piece_hors_topo.html" target="_top" title="stareau_aep.aep_piece_hors_topo" alt="" coords="425,8553,775,8847">
+<area shape="rect" id="node30" href="../../stareau_aep/tables/aep_point_mesure.html" target="_top" title="stareau_aep.aep_point_mesure" alt="" coords="435,17100,765,17452">
+<area shape="rect" id="node31" href="aep_fonction_point_mesure.html" target="_top" title="aep_fonction_point_mesure" alt="" coords="9,17347,311,17435">
+<area shape="rect" id="node32" href="aep_type_point_mesure.html" target="_top" title="aep_type_point_mesure" alt="" coords="25,17241,295,17329">
+<area shape="rect" id="node33" href="../../stareau_aep/tables/aep_pompage.html" target="_top" title="stareau_aep.aep_pompage" alt="" coords="452,17469,748,17821">
+<area shape="rect" id="node34" href="aep_fonction_pompage.html" target="_top" title="aep_fonction_pompage" alt="" coords="26,17611,294,17699">
+<area shape="rect" id="node35" href="aep_installation_pompage.html" target="_top" title="aep_installation_pompage" alt="" coords="14,17716,306,17804">
+<area shape="rect" id="node36" href="../../stareau_aep/tables/aep_protection_mecanique.html" target="_top" title="stareau_aep.aep_protection_mecanique" alt="" coords="400,3957,800,4309">
+<area shape="rect" id="node37" href="com_type_protection.html" target="_top" title="com_type_protection" alt="" coords="35,4349,285,4437">
+<area shape="rect" id="node38" href="../../stareau_aep/tables/aep_regulation.html" target="_top" title="stareau_aep.aep_regulation" alt="" coords="447,17839,753,18191">
+<area shape="rect" id="node39" href="aep_type_consigne.html" target="_top" title="aep_type_consigne" alt="" coords="43,18085,277,18173">
+<area shape="rect" id="node40" href="aep_type_regulation.html" target="_top" title="aep_type_regulation" alt="" coords="37,17980,283,18068">
+<area shape="rect" id="node41" href="../../stareau_aep/tables/aep_reservoir.html" target="_top" title="stareau_aep.aep_reservoir" alt="" coords="453,8184,747,8536">
+<area shape="rect" id="node42" href="aep_type_reservoir.html" target="_top" title="aep_type_reservoir" alt="" coords="43,8392,277,8480">
+<area shape="rect" id="node43" href="../../stareau_aep/tables/aep_station_alerte.html" target="_top" title="stareau_aep.aep_station_alerte" alt="" coords="434,12815,766,13108">
+<area shape="rect" id="node44" href="../../stareau_aep/tables/aep_traitement.html" target="_top" title="stareau_aep.aep_traitement" alt="" coords="445,18208,755,18560">
+<area shape="rect" id="node45" href="aep_fonction_traitement.html" target="_top" title="aep_fonction_traitement" alt="" coords="20,18349,300,18437">
+<area shape="rect" id="node46" href="aep_type_desinfection.html" target="_top" title="aep_type_desinfection" alt="" coords="30,18455,290,18543">
+<area shape="rect" id="node47" href="../../stareau_aep/tables/aep_vanne.html" target="_top" title="stareau_aep.aep_vanne" alt="" coords="465,20453,735,20923">
+<area shape="rect" id="node48" href="aep_etat_ouverture.html" target="_top" title="aep_etat_ouverture" alt="" coords="41,20545,279,20633">
+<area shape="rect" id="node49" href="aep_fonction_vanne.html" target="_top" title="aep_fonction_vanne" alt="" coords="39,20661,281,20749">
+<area shape="rect" id="node50" href="aep_sens_fermeture.html" target="_top" title="aep_sens_fermeture" alt="" coords="38,20420,282,20508">
+<area shape="rect" id="node51" href="aep_type_vanne.html" target="_top" title="aep_type_vanne" alt="" coords="55,20273,265,20361">
+<area shape="rect" id="node52" href="../../stareau_aep_brcht/tables/aep_canalisation_branchement.html" target="_top" title="stareau_aep_brcht.aep_canalisation_branchement" alt="" coords="359,580,841,1079">
+<area shape="rect" id="node53" href="aep_fonction_branchement.html" target="_top" title="aep_fonction_branchement" alt="" coords="9,935,311,1023">
+<area shape="rect" id="node54" href="../../stareau_aep_brcht/tables/aep_piece_branchement.html" target="_top" title="stareau_aep_brcht.aep_piece_branchement" alt="" coords="386,8864,814,9157">
+<area shape="rect" id="node55" href="../../stareau_aep_brcht/tables/aep_point_livraison.html" target="_top" title="stareau_aep_brcht.aep_point_livraison" alt="" coords="406,5804,794,6127">
+<area shape="rect" id="node56" href="aep_type_point_livraison.html" target="_top" title="aep_type_point_livraison" alt="" coords="20,5983,300,6071">
+<area shape="rect" id="node57" href="com_type_usager.html" target="_top" title="com_type_usager" alt="" coords="49,4884,271,4972">
+<area shape="rect" id="node58" href="../../stareau_aep_brcht/tables/aep_raccord.html" target="_top" title="stareau_aep_brcht.aep_raccord" alt="" coords="435,10165,765,10429">
+<area shape="rect" id="node59" href="../../stareau_aep_brcht/tables/aep_vanne_branchement.html" target="_top" title="stareau_aep_brcht.aep_vanne_branchement" alt="" coords="383,20084,817,20436">
+<area shape="rect" id="node60" href="../../stareau_ass/tables/ass_affleurant.html" target="_top" title="stareau_ass.ass_affleurant" alt="" coords="453,7504,747,7827">
+<area shape="rect" id="node61" href="../../stareau_ass/tables/ass_bassin.html" target="_top" title="stareau_ass.ass_bassin" alt="" coords="467,18577,733,18988">
+<area shape="rect" id="node62" href="ass_fonction_bassin.html" target="_top" title="ass_fonction_bassin" alt="" coords="40,18815,280,18903">
+<area shape="rect" id="node63" href="ass_structure_bassin.html" target="_top" title="ass_structure_bassin" alt="" coords="36,18920,284,19008">
+<area shape="rect" id="node64" href="ass_type_bassin.html" target="_top" title="ass_type_bassin" alt="" coords="55,18709,265,18797">
+<area shape="rect" id="node65" href="../../stareau_ass/tables/ass_canalisation.html" target="_top" title="stareau_ass.ass_canalisation" alt="" coords="445,2040,755,2568">
+<area shape="rect" id="node66" href="ass_contenu_canalisation.html" target="_top" title="ass_contenu_canalisation" alt="" coords="17,2133,303,2221">
+<area shape="rect" id="node67" href="ass_fonction_canalisation.html" target="_top" title="ass_fonction_canalisation" alt="" coords="17,2395,303,2483">
+<area shape="rect" id="node68" href="../../stareau_ass/tables/ass_chambre_depollution.html" target="_top" title="stareau_ass.ass_chambre_depollution" alt="" coords="409,14485,791,14867">
+<area shape="rect" id="node69" href="ass_type_chambre.html" target="_top" title="ass_type_chambre" alt="" coords="46,14693,274,14781">
+<area shape="rect" id="node70" href="../../stareau_ass/tables/ass_equipement.html" target="_top" title="stareau_ass.ass_equipement" alt="" coords="445,19005,755,19357">
+<area shape="rect" id="node71" href="ass_fonction_equipement.html" target="_top" title="ass_fonction_equipement" alt="" coords="17,19252,303,19340">
+<area shape="rect" id="node72" href="ass_type_equipement.html" target="_top" title="ass_type_equipement" alt="" coords="33,19147,287,19235">
+<area shape="rect" id="node73" href="../../stareau_ass/tables/ass_exutoire.html" target="_top" title="stareau_ass.ass_exutoire" alt="" coords="459,11572,741,11865">
+<area shape="rect" id="node74" href="ass_destination.html" target="_top" title="ass_destination" alt="" coords="57,11751,263,11839">
+<area shape="rect" id="node75" href="../../stareau_ass/tables/ass_genie_civil.html" target="_top" title="stareau_ass.ass_genie_civil" alt="" coords="452,9825,748,10148">
+<area shape="rect" id="node76" href="../../stareau_ass/tables/ass_gestion_epl_ligne.html" target="_top" title="stareau_ass.ass_gestion_epl_ligne" alt="" coords="425,5435,775,5787">
+<area shape="rect" id="node77" href="ass_fonction_gestion_epl.html" target="_top" title="ass_fonction_gestion_epl" alt="" coords="20,5341,300,5429">
+<area shape="rect" id="node78" href="ass_type_gestion_epl.html" target="_top" title="ass_type_gestion_epl" alt="" coords="36,5236,284,5324">
+<area shape="rect" id="node79" href="../../stareau_ass/tables/ass_gestion_epl_point.html" target="_top" title="stareau_ass.ass_gestion_epl_point" alt="" coords="423,4696,777,5048">
+<area shape="rect" id="node80" href="../../stareau_ass/tables/ass_gestion_epl_surface.html" target="_top" title="stareau_ass.ass_gestion_epl_surface" alt="" coords="415,5065,785,5417">
+<area shape="rect" id="node81" href="../../stareau_ass/tables/ass_ouvrage_special_ligne.html" target="_top" title="stareau_ass.ass_ouvrage_special_ligne" alt="" coords="406,6144,794,6467">
+<area shape="rect" id="node82" href="ass_type_ouvrage_special.html" target="_top" title="ass_type_ouvrage_special" alt="" coords="17,6692,303,6780">
+<area shape="rect" id="node83" href="../../stareau_ass/tables/ass_ouvrage_special_point.html" target="_top" title="stareau_ass.ass_ouvrage_special_point" alt="" coords="405,6484,795,6807">
+<area shape="rect" id="node84" href="../../stareau_ass/tables/ass_ouvrage_special_surface.html" target="_top" title="stareau_ass.ass_ouvrage_special_surface" alt="" coords="397,6824,803,7147">
+<area shape="rect" id="node85" href="../../stareau_ass/tables/ass_perimetre_gestion.html" target="_top" title="stareau_ass.ass_perimetre_gestion" alt="" coords="420,19744,780,20067">
+<area shape="rect" id="node86" href="../../stareau_ass/tables/ass_piece.html" target="_top" title="stareau_ass.ass_piece" alt="" coords="472,11883,728,12176">
+<area shape="rect" id="node87" href="ass_type_piece.html" target="_top" title="ass_type_piece" alt="" coords="60,12216,260,12304">
+<area shape="rect" id="node88" href="../../stareau_ass/tables/ass_piece_hors_topo.html" target="_top" title="stareau_ass.ass_piece_hors_topo" alt="" coords="429,12193,771,12487">
+<area shape="rect" id="node89" href="../../stareau_ass/tables/ass_point_mesure.html" target="_top" title="stareau_ass.ass_point_mesure" alt="" coords="439,16731,761,17083">
+<area shape="rect" id="node90" href="ass_code_sandre.html" target="_top" title="ass_code_sandre" alt="" coords="53,15541,267,15629">
+<area shape="rect" id="node91" href="ass_type_point_mesure.html" target="_top" title="ass_type_point_mesure" alt="" coords="27,16909,293,16997">
+<area shape="rect" id="node92" href="../../stareau_ass/tables/ass_point_prelevement.html" target="_top" title="stareau_ass.ass_point_prelevement" alt="" coords="417,13747,783,14069">
+<area shape="rect" id="node93" href="ass_type_point_prelevement.html" target="_top" title="ass_type_point_prelevement" alt="" coords="5,13925,315,14013">
+<area shape="rect" id="node94" href="../../stareau_ass/tables/ass_pompage.html" target="_top" title="stareau_ass.ass_pompage" alt="" coords="455,16332,745,16713">
+<area shape="rect" id="node95" href="ass_fonction_pompage.html" target="_top" title="ass_fonction_pompage" alt="" coords="28,16608,292,16696">
+<area shape="rect" id="node96" href="ass_type_pompage.html" target="_top" title="ass_type_pompage" alt="" coords="43,16503,277,16591">
+<area shape="rect" id="node97" href="../../stareau_ass/tables/ass_pretraitement.html" target="_top" title="stareau_ass.ass_pretraitement" alt="" coords="436,15564,764,15887">
+<area shape="rect" id="node98" href="ass_type_pretraitement.html" target="_top" title="ass_type_pretraitement" alt="" coords="24,15711,296,15799">
+<area shape="rect" id="node99" href="../../stareau_ass/tables/ass_protection_mecanique.html" target="_top" title="stareau_ass.ass_protection_mecanique" alt="" coords="403,4327,797,4679">
+<area shape="rect" id="node100" href="../../stareau_ass/tables/ass_regard.html" target="_top" title="stareau_ass.ass_regard" alt="" coords="466,2585,734,2996">
+<area shape="rect" id="node101" href="ass_position.html" target="_top" title="ass_position" alt="" coords="70,2852,250,2940">
+<area shape="rect" id="node102" href="ass_type_descente.html" target="_top" title="ass_type_descente" alt="" coords="45,2957,275,3045">
+<area shape="rect" id="node103" href="ass_type_regard.html" target="_top" title="ass_type_regard" alt="" coords="54,2747,266,2835">
+<area shape="rect" id="node104" href="../../stareau_ass/tables/ass_traitement.html" target="_top" title="stareau_ass.ass_traitement" alt="" coords="449,15224,751,15547">
+<area shape="rect" id="node105" href="ass_techno_traitement.html" target="_top" title="ass_techno_traitement" alt="" coords="27,15403,293,15491">
+<area shape="rect" id="node106" href="../../stareau_ass_brcht/tables/ass_canalisation_branchement.html" target="_top" title="stareau_ass_brcht.ass_canalisation_branchement" alt="" coords="362,1096,838,1595">
+<area shape="rect" id="node107" href="ass_fonction_branchement.html" target="_top" title="ass_fonction_branchement" alt="" coords="11,1451,309,1539">
+<area shape="rect" id="node108" href="../../stareau_ass_brcht/tables/ass_engouffrement_ligne.html" target="_top" title="stareau_ass_brcht.ass_engouffrement_ligne" alt="" coords="384,3412,816,3940">
+<area shape="rect" id="node109" href="ass_type_engouffrement.html" target="_top" title="ass_type_engouffrement" alt="" coords="20,14295,300,14383">
+<area shape="rect" id="node110" href="../../stareau_ass_brcht/tables/ass_engouffrement_point.html" target="_top" title="stareau_ass_brcht.ass_engouffrement_point" alt="" coords="383,14087,817,14468">
+<area shape="rect" id="node111" href="../../stareau_ass_brcht/tables/ass_engouffrement_surface.html" target="_top" title="stareau_ass_brcht.ass_engouffrement_surface" alt="" coords="374,15904,826,16315">
+<area shape="rect" id="node112" href="../../stareau_ass_brcht/tables/ass_point_collecte.html" target="_top" title="stareau_ass_brcht.ass_point_collecte" alt="" coords="413,3013,787,3395">
+<area shape="rect" id="node113" href="ass_type_point_collecte.html" target="_top" title="ass_type_point_collecte" alt="" coords="26,3221,294,3309">
+<area shape="rect" id="node114" href="../../stareau_ass_brcht/tables/ass_raccord.html" target="_top" title="stareau_ass_brcht.ass_raccord" alt="" coords="438,12504,762,12797">
+<area shape="rect" id="node115" href="ass_type_raccord.html" target="_top" title="ass_type_raccord" alt="" coords="51,12683,269,12771">
+<area shape="rect" id="node116" href="../../stareau_commun/tables/piezometre.html" target="_top" title="stareau_commun.piezometre" alt="" coords="441,10447,759,10711">
+<area shape="rect" id="node117" href="../../stareau_commun/tables/pluviometre.html" target="_top" title="stareau_commun.pluviometre" alt="" coords="437,13125,763,13419">
+<area shape="rect" id="node118" href="../../stareau_commun/tables/point_geolocalisation.html" target="_top" title="stareau_commun.point_geolocalisation" alt="" coords="401,10728,799,10992">
+<area shape="rect" id="node119" href="../../stareau_principale/tables/canalisation.html" target="_top" title="stareau_principale.canalisation" alt="" coords="433,1612,767,2023">
+<area shape="rect" id="node120" href="../../stareau_principale/tables/champ_commun.html" target="_top" title="stareau_principale.champ_commun" alt="" coords="416,11009,784,11273">
+<area shape="rect" id="node121" href="../../stareau_principale/tables/emprise.html" target="_top" title="stareau_principale.emprise" alt="" coords="449,13436,751,13729">
+<area shape="rect" id="node122" href="../../stareau_principale/tables/noeud_reseau.html" target="_top" title="stareau_principale.noeud_reseau" alt="" coords="426,11291,774,11555">
+</map>
+                                        <a name='diagram'><img id="twodegreesDegreeImg" src="../diagrams/tables/com_origine.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" align="left"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>

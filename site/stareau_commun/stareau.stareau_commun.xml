@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><database name="stareau" schema="stareau_commun" type="PostgreSQL - 15.8 (Debian 15.8-0+deb12u1)">
+   <tables>
+      <table name="piezometre" remarks="forage non exploité qui permet la mesure du niveau de l'eau souterraine en un point donné de la nappe" schema="stareau_commun" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="type_reseau" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="piezometre_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_type_reseau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="1" name="fictif" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="etat_service" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="piezometre_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_etat_service"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="insee_commune" nullable="false" remarks="" size="2147483647" type="c_insee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="localisation" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="maitre_ouvrage" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="exploitant" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="entreprise_pose" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="precision_xy" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="piezometre_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="precision_z" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="piezometre_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="an_pose_sup" nullable="false" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="an_pose_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="an_service_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="an_service_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="an_abandon_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="an_abandon_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="an_rehab_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="an_rehab_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="18" name="date_creation" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="origine_creation" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="piezometre_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="CURRENT_TIMESTAMP" digits="6" id="20" name="date_maj" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="origine_maj" nullable="true" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="piezometre_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="lien_doc1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="lien_doc2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="commentaire" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="gen_random_uuid()" digits="0" id="25" name="id_piezometre" nullable="false" remarks="identifiant métier" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="nom_usuel" nullable="true" remarks="nom usuel" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="diametre" nullable="true" remarks="diamètre interne du forage" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="8" id="28" name="cote_tn" nullable="true" remarks="cote terrain naturel" size="8" type="float4" typeCode="7"/>
+         <column autoUpdated="false" defaultValue="null" digits="8" id="29" name="cote_fin_crepine" nullable="true" remarks="cote de fin de crépine" size="8" type="float4" typeCode="7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="ref_bss" nullable="true" remarks="référence dans la banque du sous-sol (BRGM)" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="geom" nullable="false" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
+         <primaryKey column="id_piezometre" sequenceNumberInPK="1"/>
+         <index name="pk_piezometre" unique="true">
+            <column ascending="true" name="id_piezometre"/>
+         </index>
+         <checkConstraint constraint="(((an_abandon_sup)::integer &gt;= (an_abandon_inf)::integer))" name="donnee_abandon_check"/>
+         <checkConstraint constraint="(((an_pose_sup)::integer &gt;= (an_pose_inf)::integer))" name="donnee_pose_check"/>
+         <checkConstraint constraint="(((an_rehab_sup)::integer &gt;= (an_rehab_inf)::integer))" name="donnee_rehab_check"/>
+         <checkConstraint constraint="(((an_service_sup)::integer &gt;= (an_service_inf)::integer))" name="donnee_service_check"/>
+      </table>
+      <table name="pluviometre" remarks="pluviometre" schema="stareau_commun" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="type_reseau" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="pluviometre_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_type_reseau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="1" name="fictif" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="etat_service" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="pluviometre_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_etat_service"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="insee_commune" nullable="false" remarks="" size="2147483647" type="c_insee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="localisation" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="maitre_ouvrage" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="exploitant" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="entreprise_pose" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="precision_xy" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="pluviometre_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="precision_z" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="pluviometre_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="an_pose_sup" nullable="false" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="an_pose_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="an_service_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="an_service_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="an_abandon_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="an_abandon_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="an_rehab_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="an_rehab_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="18" name="date_creation" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="origine_creation" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="pluviometre_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="CURRENT_TIMESTAMP" digits="6" id="20" name="date_maj" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="origine_maj" nullable="true" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="pluviometre_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="lien_doc1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="lien_doc2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="commentaire" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="gen_random_uuid()" digits="0" id="25" name="id_pluviometre" nullable="false" remarks="identifiant métier" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="type_pluviometre" nullable="false" remarks="*type de pluviomètre*" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="nom_usuel" nullable="false" remarks="nom usuel" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="ref_meteo_france" nullable="true" remarks="référence MétéoFrance" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="telegestion" nullable="false" remarks="*présence d'une gestion à distance*" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="pluviometre_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_oui_non"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="geom" nullable="false" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
+         <primaryKey column="id_pluviometre" sequenceNumberInPK="1"/>
+         <index name="pk_pluviometre" unique="true">
+            <column ascending="true" name="id_pluviometre"/>
+         </index>
+         <checkConstraint constraint="(((an_abandon_sup)::integer &gt;= (an_abandon_inf)::integer))" name="donnee_abandon_check"/>
+         <checkConstraint constraint="(((an_pose_sup)::integer &gt;= (an_pose_inf)::integer))" name="donnee_pose_check"/>
+         <checkConstraint constraint="(((an_rehab_sup)::integer &gt;= (an_rehab_inf)::integer))" name="donnee_rehab_check"/>
+         <checkConstraint constraint="(((an_service_sup)::integer &gt;= (an_service_inf)::integer))" name="donnee_service_check"/>
+      </table>
+      <table name="point_geolocalisation" remarks="point géoréférencé en planimétrie ou planimétrie/altimétrie, relatif à la position d'un patrimoine" schema="stareau_commun" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="type_reseau" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="point_geolocalisation_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_type_reseau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="false" digits="0" id="1" name="fictif" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="etat_service" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="point_geolocalisation_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_etat_service"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="insee_commune" nullable="false" remarks="" size="2147483647" type="c_insee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="localisation" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="maitre_ouvrage" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="exploitant" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="entreprise_pose" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="precision_xy" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="point_geolocalisation_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="precision_z" nullable="false" remarks="" size="1" type="varchar" typeCode="12">
+            <parent column="code" foreignKey="point_geolocalisation_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_precision"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="an_pose_sup" nullable="false" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="an_pose_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="an_service_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="an_service_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="an_abandon_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="an_abandon_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="an_rehab_sup" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="an_rehab_inf" nullable="true" remarks="" size="10" type="c_annee" typeCode="2001"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="18" name="date_creation" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="origine_creation" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="point_geolocalisation_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="CURRENT_TIMESTAMP" digits="6" id="20" name="date_maj" nullable="false" remarks="" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="origine_maj" nullable="true" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="code" foreignKey="point_geolocalisation_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_valeur" table="com_origine"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="lien_doc1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="lien_doc2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="commentaire" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="gen_random_uuid()" digits="0" id="25" name="id_point_geolocalisation" nullable="false" remarks="identifiant métier" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="8" id="26" name="z_objet" nullable="true" remarks="cote altimétrique de l'objet" size="8" type="float4" typeCode="7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="reference_z" nullable="false" remarks="*lieu de lever du Z*" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="mode_lever" nullable="false" remarks="*mode de lever*" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="29" name="date_lever" nullable="true" remarks="date du lever" size="29" type="timestamp" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="8" id="30" name="mesure_precision_xy" nullable="true" remarks="qualité précision (GPS HRMS en cm/m)" size="8" type="float4" typeCode="7"/>
+         <column autoUpdated="false" defaultValue="null" digits="8" id="31" name="mesure_precision_z" nullable="true" remarks="qualité précision (GPS HRMS en cm/m)" size="8" type="float4" typeCode="7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="qualite_outil" nullable="true" remarks="pourcent d'erreur de l'appareil ou de la mesure" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="geom" nullable="false" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
+         <primaryKey column="id_point_geolocalisation" sequenceNumberInPK="1"/>
+         <index name="pk_point_geolocalisation" unique="true">
+            <column ascending="true" name="id_point_geolocalisation"/>
+         </index>
+         <index name="sidx_geolocalisation_geom" unique="false">
+            <column ascending="true" name="geom"/>
+         </index>
+         <checkConstraint constraint="(((an_abandon_sup)::integer &gt;= (an_abandon_inf)::integer))" name="donnee_abandon_check"/>
+         <checkConstraint constraint="(((an_pose_sup)::integer &gt;= (an_pose_inf)::integer))" name="donnee_pose_check"/>
+         <checkConstraint constraint="(((an_rehab_sup)::integer &gt;= (an_rehab_inf)::integer))" name="donnee_rehab_check"/>
+         <checkConstraint constraint="(((an_service_sup)::integer &gt;= (an_service_inf)::integer))" name="donnee_service_check"/>
+      </table>
+   </tables>
+</database>

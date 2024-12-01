@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?><database name="stareau" schema="stareau_valeur" type="PostgreSQL - 15.8 (Debian 15.8-0+deb12u1)">
+   <tables>
+      <table name="aep_contenu_canalisation" remarks="aep_contenu_canalisation" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="contenu_canalisation" foreignKey="aep_canalisation_contenu_canalisation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="contenu_canalisation" foreignKey="aep_canalisation_branchement_contenu_canalisation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_contenu_canalisation_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_etat_ouverture" remarks="aep_etat_ouverture" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="etat_ouverture" foreignKey="aep_vanne_etat_ouverture_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="etat_ouverture" foreignKey="aep_vanne_branchement_etat_ouverture_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_vanne_branchement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_etat_ouverture_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_fonction_branchement" remarks="aep_fonction_branchement" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_canalisation" foreignKey="aep_canalisation_branchement_fonction_canalisation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_fonction_branchement_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_fonction_canalisation" remarks="aep_fonction_canalisation" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_canalisation" foreignKey="aep_canalisation_fonction_canalisation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_fonction_canalisation_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_fonction_point_mesure" remarks="aep_fonction_point_mesure" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_point_mesure" foreignKey="aep_point_mesure_fonction_point_mesure_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_point_mesure"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_fonction_point_mesure_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_fonction_pompage" remarks="aep_fonction_pompage" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_pompage" foreignKey="aep_pompage_fonction_pompage_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_pompage"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_fonction_pompage_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_fonction_traitement" remarks="aep_fonction_traitement" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_traitement" foreignKey="aep_traitement_fonction_traitement_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_traitement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_fonction_traitement_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_fonction_vanne" remarks="aep_fonction_vanne" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_vanne" foreignKey="aep_vanne_fonction_vanne_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_fonction_vanne_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_installation_pompage" remarks="aep_installation_pompage" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="installation_pompage" foreignKey="aep_pompage_installation_pompage_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_pompage"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_installation_pompage_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_sens_fermeture" remarks="aep_sens_fermeture" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="sens_fermeture" foreignKey="aep_vanne_sens_fermeture_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="sens_fermeture" foreignKey="aep_vanne_branchement_sens_fermeture_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_vanne_branchement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_sens_fermeture_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_appareillage" remarks="aep_type_appareillage" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_appareillage" foreignKey="aep_appareillage_type_appareillage_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_appareillage"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_appareillage_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_captage" remarks="aep_type_captage" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_captage" foreignKey="aep_captage_type_captage_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_captage"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_captage_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_consigne" remarks="aep_type_consigne" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_consigne" foreignKey="aep_regulation_type_consigne_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_regulation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_consigne_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_desinfection" remarks="aep_type_desinfection" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_desinfection" foreignKey="aep_traitement_type_desinfection_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_traitement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_desinfection_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_piece" remarks="aep_type_piece" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_piece" foreignKey="aep_piece_type_piece_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece"/>
+            <child column="type_piece" foreignKey="aep_piece_hors_topo_type_piece_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece_hors_topo"/>
+            <child column="type_piece_branchement" foreignKey="aep_piece_branchement_type_piece_branchement_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_piece_branchement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_piece_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_point_livraison" remarks="aep_type_point_livraison" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_point_livraison" foreignKey="aep_point_livraison_type_point_livraison_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_point_livraison"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_point_livraison_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_point_mesure" remarks="aep_type_point_mesure" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_point_mesure" foreignKey="aep_point_mesure_type_point_mesure_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_point_mesure"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_point_mesure_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_pression" remarks="aep_type_pression" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_pression" foreignKey="aep_canalisation_type_pression_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_pression_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_regulation" remarks="aep_type_regulation" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_regulation" foreignKey="aep_regulation_type_regulation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_regulation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_regulation_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_reservoir" remarks="aep_type_reservoir" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_reservoir" foreignKey="aep_reservoir_type_reservoir_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_reservoir"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_reservoir_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_ressource" remarks="aep_type_ressource" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_ressource" foreignKey="aep_captage_type_ressource_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_captage"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_ressource_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="aep_type_vanne" remarks="aep_type_vanne" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_vanne" foreignKey="aep_vanne_type_vanne_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="type_vanne_branchement" foreignKey="aep_vanne_branchement_type_vanne_branchement_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_vanne_branchement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="aep_type_vanne_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_code_sandre" numRows="77" remarks="ass_code_sandre" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="code_sandre" foreignKey="ass_point_mesure_code_sandre_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_mesure"/>
+            <child column="code_sandre" foreignKey="ass_point_prelevement_code_sandre_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_prelevement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_code_sandre_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_contenu_canalisation" remarks="ass_contenu_canalisation" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="contenu_canalisation" foreignKey="ass_canalisation_contenu_canalisation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="contenu_canalisation" foreignKey="ass_canalisation_branchement_contenu_canalisation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_contenu_canalisation_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_destination" remarks="ass_destination" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="destination" foreignKey="ass_exutoire_destination_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_exutoire"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_destination_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_fonction_bassin" remarks="ass_fonction_bassin" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_bassin" foreignKey="ass_bassin_fonction_bassin_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_bassin"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_fonction_bassin_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_fonction_branchement" remarks="ass_fonction_branchement" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_canalisation" foreignKey="ass_canalisation_branchement_fonction_canalisation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_fonction_branchement_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_fonction_canalisation" remarks="ass_fonction_canalisation" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_canalisation" foreignKey="ass_canalisation_fonction_canalisation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_fonction_canalisation_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_fonction_equipement" remarks="ass_fonction_equipement" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_equipement" foreignKey="ass_equipement_fonction_equipement_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_equipement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_fonction_equipement_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_fonction_gestion_epl" remarks="ass_fonction_gestion_epl" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_gestion_epl" foreignKey="ass_gestion_epl_ligne_fonction_gestion_epl_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_ligne"/>
+            <child column="fonction_gestion_epl" foreignKey="ass_gestion_epl_point_fonction_gestion_epl_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_point"/>
+            <child column="fonction_gestion_epl" foreignKey="ass_gestion_epl_surface_fonction_gestion_epl_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_surface"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_fonction_gestion_epl_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_fonction_pompage" remarks="ass_fonction_pompage" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="fonction_pompage" foreignKey="ass_pompage_fonction_pompage_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pompage"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_fonction_pompage_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_position" remarks="ass_position" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="position" foreignKey="ass_regard_position_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_regard"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_position_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_structure_bassin" remarks="ass_structure_bassin" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="structure_bassin" foreignKey="ass_bassin_structure_bassin_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_bassin"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_structure_bassin_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_techno_traitement" remarks="ass_techno_traitement" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="techno_traitement" foreignKey="ass_traitement_techno_traitement_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_traitement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_techno_traitement_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_bassin" remarks="ass_type_bassin" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_bassin" foreignKey="ass_bassin_type_bassin_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_bassin"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_bassin_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_chambre" remarks="ass_type_chambre" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_chambre_depollution" foreignKey="ass_chambre_depollution_type_chambre_depollution_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_chambre_depollution"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_chambre_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_descente" remarks="ass_type_descente" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_descente" foreignKey="ass_regard_type_descente_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_regard"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_descente_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_engouffrement" remarks="ass_type_engouffrement" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_engouffrement" foreignKey="ass_engouffrement_ligne_type_engouffrement_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="type_engouffrement" foreignKey="ass_engouffrement_point_type_engouffrement_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_point"/>
+            <child column="type_engouffrement" foreignKey="ass_engouffrement_surface_type_engouffrement_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_surface"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_engouffrement_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_equipement" remarks="ass_type_equipement" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_equipement" foreignKey="ass_equipement_type_equipement_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_equipement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_equipement_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_gestion_epl" remarks="ass_type_gestion_epl" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_gestion_epl" foreignKey="ass_gestion_epl_ligne_type_gestion_epl_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_ligne"/>
+            <child column="type_gestion_epl" foreignKey="ass_gestion_epl_point_type_gestion_epl_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_point"/>
+            <child column="type_gestion_epl" foreignKey="ass_gestion_epl_surface_type_gestion_epl_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_surface"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_gestion_epl_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_ouvrage_special" remarks="ass_type_ouvrage_special" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_ouvrage_special" foreignKey="ass_ouvrage_special_ligne_type_ouvrage_special_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_ligne"/>
+            <child column="type_ouvrage_special" foreignKey="ass_ouvrage_special_point_type_ouvrage_special_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_point"/>
+            <child column="type_ouvrage_special" foreignKey="ass_ouvrage_special_surface_type_ouvrage_special_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_surface"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_ouvrage_special_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_piece" remarks="ass_type_piece" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_piece" foreignKey="ass_piece_type_piece_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece"/>
+            <child column="type_piece" foreignKey="ass_piece_hors_topo_type_piece_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece_hors_topo"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_piece_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_point_collecte" remarks="ass_type_point_collecte" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_point_collecte" foreignKey="ass_point_collecte_type_point_collecte_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_point_collecte"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_point_collecte_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_point_mesure" remarks="ass_type_point_mesure" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_point_mesure" foreignKey="ass_point_mesure_type_point_mesure_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_mesure"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_point_mesure_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_point_prelevement" remarks="ass_type_point_prelevement" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_point_prelevement" foreignKey="ass_point_prelevement_type_point_mesure_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_prelevement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_point_prelevement_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_pompage" remarks="ass_type_pompage" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_pompage" foreignKey="ass_pompage_type_pompage_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pompage"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_pompage_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_pretraitement" remarks="ass_type_pretraitement" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_pretraitement" foreignKey="ass_pretraitement_type_pretraitement_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pretraitement"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_pretraitement_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_raccord" remarks="ass_type_raccord" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_raccord" foreignKey="ass_raccord_type_raccord_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_raccord"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_raccord_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="ass_type_regard" remarks="ass_type_regard" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_regard" foreignKey="ass_regard_type_regard_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_regard"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="ass_type_regard_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_etat_service" remarks="com_etat_service" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="etat_service" foreignKey="aep_affleurant_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_affleurant"/>
+            <child column="etat_service" foreignKey="aep_appareillage_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_appareillage"/>
+            <child column="etat_service" foreignKey="aep_canalisation_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="etat_service" foreignKey="aep_captage_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_captage"/>
+            <child column="etat_service" foreignKey="aep_genie_civil_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_genie_civil"/>
+            <child column="etat_service" foreignKey="aep_perimetre_gestion_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_perimetre_gestion"/>
+            <child column="etat_service" foreignKey="aep_piece_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece"/>
+            <child column="etat_service" foreignKey="aep_piece_hors_topo_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece_hors_topo"/>
+            <child column="etat_service" foreignKey="aep_point_mesure_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_point_mesure"/>
+            <child column="etat_service" foreignKey="aep_pompage_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_pompage"/>
+            <child column="etat_service" foreignKey="aep_protection_mecanique_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_protection_mecanique"/>
+            <child column="etat_service" foreignKey="aep_regulation_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_regulation"/>
+            <child column="etat_service" foreignKey="aep_reservoir_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_reservoir"/>
+            <child column="etat_service" foreignKey="aep_station_alerte_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_station_alerte"/>
+            <child column="etat_service" foreignKey="aep_traitement_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_traitement"/>
+            <child column="etat_service" foreignKey="aep_vanne_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="etat_service" foreignKey="aep_canalisation_branchement_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="etat_service" foreignKey="aep_piece_branchement_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_piece_branchement"/>
+            <child column="etat_service" foreignKey="aep_point_livraison_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_point_livraison"/>
+            <child column="etat_service" foreignKey="aep_raccord_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_raccord"/>
+            <child column="etat_service" foreignKey="aep_vanne_branchement_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_vanne_branchement"/>
+            <child column="etat_service" foreignKey="ass_affleurant_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_affleurant"/>
+            <child column="etat_service" foreignKey="ass_bassin_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_bassin"/>
+            <child column="etat_service" foreignKey="ass_canalisation_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="etat_service" foreignKey="ass_chambre_depollution_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_chambre_depollution"/>
+            <child column="etat_service" foreignKey="ass_equipement_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_equipement"/>
+            <child column="etat_service" foreignKey="ass_exutoire_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_exutoire"/>
+            <child column="etat_service" foreignKey="ass_genie_civil_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_genie_civil"/>
+            <child column="etat_service" foreignKey="ass_gestion_epl_ligne_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_ligne"/>
+            <child column="etat_service" foreignKey="ass_gestion_epl_point_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_point"/>
+            <child column="etat_service" foreignKey="ass_gestion_epl_surface_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_surface"/>
+            <child column="etat_service" foreignKey="ass_ouvrage_special_ligne_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_ligne"/>
+            <child column="etat_service" foreignKey="ass_ouvrage_special_point_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_point"/>
+            <child column="etat_service" foreignKey="ass_ouvrage_special_surface_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_surface"/>
+            <child column="etat_service" foreignKey="ass_perimetre_gestion_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_perimetre_gestion"/>
+            <child column="etat_service" foreignKey="ass_piece_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece"/>
+            <child column="etat_service" foreignKey="ass_piece_hors_topo_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece_hors_topo"/>
+            <child column="etat_service" foreignKey="ass_point_mesure_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_mesure"/>
+            <child column="etat_service" foreignKey="ass_point_prelevement_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_prelevement"/>
+            <child column="etat_service" foreignKey="ass_pompage_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pompage"/>
+            <child column="etat_service" foreignKey="ass_pretraitement_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pretraitement"/>
+            <child column="etat_service" foreignKey="ass_protection_mecanique_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_protection_mecanique"/>
+            <child column="etat_service" foreignKey="ass_regard_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_regard"/>
+            <child column="etat_service" foreignKey="ass_traitement_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_traitement"/>
+            <child column="etat_service" foreignKey="ass_canalisation_branchement_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="etat_service" foreignKey="ass_engouffrement_ligne_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="etat_service" foreignKey="ass_engouffrement_point_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_point"/>
+            <child column="etat_service" foreignKey="ass_engouffrement_surface_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_surface"/>
+            <child column="etat_service" foreignKey="ass_point_collecte_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_point_collecte"/>
+            <child column="etat_service" foreignKey="ass_raccord_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_raccord"/>
+            <child column="etat_service" foreignKey="piezometre_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="piezometre"/>
+            <child column="etat_service" foreignKey="pluviometre_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="pluviometre"/>
+            <child column="etat_service" foreignKey="point_geolocalisation_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="point_geolocalisation"/>
+            <child column="etat_service" foreignKey="canalisation_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="canalisation"/>
+            <child column="etat_service" foreignKey="champ_commun_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="champ_commun"/>
+            <child column="etat_service" foreignKey="emprise_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="emprise"/>
+            <child column="etat_service" foreignKey="noeud_reseau_etat_service_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="noeud_reseau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_etat_service_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_forme" remarks="com_forme" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="forme" foreignKey="aep_affleurant_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_affleurant"/>
+            <child column="forme" foreignKey="aep_canalisation_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="forme" foreignKey="aep_protection_mecanique_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_protection_mecanique"/>
+            <child column="forme" foreignKey="aep_reservoir_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_reservoir"/>
+            <child column="forme" foreignKey="aep_canalisation_branchement_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="forme" foreignKey="ass_affleurant_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_affleurant"/>
+            <child column="forme" foreignKey="ass_bassin_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_bassin"/>
+            <child column="forme" foreignKey="ass_canalisation_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="forme" foreignKey="ass_chambre_depollution_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_chambre_depollution"/>
+            <child column="forme" foreignKey="ass_gestion_epl_ligne_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_ligne"/>
+            <child column="forme" foreignKey="ass_gestion_epl_point_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_point"/>
+            <child column="forme" foreignKey="ass_gestion_epl_surface_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_surface"/>
+            <child column="forme" foreignKey="ass_ouvrage_special_ligne_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_ligne"/>
+            <child column="forme" foreignKey="ass_ouvrage_special_point_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_point"/>
+            <child column="forme" foreignKey="ass_ouvrage_special_surface_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_surface"/>
+            <child column="forme" foreignKey="ass_pompage_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pompage"/>
+            <child column="forme" foreignKey="ass_protection_mecanique_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_protection_mecanique"/>
+            <child column="forme" foreignKey="ass_regard_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_regard"/>
+            <child column="forme" foreignKey="ass_canalisation_branchement_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="forme" foreignKey="ass_engouffrement_ligne_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="forme" foreignKey="ass_engouffrement_point_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_point"/>
+            <child column="forme" foreignKey="ass_engouffrement_surface_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_surface"/>
+            <child column="forme" foreignKey="ass_point_collecte_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_point_collecte"/>
+            <child column="forme" foreignKey="dimension_forme_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="dimension"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_forme_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_materiau" numRows="51" remarks="liste des matériaux" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="identifiant métier" size="2147483647" type="text" typeCode="12">
+            <child column="materiau" foreignKey="aep_canalisation_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="materiau" foreignKey="aep_genie_civil_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_genie_civil"/>
+            <child column="materiau" foreignKey="aep_protection_mecanique_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_protection_mecanique"/>
+            <child column="materiau" foreignKey="aep_canalisation_branchement_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="materiau" foreignKey="ass_canalisation_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="materiau" foreignKey="ass_genie_civil_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_genie_civil"/>
+            <child column="materiau" foreignKey="ass_protection_mecanique_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_protection_mecanique"/>
+            <child column="materiau" foreignKey="ass_regard_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_regard"/>
+            <child column="materiau" foreignKey="ass_canalisation_branchement_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="materiau" foreignKey="ass_engouffrement_ligne_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="materiau" foreignKey="ass_point_collecte_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_point_collecte"/>
+            <child column="materiau" foreignKey="canalisation_materiau_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="canalisation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="valeur" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="description longue" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="categorie" nullable="true" remarks="catégorie ou famille de matériau" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="stardt" nullable="true" remarks="référence à STAR-DT" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="ref13508" nullable="true" remarks="référence à la Norme ITV NF EN 13508" size="2147483647" type="text" typeCode="12"/>
+         <index name="com_materiau_unique" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_mode_circulation" remarks="com_mode_circulation" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="mode_circulation" foreignKey="aep_canalisation_mode_circulation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="mode_circulation" foreignKey="aep_canalisation_branchement_mode_circulation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="mode_circulation" foreignKey="ass_canalisation_mode_circulation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="mode_circulation" foreignKey="ass_canalisation_branchement_mode_circulation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="mode_circulation" foreignKey="ass_engouffrement_ligne_mode_circulation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="mode_circulation" foreignKey="canalisation_mode_circulation_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="canalisation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_mode_circulation_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_mode_lever" remarks="com_mode_lever" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_mode_lever_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_origine" remarks="com_origine" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="origine_creation" foreignKey="aep_affleurant_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_affleurant"/>
+            <child column="origine_maj" foreignKey="aep_affleurant_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_affleurant"/>
+            <child column="origine_creation" foreignKey="aep_appareillage_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_appareillage"/>
+            <child column="origine_maj" foreignKey="aep_appareillage_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_appareillage"/>
+            <child column="origine_creation" foreignKey="aep_canalisation_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="origine_maj" foreignKey="aep_canalisation_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="origine_creation" foreignKey="aep_captage_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_captage"/>
+            <child column="origine_maj" foreignKey="aep_captage_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_captage"/>
+            <child column="origine_creation" foreignKey="aep_genie_civil_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_genie_civil"/>
+            <child column="origine_maj" foreignKey="aep_genie_civil_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_genie_civil"/>
+            <child column="origine_creation" foreignKey="aep_perimetre_gestion_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_perimetre_gestion"/>
+            <child column="origine_maj" foreignKey="aep_perimetre_gestion_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_perimetre_gestion"/>
+            <child column="origine_creation" foreignKey="aep_piece_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece"/>
+            <child column="origine_maj" foreignKey="aep_piece_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece"/>
+            <child column="origine_creation" foreignKey="aep_piece_hors_topo_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece_hors_topo"/>
+            <child column="origine_maj" foreignKey="aep_piece_hors_topo_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece_hors_topo"/>
+            <child column="origine_creation" foreignKey="aep_point_mesure_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_point_mesure"/>
+            <child column="origine_maj" foreignKey="aep_point_mesure_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_point_mesure"/>
+            <child column="origine_creation" foreignKey="aep_pompage_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_pompage"/>
+            <child column="origine_maj" foreignKey="aep_pompage_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_pompage"/>
+            <child column="origine_creation" foreignKey="aep_protection_mecanique_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_protection_mecanique"/>
+            <child column="origine_maj" foreignKey="aep_protection_mecanique_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_protection_mecanique"/>
+            <child column="origine_creation" foreignKey="aep_regulation_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_regulation"/>
+            <child column="origine_maj" foreignKey="aep_regulation_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_regulation"/>
+            <child column="origine_creation" foreignKey="aep_reservoir_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_reservoir"/>
+            <child column="origine_maj" foreignKey="aep_reservoir_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_reservoir"/>
+            <child column="origine_creation" foreignKey="aep_station_alerte_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_station_alerte"/>
+            <child column="origine_maj" foreignKey="aep_station_alerte_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_station_alerte"/>
+            <child column="origine_creation" foreignKey="aep_traitement_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_traitement"/>
+            <child column="origine_maj" foreignKey="aep_traitement_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_traitement"/>
+            <child column="origine_creation" foreignKey="aep_vanne_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="origine_maj" foreignKey="aep_vanne_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="origine_creation" foreignKey="aep_canalisation_branchement_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="origine_maj" foreignKey="aep_canalisation_branchement_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="origine_creation" foreignKey="aep_piece_branchement_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_piece_branchement"/>
+            <child column="origine_maj" foreignKey="aep_piece_branchement_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_piece_branchement"/>
+            <child column="origine_creation" foreignKey="aep_point_livraison_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_point_livraison"/>
+            <child column="origine_maj" foreignKey="aep_point_livraison_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_point_livraison"/>
+            <child column="origine_creation" foreignKey="aep_raccord_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_raccord"/>
+            <child column="origine_maj" foreignKey="aep_raccord_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_raccord"/>
+            <child column="origine_creation" foreignKey="aep_vanne_branchement_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_vanne_branchement"/>
+            <child column="origine_maj" foreignKey="aep_vanne_branchement_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_vanne_branchement"/>
+            <child column="origine_creation" foreignKey="ass_affleurant_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_affleurant"/>
+            <child column="origine_maj" foreignKey="ass_affleurant_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_affleurant"/>
+            <child column="origine_creation" foreignKey="ass_bassin_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_bassin"/>
+            <child column="origine_maj" foreignKey="ass_bassin_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_bassin"/>
+            <child column="origine_creation" foreignKey="ass_canalisation_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="origine_maj" foreignKey="ass_canalisation_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="origine_creation" foreignKey="ass_chambre_depollution_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_chambre_depollution"/>
+            <child column="origine_maj" foreignKey="ass_chambre_depollution_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_chambre_depollution"/>
+            <child column="origine_creation" foreignKey="ass_equipement_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_equipement"/>
+            <child column="origine_maj" foreignKey="ass_equipement_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_equipement"/>
+            <child column="origine_creation" foreignKey="ass_exutoire_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_exutoire"/>
+            <child column="origine_maj" foreignKey="ass_exutoire_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_exutoire"/>
+            <child column="origine_creation" foreignKey="ass_genie_civil_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_genie_civil"/>
+            <child column="origine_maj" foreignKey="ass_genie_civil_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_genie_civil"/>
+            <child column="origine_creation" foreignKey="ass_gestion_epl_ligne_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_ligne"/>
+            <child column="origine_maj" foreignKey="ass_gestion_epl_ligne_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_ligne"/>
+            <child column="origine_creation" foreignKey="ass_gestion_epl_point_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_point"/>
+            <child column="origine_maj" foreignKey="ass_gestion_epl_point_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_point"/>
+            <child column="origine_creation" foreignKey="ass_gestion_epl_surface_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_surface"/>
+            <child column="origine_maj" foreignKey="ass_gestion_epl_surface_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_surface"/>
+            <child column="origine_creation" foreignKey="ass_ouvrage_special_ligne_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_ligne"/>
+            <child column="origine_maj" foreignKey="ass_ouvrage_special_ligne_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_ligne"/>
+            <child column="origine_creation" foreignKey="ass_ouvrage_special_point_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_point"/>
+            <child column="origine_maj" foreignKey="ass_ouvrage_special_point_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_point"/>
+            <child column="origine_creation" foreignKey="ass_ouvrage_special_surface_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_surface"/>
+            <child column="origine_maj" foreignKey="ass_ouvrage_special_surface_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_surface"/>
+            <child column="origine_creation" foreignKey="ass_perimetre_gestion_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_perimetre_gestion"/>
+            <child column="origine_maj" foreignKey="ass_perimetre_gestion_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_perimetre_gestion"/>
+            <child column="origine_creation" foreignKey="ass_piece_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece"/>
+            <child column="origine_maj" foreignKey="ass_piece_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece"/>
+            <child column="origine_creation" foreignKey="ass_piece_hors_topo_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece_hors_topo"/>
+            <child column="origine_maj" foreignKey="ass_piece_hors_topo_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece_hors_topo"/>
+            <child column="origine_creation" foreignKey="ass_point_mesure_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_mesure"/>
+            <child column="origine_maj" foreignKey="ass_point_mesure_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_mesure"/>
+            <child column="origine_creation" foreignKey="ass_point_prelevement_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_prelevement"/>
+            <child column="origine_maj" foreignKey="ass_point_prelevement_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_prelevement"/>
+            <child column="origine_creation" foreignKey="ass_pompage_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pompage"/>
+            <child column="origine_maj" foreignKey="ass_pompage_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pompage"/>
+            <child column="origine_creation" foreignKey="ass_pretraitement_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pretraitement"/>
+            <child column="origine_maj" foreignKey="ass_pretraitement_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pretraitement"/>
+            <child column="origine_creation" foreignKey="ass_protection_mecanique_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_protection_mecanique"/>
+            <child column="origine_maj" foreignKey="ass_protection_mecanique_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_protection_mecanique"/>
+            <child column="origine_creation" foreignKey="ass_regard_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_regard"/>
+            <child column="origine_maj" foreignKey="ass_regard_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_regard"/>
+            <child column="origine_creation" foreignKey="ass_traitement_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_traitement"/>
+            <child column="origine_maj" foreignKey="ass_traitement_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_traitement"/>
+            <child column="origine_creation" foreignKey="ass_canalisation_branchement_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="origine_maj" foreignKey="ass_canalisation_branchement_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="origine_creation" foreignKey="ass_engouffrement_ligne_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="origine_maj" foreignKey="ass_engouffrement_ligne_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="origine_creation" foreignKey="ass_engouffrement_point_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_point"/>
+            <child column="origine_maj" foreignKey="ass_engouffrement_point_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_point"/>
+            <child column="origine_creation" foreignKey="ass_engouffrement_surface_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_surface"/>
+            <child column="origine_maj" foreignKey="ass_engouffrement_surface_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_surface"/>
+            <child column="origine_creation" foreignKey="ass_point_collecte_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_point_collecte"/>
+            <child column="origine_maj" foreignKey="ass_point_collecte_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_point_collecte"/>
+            <child column="origine_creation" foreignKey="ass_raccord_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_raccord"/>
+            <child column="origine_maj" foreignKey="ass_raccord_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_raccord"/>
+            <child column="origine_creation" foreignKey="piezometre_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="piezometre"/>
+            <child column="origine_maj" foreignKey="piezometre_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="piezometre"/>
+            <child column="origine_creation" foreignKey="pluviometre_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="pluviometre"/>
+            <child column="origine_maj" foreignKey="pluviometre_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="pluviometre"/>
+            <child column="origine_creation" foreignKey="point_geolocalisation_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="point_geolocalisation"/>
+            <child column="origine_maj" foreignKey="point_geolocalisation_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="point_geolocalisation"/>
+            <child column="origine_creation" foreignKey="canalisation_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="canalisation"/>
+            <child column="origine_maj" foreignKey="canalisation_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="canalisation"/>
+            <child column="origine_creation" foreignKey="champ_commun_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="champ_commun"/>
+            <child column="origine_maj" foreignKey="champ_commun_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="champ_commun"/>
+            <child column="origine_creation" foreignKey="emprise_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="emprise"/>
+            <child column="origine_maj" foreignKey="emprise_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="emprise"/>
+            <child column="origine_creation" foreignKey="noeud_reseau_origine_creation_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="noeud_reseau"/>
+            <child column="origine_maj" foreignKey="noeud_reseau_origine_maj_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="noeud_reseau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_origine_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_oui_non" remarks="com_oui_non" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="telegestion" foreignKey="aep_appareillage_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_appareillage"/>
+            <child column="protection_cathodique" foreignKey="aep_canalisation_protection_cathodique_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="visible" foreignKey="aep_genie_civil_visible_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_genie_civil"/>
+            <child column="visible" foreignKey="aep_perimetre_gestion_visible_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_perimetre_gestion"/>
+            <child column="telegestion" foreignKey="aep_point_mesure_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_point_mesure"/>
+            <child column="telegestion" foreignKey="aep_pompage_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_pompage"/>
+            <child column="telegestion" foreignKey="aep_regulation_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_regulation"/>
+            <child column="telegestion" foreignKey="aep_reservoir_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_reservoir"/>
+            <child column="telegestion" foreignKey="aep_station_alerte_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_station_alerte"/>
+            <child column="telegestion" foreignKey="aep_traitement_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_traitement"/>
+            <child column="blocage" foreignKey="aep_vanne_blocage_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="motorisation" foreignKey="aep_vanne_motorisation_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="telegestion" foreignKey="aep_vanne_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="telegestion" foreignKey="ass_bassin_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_bassin"/>
+            <child column="visitable" foreignKey="ass_canalisation_visitable_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="bypass" foreignKey="ass_chambre_depollution_bypass_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_chambre_depollution"/>
+            <child column="telegestion" foreignKey="ass_chambre_depollution_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_chambre_depollution"/>
+            <child column="telegestion" foreignKey="ass_equipement_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_equipement"/>
+            <child column="visible" foreignKey="ass_genie_civil_visible_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_genie_civil"/>
+            <child column="visible" foreignKey="ass_perimetre_gestion_visible_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_perimetre_gestion"/>
+            <child column="telegestion" foreignKey="ass_point_mesure_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_mesure"/>
+            <child column="telegestion" foreignKey="ass_pompage_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pompage"/>
+            <child column="telegestion" foreignKey="ass_pretraitement_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pretraitement"/>
+            <child column="telegestion" foreignKey="ass_traitement_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_traitement"/>
+            <child column="decantation" foreignKey="ass_engouffrement_ligne_decantation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="siphon" foreignKey="ass_engouffrement_ligne_siphon_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="decantation" foreignKey="ass_engouffrement_point_decantation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_point"/>
+            <child column="siphon" foreignKey="ass_engouffrement_point_siphon_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_point"/>
+            <child column="decantation" foreignKey="ass_engouffrement_surface_decantation_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_surface"/>
+            <child column="siphon" foreignKey="ass_engouffrement_surface_siphon_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_surface"/>
+            <child column="visible" foreignKey="ass_engouffrement_surface_visible_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_surface"/>
+            <child column="telegestion" foreignKey="pluviometre_telegestion_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="pluviometre"/>
+            <child column="visible" foreignKey="emprise_visible_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="emprise"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_oui_non_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_precision" remarks="com_precision" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="precision_xy" foreignKey="aep_affleurant_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_affleurant"/>
+            <child column="precision_z" foreignKey="aep_affleurant_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_affleurant"/>
+            <child column="precision_xy" foreignKey="aep_appareillage_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_appareillage"/>
+            <child column="precision_z" foreignKey="aep_appareillage_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_appareillage"/>
+            <child column="precision_xy" foreignKey="aep_canalisation_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="precision_z" foreignKey="aep_canalisation_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="precision_xy" foreignKey="aep_captage_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_captage"/>
+            <child column="precision_z" foreignKey="aep_captage_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_captage"/>
+            <child column="precision_xy" foreignKey="aep_genie_civil_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_genie_civil"/>
+            <child column="precision_z" foreignKey="aep_genie_civil_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_genie_civil"/>
+            <child column="precision_xy" foreignKey="aep_perimetre_gestion_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_perimetre_gestion"/>
+            <child column="precision_z" foreignKey="aep_perimetre_gestion_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_perimetre_gestion"/>
+            <child column="precision_xy" foreignKey="aep_piece_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece"/>
+            <child column="precision_z" foreignKey="aep_piece_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece"/>
+            <child column="precision_xy" foreignKey="aep_piece_hors_topo_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece_hors_topo"/>
+            <child column="precision_z" foreignKey="aep_piece_hors_topo_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece_hors_topo"/>
+            <child column="precision_xy" foreignKey="aep_point_mesure_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_point_mesure"/>
+            <child column="precision_z" foreignKey="aep_point_mesure_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_point_mesure"/>
+            <child column="precision_xy" foreignKey="aep_pompage_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_pompage"/>
+            <child column="precision_z" foreignKey="aep_pompage_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_pompage"/>
+            <child column="precision_xy" foreignKey="aep_protection_mecanique_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_protection_mecanique"/>
+            <child column="precision_z" foreignKey="aep_protection_mecanique_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_protection_mecanique"/>
+            <child column="precision_xy" foreignKey="aep_regulation_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_regulation"/>
+            <child column="precision_z" foreignKey="aep_regulation_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_regulation"/>
+            <child column="precision_xy" foreignKey="aep_reservoir_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_reservoir"/>
+            <child column="precision_z" foreignKey="aep_reservoir_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_reservoir"/>
+            <child column="precision_xy" foreignKey="aep_station_alerte_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_station_alerte"/>
+            <child column="precision_z" foreignKey="aep_station_alerte_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_station_alerte"/>
+            <child column="precision_xy" foreignKey="aep_traitement_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_traitement"/>
+            <child column="precision_z" foreignKey="aep_traitement_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_traitement"/>
+            <child column="precision_xy" foreignKey="aep_vanne_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="precision_z" foreignKey="aep_vanne_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="precision_xy" foreignKey="aep_canalisation_branchement_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="precision_z" foreignKey="aep_canalisation_branchement_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="precision_xy" foreignKey="aep_piece_branchement_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_piece_branchement"/>
+            <child column="precision_z" foreignKey="aep_piece_branchement_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_piece_branchement"/>
+            <child column="precision_xy" foreignKey="aep_point_livraison_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_point_livraison"/>
+            <child column="precision_z" foreignKey="aep_point_livraison_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_point_livraison"/>
+            <child column="precision_xy" foreignKey="aep_raccord_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_raccord"/>
+            <child column="precision_z" foreignKey="aep_raccord_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_raccord"/>
+            <child column="precision_xy" foreignKey="aep_vanne_branchement_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_vanne_branchement"/>
+            <child column="precision_z" foreignKey="aep_vanne_branchement_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_vanne_branchement"/>
+            <child column="precision_xy" foreignKey="ass_affleurant_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_affleurant"/>
+            <child column="precision_z" foreignKey="ass_affleurant_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_affleurant"/>
+            <child column="precision_xy" foreignKey="ass_bassin_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_bassin"/>
+            <child column="precision_z" foreignKey="ass_bassin_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_bassin"/>
+            <child column="precision_xy" foreignKey="ass_canalisation_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="precision_z" foreignKey="ass_canalisation_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="precision_xy" foreignKey="ass_chambre_depollution_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_chambre_depollution"/>
+            <child column="precision_z" foreignKey="ass_chambre_depollution_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_chambre_depollution"/>
+            <child column="precision_xy" foreignKey="ass_equipement_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_equipement"/>
+            <child column="precision_z" foreignKey="ass_equipement_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_equipement"/>
+            <child column="precision_xy" foreignKey="ass_exutoire_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_exutoire"/>
+            <child column="precision_z" foreignKey="ass_exutoire_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_exutoire"/>
+            <child column="precision_xy" foreignKey="ass_genie_civil_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_genie_civil"/>
+            <child column="precision_z" foreignKey="ass_genie_civil_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_genie_civil"/>
+            <child column="precision_xy" foreignKey="ass_gestion_epl_ligne_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_ligne"/>
+            <child column="precision_z" foreignKey="ass_gestion_epl_ligne_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_ligne"/>
+            <child column="precision_xy" foreignKey="ass_gestion_epl_point_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_point"/>
+            <child column="precision_z" foreignKey="ass_gestion_epl_point_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_point"/>
+            <child column="precision_xy" foreignKey="ass_gestion_epl_surface_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_surface"/>
+            <child column="precision_z" foreignKey="ass_gestion_epl_surface_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_surface"/>
+            <child column="precision_xy" foreignKey="ass_ouvrage_special_ligne_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_ligne"/>
+            <child column="precision_z" foreignKey="ass_ouvrage_special_ligne_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_ligne"/>
+            <child column="precision_xy" foreignKey="ass_ouvrage_special_point_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_point"/>
+            <child column="precision_z" foreignKey="ass_ouvrage_special_point_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_point"/>
+            <child column="precision_xy" foreignKey="ass_ouvrage_special_surface_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_surface"/>
+            <child column="precision_z" foreignKey="ass_ouvrage_special_surface_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_surface"/>
+            <child column="precision_xy" foreignKey="ass_perimetre_gestion_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_perimetre_gestion"/>
+            <child column="precision_z" foreignKey="ass_perimetre_gestion_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_perimetre_gestion"/>
+            <child column="precision_xy" foreignKey="ass_piece_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece"/>
+            <child column="precision_z" foreignKey="ass_piece_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece"/>
+            <child column="precision_xy" foreignKey="ass_piece_hors_topo_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece_hors_topo"/>
+            <child column="precision_z" foreignKey="ass_piece_hors_topo_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece_hors_topo"/>
+            <child column="precision_xy" foreignKey="ass_point_mesure_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_mesure"/>
+            <child column="precision_z" foreignKey="ass_point_mesure_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_mesure"/>
+            <child column="precision_xy" foreignKey="ass_point_prelevement_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_prelevement"/>
+            <child column="precision_z" foreignKey="ass_point_prelevement_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_prelevement"/>
+            <child column="precision_xy" foreignKey="ass_pompage_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pompage"/>
+            <child column="precision_z" foreignKey="ass_pompage_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pompage"/>
+            <child column="precision_xy" foreignKey="ass_pretraitement_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pretraitement"/>
+            <child column="precision_z" foreignKey="ass_pretraitement_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pretraitement"/>
+            <child column="precision_xy" foreignKey="ass_protection_mecanique_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_protection_mecanique"/>
+            <child column="precision_z" foreignKey="ass_protection_mecanique_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_protection_mecanique"/>
+            <child column="precision_xy" foreignKey="ass_regard_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_regard"/>
+            <child column="precision_z" foreignKey="ass_regard_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_regard"/>
+            <child column="precision_xy" foreignKey="ass_traitement_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_traitement"/>
+            <child column="precision_z" foreignKey="ass_traitement_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_traitement"/>
+            <child column="precision_xy" foreignKey="ass_canalisation_branchement_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="precision_z" foreignKey="ass_canalisation_branchement_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="precision_xy" foreignKey="ass_engouffrement_ligne_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="precision_z" foreignKey="ass_engouffrement_ligne_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="precision_xy" foreignKey="ass_engouffrement_point_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_point"/>
+            <child column="precision_z" foreignKey="ass_engouffrement_point_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_point"/>
+            <child column="precision_xy" foreignKey="ass_engouffrement_surface_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_surface"/>
+            <child column="precision_z" foreignKey="ass_engouffrement_surface_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_surface"/>
+            <child column="precision_xy" foreignKey="ass_point_collecte_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_point_collecte"/>
+            <child column="precision_z" foreignKey="ass_point_collecte_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_point_collecte"/>
+            <child column="precision_xy" foreignKey="ass_raccord_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_raccord"/>
+            <child column="precision_z" foreignKey="ass_raccord_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_raccord"/>
+            <child column="precision_xy" foreignKey="piezometre_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="piezometre"/>
+            <child column="precision_z" foreignKey="piezometre_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="piezometre"/>
+            <child column="precision_xy" foreignKey="pluviometre_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="pluviometre"/>
+            <child column="precision_z" foreignKey="pluviometre_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="pluviometre"/>
+            <child column="precision_xy" foreignKey="point_geolocalisation_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="point_geolocalisation"/>
+            <child column="precision_z" foreignKey="point_geolocalisation_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="point_geolocalisation"/>
+            <child column="precision_xy" foreignKey="canalisation_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="canalisation"/>
+            <child column="precision_z" foreignKey="canalisation_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="canalisation"/>
+            <child column="precision_xy" foreignKey="champ_commun_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="champ_commun"/>
+            <child column="precision_z" foreignKey="champ_commun_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="champ_commun"/>
+            <child column="precision_xy" foreignKey="emprise_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="emprise"/>
+            <child column="precision_z" foreignKey="emprise_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="emprise"/>
+            <child column="precision_xy" foreignKey="noeud_reseau_precision_xy_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="noeud_reseau"/>
+            <child column="precision_z" foreignKey="noeud_reseau_precision_z_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="noeud_reseau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_precision_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_raison_pose" remarks="com_raison_pose" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="raison_pose" foreignKey="aep_canalisation_raison_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="raison_pose" foreignKey="aep_canalisation_branchement_raison_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="raison_pose" foreignKey="ass_canalisation_raison_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="raison_pose" foreignKey="ass_canalisation_branchement_raison_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="raison_pose" foreignKey="ass_engouffrement_ligne_raison_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="raison_pose" foreignKey="canalisation_raison_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="canalisation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_raison_pose_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_reference_z" remarks="com_reference_z" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_reference_z_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_revetement_interieur" remarks="com_revetement_interieur" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="revetement_interieur" foreignKey="aep_canalisation_revetement_interieur_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="revetement_interieur" foreignKey="aep_canalisation_branchement_revetement_interieur_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="revetement_interieur" foreignKey="ass_canalisation_revetement_interieur_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="revetement_interieur" foreignKey="ass_canalisation_branchement_revetement_interieur_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="revetement_interieur" foreignKey="ass_engouffrement_ligne_revetement_interieur_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="revetement_interieur" foreignKey="canalisation_revetement_interieur_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="canalisation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_revetement_interieur_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_type_acces" remarks="com_type_acces" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_acces" foreignKey="aep_perimetre_gestion_type_acces_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_perimetre_gestion"/>
+            <child column="type_acces" foreignKey="ass_perimetre_gestion_type_acces_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_perimetre_gestion"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_type_acces_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_type_affleurant" remarks="com_type_affleurant" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_affleurant" foreignKey="aep_affleurant_type_affleurant_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_affleurant"/>
+            <child column="type_affleurant" foreignKey="ass_affleurant_type_affleurant_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_affleurant"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_type_affleurant_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_type_perimetre" remarks="com_type_perimetre" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_perimetre_gestion" foreignKey="aep_perimetre_gestion_type_perimetre_gestion_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_perimetre_gestion"/>
+            <child column="type_perimetre_gestion" foreignKey="ass_perimetre_gestion_type_perimetre_gestion_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_perimetre_gestion"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_type_perimetre_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_type_pluviometre" remarks="com_type_pluviometre" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_type_pluviometre_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_type_pose" remarks="com_type_pose" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_pose" foreignKey="aep_canalisation_type_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="type_pose" foreignKey="aep_canalisation_branchement_type_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="type_pose" foreignKey="ass_canalisation_type_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="type_pose" foreignKey="ass_canalisation_branchement_type_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="type_pose" foreignKey="ass_engouffrement_ligne_type_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="type_pose" foreignKey="canalisation_type_pose_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="canalisation"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_type_pose_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_type_protection" remarks="com_type_protection" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_protection" foreignKey="aep_protection_mecanique_type_protection_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_protection_mecanique"/>
+            <child column="type_protection" foreignKey="ass_protection_mecanique_type_protection_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_protection_mecanique"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_type_protection_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_type_reseau" remarks="com_type_reseau" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_reseau" foreignKey="aep_affleurant_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_affleurant"/>
+            <child column="type_reseau" foreignKey="aep_appareillage_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_appareillage"/>
+            <child column="type_reseau" foreignKey="aep_canalisation_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_canalisation"/>
+            <child column="type_reseau" foreignKey="aep_captage_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_captage"/>
+            <child column="type_reseau" foreignKey="aep_genie_civil_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_genie_civil"/>
+            <child column="type_reseau" foreignKey="aep_perimetre_gestion_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_perimetre_gestion"/>
+            <child column="type_reseau" foreignKey="aep_piece_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece"/>
+            <child column="type_reseau" foreignKey="aep_piece_hors_topo_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_piece_hors_topo"/>
+            <child column="type_reseau" foreignKey="aep_point_mesure_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_point_mesure"/>
+            <child column="type_reseau" foreignKey="aep_pompage_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_pompage"/>
+            <child column="type_reseau" foreignKey="aep_protection_mecanique_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_protection_mecanique"/>
+            <child column="type_reseau" foreignKey="aep_regulation_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_regulation"/>
+            <child column="type_reseau" foreignKey="aep_reservoir_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_reservoir"/>
+            <child column="type_reseau" foreignKey="aep_station_alerte_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_station_alerte"/>
+            <child column="type_reseau" foreignKey="aep_traitement_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_traitement"/>
+            <child column="type_reseau" foreignKey="aep_vanne_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep" table="aep_vanne"/>
+            <child column="type_reseau" foreignKey="aep_canalisation_branchement_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_canalisation_branchement"/>
+            <child column="type_reseau" foreignKey="aep_piece_branchement_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_piece_branchement"/>
+            <child column="type_reseau" foreignKey="aep_point_livraison_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_point_livraison"/>
+            <child column="type_reseau" foreignKey="aep_raccord_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_raccord"/>
+            <child column="type_reseau" foreignKey="aep_vanne_branchement_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_vanne_branchement"/>
+            <child column="type_reseau" foreignKey="ass_affleurant_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_affleurant"/>
+            <child column="type_reseau" foreignKey="ass_bassin_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_bassin"/>
+            <child column="type_reseau" foreignKey="ass_canalisation_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_canalisation"/>
+            <child column="type_reseau" foreignKey="ass_chambre_depollution_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_chambre_depollution"/>
+            <child column="type_reseau" foreignKey="ass_equipement_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_equipement"/>
+            <child column="type_reseau" foreignKey="ass_exutoire_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_exutoire"/>
+            <child column="type_reseau" foreignKey="ass_genie_civil_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_genie_civil"/>
+            <child column="type_reseau" foreignKey="ass_gestion_epl_ligne_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_ligne"/>
+            <child column="type_reseau" foreignKey="ass_gestion_epl_point_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_point"/>
+            <child column="type_reseau" foreignKey="ass_gestion_epl_surface_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_gestion_epl_surface"/>
+            <child column="type_reseau" foreignKey="ass_ouvrage_special_ligne_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_ligne"/>
+            <child column="type_reseau" foreignKey="ass_ouvrage_special_point_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_point"/>
+            <child column="type_reseau" foreignKey="ass_ouvrage_special_surface_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_ouvrage_special_surface"/>
+            <child column="type_reseau" foreignKey="ass_piece_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece"/>
+            <child column="type_reseau" foreignKey="ass_piece_hors_topo_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_piece_hors_topo"/>
+            <child column="type_reseau" foreignKey="ass_point_mesure_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_mesure"/>
+            <child column="type_reseau" foreignKey="ass_point_prelevement_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_point_prelevement"/>
+            <child column="type_reseau" foreignKey="ass_pompage_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pompage"/>
+            <child column="type_reseau" foreignKey="ass_pretraitement_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_pretraitement"/>
+            <child column="type_reseau" foreignKey="ass_protection_mecanique_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_protection_mecanique"/>
+            <child column="type_reseau" foreignKey="ass_regard_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_regard"/>
+            <child column="type_reseau" foreignKey="ass_traitement_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass" table="ass_traitement"/>
+            <child column="type_reseau" foreignKey="ass_canalisation_branchement_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_canalisation_branchement"/>
+            <child column="type_reseau" foreignKey="ass_engouffrement_ligne_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_ligne"/>
+            <child column="type_reseau" foreignKey="ass_engouffrement_point_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_point"/>
+            <child column="type_reseau" foreignKey="ass_engouffrement_surface_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_engouffrement_surface"/>
+            <child column="type_reseau" foreignKey="ass_point_collecte_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_point_collecte"/>
+            <child column="type_reseau" foreignKey="ass_raccord_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_raccord"/>
+            <child column="type_reseau" foreignKey="piezometre_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="piezometre"/>
+            <child column="type_reseau" foreignKey="pluviometre_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="pluviometre"/>
+            <child column="type_reseau" foreignKey="point_geolocalisation_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_commun" table="point_geolocalisation"/>
+            <child column="type_reseau" foreignKey="canalisation_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="canalisation"/>
+            <child column="type_reseau" foreignKey="champ_commun_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="champ_commun"/>
+            <child column="type_reseau" foreignKey="emprise_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="emprise"/>
+            <child column="type_reseau" foreignKey="noeud_reseau_type_reseau_fk" implied="false" onDeleteCascade="false" schema="stareau_principale" table="noeud_reseau"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_type_reseau_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+      <table name="com_type_usager" remarks="com_type_usager" schema="stareau_valeur" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="code" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <child column="type_usager" foreignKey="aep_point_livraison_type_usager_fk" implied="false" onDeleteCascade="false" schema="stareau_aep_brcht" table="aep_point_livraison"/>
+            <child column="type_usager" foreignKey="ass_point_collecte_type_usager_fk" implied="false" onDeleteCascade="false" schema="stareau_ass_brcht" table="ass_point_collecte"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="valeur" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="description" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <primaryKey column="code" sequenceNumberInPK="1"/>
+         <index name="com_type_usager_pk" unique="true">
+            <column ascending="true" name="code"/>
+         </index>
+      </table>
+   </tables>
+</database>
