@@ -26,11 +26,12 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       - name: Build
         run: |
           npx hyperbook build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
