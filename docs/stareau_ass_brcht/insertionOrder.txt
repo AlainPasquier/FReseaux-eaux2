@@ -1,6 +1,0 @@
-ass_raccord
-ass_engouffrement_point
-ass_point_collecte
-ass_engouffrement_surface
-ass_engouffrement_ligne
-ass_canalisation_branchement

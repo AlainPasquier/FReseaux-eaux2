@@ -1,0 +1,15 @@
+{
+  "name": "AIde Star-Eau",
+  "version": "2024",
+  "description": "Aide pour la prise en main et l'exploitation du modèle SatR-Eau",
+  "author": {
+    "name": "GT Astee - CNIG",
+    "url": "https://github.com/cnigfr/StaR-Eau"
+  },
+  "license": "ETALAB V2",
+  "language": "fr",
+  "basePath": "/aide",
+  "repo": {
+    "url": "https://github.com/cnigfr/StaR-Eau/edit/main/%path%",
+    "label": "Modifié sur GitHub"
+}

@@ -1,3 +1,0 @@
-piezometre
-point_geolocalisation
-pluviometre

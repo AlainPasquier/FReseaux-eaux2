@@ -1,5 +1,0 @@
-aep_piece_branchement
-aep_raccord
-aep_point_livraison
-aep_vanne_branchement
-aep_canalisation_branchement

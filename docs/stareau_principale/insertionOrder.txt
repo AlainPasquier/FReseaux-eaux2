@@ -1,6 +1,0 @@
-noeud_reseau
-emprise
-canalisation
-dimension
-mm_emprise_ponctuel
-champ_commun
