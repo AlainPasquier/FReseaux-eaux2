@@ -1,5 +1,5 @@
 {
-  "name": "AIde Star-Eau",
+  "name": "Aide Star-Eau",
   "version": "2024",
   "description": "Aide pour la prise en main et l'exploitation du modèle SatR-Eau",
   "author": {
@@ -8,8 +8,8 @@
   },
   "license": "ETALAB V2",
   "language": "fr",
-  "basePath": "/aide",
+  "basePath": "/FReseaux-eaux2/aide",
   "repo": {
-    "url": "https://github.com/cnigfr/StaR-Eau/edit/main/%path%",
+    "url": "https://github.com/AlainPasquier/FReseaux-eaux2/edit/main/%path%",
     "label": "Modifié sur GitHub"
 }
