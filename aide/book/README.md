@@ -25,9 +25,9 @@ En partenariat avec CNIG, de l'OFB...
 
 ## Aide à la saisie
 
-::alert
-les pages de ce wiki n'ont pas fait l'objet de validation en commission, elles sont ici servies pour exemple et réflexions lors des saisies d'essais. elles seront complétées au fur et à mesure des mises à jour.
-::
+:::alert{warn}
+les pages de ce wiki n'ont pas fait l'objet de validation en commission, elles sont ici servies pour exemple et réflexions lors des saisies d'essais. Elles seront complétées au fur et à mesure des mises à jour.
+:::
 
 - une [FAQ(foire aux questions)](FAQ)
 - [table des matières](table_matiere)
