@@ -8,7 +8,7 @@
   },
   "license": "ETALAB V2",
   "language": "fr",
-  "basePath": "/aide",
+  "basePath": "/FReseaux-eaux2",
   "repo": {
     "url": "https://github.com/AlainPasquier/FReseaux-eaux2/edit/main/aide/%path%",
     "label": "Modifié sur GitHub"
