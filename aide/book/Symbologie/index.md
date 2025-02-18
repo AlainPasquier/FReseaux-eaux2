@@ -1,7 +1,7 @@
 ---
 name: Symbologie
 index: 0
-TOC: off
+TOC: hide
 ---
 
 # Symbologie

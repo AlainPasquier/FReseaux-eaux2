@@ -1,7 +1,7 @@
 ---
 name: Légende des tableaux
 index: 0
-TOC: off
+TOC: hide
 ---
 
 # Légende des tableaux
@@ -15,8 +15,9 @@ Nom de la colonne et sa description / contenu
    * **TRVX** (Travaux)  - Représentation des objets à très grande échelle **(<1/500)**
    * **Réponse DT/DICT** - Géostandard StaR-DT (v0.4) Représentation des objets prévu dans le cadre du géostandard StaR-DT pour les réponses aux DT-DICT
 * **Type objet** - Type de représentation des objets
+  
 | type | symbole |
-| -- | --|
+| ---- | ---- |
 |Point | ![point](/images/symbole/point-svgrepo-com.svg) |
 | Ligne | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) |
 | Surface | ![polygone](/images/symbole/polygon-pt-svgrepo-com.svg) |

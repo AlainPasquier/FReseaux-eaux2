@@ -6,6 +6,7 @@
     "name": "GT Astee - CNIG",
     "url": "https://github.com/cnigfr/StaR-Eau"
   },
+  "logo": "/images/logo/logo.png",
   "license": "ETALAB V2",
   "language": "fr",
   "basePath": "/FReseaux-eaux2",

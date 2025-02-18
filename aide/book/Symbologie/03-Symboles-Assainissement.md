@@ -5,8 +5,8 @@ index: 2
 # Symboles Assainissement
 ---
 
-# [Station de traitement des eaux usées](https://glossaire.eauetbiodiversite.fr/concept/station-de-traitement-des-eaux-usees)
-Ensemble des installations et dispositifs permettant d'épurer les eaux usées en vue de leur rejet dans l'environnement.(Encyclopédie de l'hydrologie urbaine et de l'assainissement) - Anciennement appelé station d'épuration. 
+# Station de traitement des eaux usées
+Ensemble des installations et dispositifs permettant d'épurer les eaux usées en vue de leur rejet dans l'environnement.(https://glossaire.eauetbiodiversite.fr/concept/station-de-traitement-des-eaux-usees) - Anciennement appelé station d'épuration. 
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
