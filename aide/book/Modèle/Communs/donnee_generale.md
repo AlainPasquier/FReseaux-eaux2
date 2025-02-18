@@ -5,7 +5,7 @@ index: 4
 
 Table mère des données communes à toutes les tables.
 
-:::alert{warm}
+:::alert{warn}
 **NE PAS INSCRIRE D’ÉLÉMENTS DIRECTEMENT DEDANS**
 :::
 

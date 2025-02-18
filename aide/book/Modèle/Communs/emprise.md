@@ -1,11 +1,11 @@
 ---
-name: canalisation
+name: emprise
 index: 1
 ---
 
 Table mère des autres tables surfaciques.
 
-:::alert{warm}
+:::alert{warn}
 **NE PAS INSCRIRE D’ÉLÉMENTS DIRECTEMENT DEDANS**
 :::
 
