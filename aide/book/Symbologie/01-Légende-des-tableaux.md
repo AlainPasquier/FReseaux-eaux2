@@ -1,7 +1,7 @@
 ---
 name: Légende des tableaux
 index: 0
-TOC: hide
+toc: hide
 ---
 
 # Légende des tableaux

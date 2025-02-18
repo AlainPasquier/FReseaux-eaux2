@@ -2,6 +2,8 @@
   "name": "Aide Star-Eau",
   "version": "2024",
   "description": "Aide pour la prise en main et l'exploitation du modèle SatR-Eau",
+  "search": true,
+  "qrcode": true,
   "author": {
     "name": "GT Astee - CNIG",
     "url": "https://github.com/cnigfr/StaR-Eau"
@@ -16,5 +18,17 @@
   },
     "colors": {
     "brand": "#0060b6"
-  }
+  },
+  "links": [
+    {
+      "label": "Question",
+      "links": [
+        {
+          "label": "Mail",
+          "icon": "📧",
+          "href": "mailto:contact@openpatch.org"
+        }
+      ]
+    }
+  ]
 }
