@@ -11,18 +11,18 @@ AEP : Assemblage de tuyaux et de leurs pièces de raccord, intégré dans le dom
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----|--------|:--------:|:--------:|--------|
-| **ENS** | ![ligne](/image/symbole/polyline-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/conduite.svg" width="50"/>  | NA | NA |  |
-| **EXP** | ![ligne](/image/symbole/polyline-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/conduite.svg" width="50"/> | NA | NA |  |
-| **TRVX** | ![ligne](/image/symbole/polyline-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/conduite.svg" width="50"/> | NA | NA |  |
+| **ENS** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/conduite.svg" width="50"/>  | NA | NA |  |
+| **EXP** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/conduite.svg" width="50"/> | NA | NA |  |
+| **TRVX** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/conduite.svg" width="50"/> | NA | NA |  |
 
 # Conduite de réseau privé
 Ouvrage souterrain d’écoulement des eaux, non intégré dans le domaine public de la collectivité. Guide de gestion patrimoniale Onema / Astee.
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----|--------|:--------:|:--------:|--------|
-| **ENS** | ![ligne](/image/symbole/polyline-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/conduite_prive.svg" width="50"/>  | NA | NA |  |
-| **EXP** | ![ligne](/image/symbole/polyline-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/conduite_prive.svg" width="50"/> | NA | NA |  |
-| **TRVX** | ![ligne](/image/symbole/polyline-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/conduite_prive.svg" width="50"/> | NA | NA |  |
+| **ENS** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/conduite_prive.svg" width="50"/>  | NA | NA |  |
+| **EXP** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/conduite_prive.svg" width="50"/> | NA | NA |  |
+| **TRVX** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/conduite_prive.svg" width="50"/> | NA | NA |  |
 
 # Conduite abandonnée
 Ouvrage souterrain d’écoulement des eaux, n’étant plus en service, toujours intégré au domaine public de la collectivité. Guide de gestion patrimoniale Onema / Astee.
@@ -30,8 +30,8 @@ Ouvrage souterrain d’écoulement des eaux, n’étant plus en service, toujour
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----|--------|:--------:|:--------:|--------|
 | **ENS** |  - | - | - | - | - |
-| **EXP** | ![ligne](/image/symbole/polyline-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/abandonne_nb.svg" width="50"/> | NA | NA |  |
-| **TRVX** | ![ligne](/image/symbole/polyline-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/abandonne_nb.svg" width="50"/> | NA | NA |  |
+| **EXP** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/abandonne_nb.svg" width="50"/> | NA | NA |  |
+| **TRVX** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/abandonne_nb.svg" width="50"/> | NA | NA |  |
 
 # Fourreau
 Elément de protection souterrain (gaine) enveloppant les canalisations à certains endroit
@@ -40,8 +40,8 @@ Composant EAU et ASS. Représente le diamètre extérieur du fourreau.
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----|--------|:--------:|:--------:|--------|
 | **ENS** |  - | - | - | - | - |
-| **EXP** | ![ligne](/image/symbole/polyline-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/fourreau_nb.svg" width="50"/> | NA | NA |  |
-| **TRVX** | ![ligne](/image/symbole/polyline-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/fourreau_nb.svg" width="50"/> | NA | NA |  |
+| **EXP** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/fourreau_nb.svg" width="50"/> | NA | NA |  |
+| **TRVX** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/fourreau_nb.svg" width="50"/> | NA | NA |  |
 
 # Armoire électrique / télécommunication
 Armoire regroupant différents systèmes participant à la distribution d’une installation électrique ou aux liaisons de communication. Se référer aux standards de représentation des réseaux électriques / télécoms pour les câbles associés.
@@ -49,17 +49,17 @@ Armoire regroupant différents systèmes participant à la distribution d’une 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/image/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_ARMOIRE_ELEC.png" width="50"/> | Centre | Libre | [EAU_ARMOIRE_ELEC](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_ARMOIRE_ELEC.svg) |
-| **TRVX** | ![surface](/image/symbole/polygon-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/empriseGC_surface.svg"  width="50"/> | NA | NA |  |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_ARMOIRE_ELEC.png" width="50"/> | Centre | Libre | [EAU_ARMOIRE_ELEC](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_ARMOIRE_ELEC.svg) |
+| **TRVX** | ![surface](/images/symbole/polygon-pt-svgrepo-com.svg) | <img src="/images/symbole/empriseGC_surface.svg"  width="50"/> | NA | NA |  |
 
 # Pluviomètre
 Appareil de mesure du cumul des précipitations atmosphériques atteignant le sol.
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/image/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_PLUVIOMETRE.png" width="50"/> | Centre | Libre | [EAU_PLUVIOMETRE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_PLUVIOMETRE.svg) |
-| **EXP** | ![point](/image/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_PLUVIOMETRE.png" width="50"/> | Centre | Libre | [EAU_PLUVIOMETRE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_PLUVIOMETRE.svg) |
-| **TRVX** | ![point](/image/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_PLUVIOMETRE.png" width="50"/> | Centre | Libre | [EAU_PLUVIOMETRE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_PLUVIOMETRE.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_PLUVIOMETRE.png" width="50"/> | Centre | Libre | [EAU_PLUVIOMETRE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_PLUVIOMETRE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_PLUVIOMETRE.png" width="50"/> | Centre | Libre | [EAU_PLUVIOMETRE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_PLUVIOMETRE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_PLUVIOMETRE.png" width="50"/> | Centre | Libre | [EAU_PLUVIOMETRE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_PLUVIOMETRE.svg) |
 
 # Mesure de nappe
 Point de localisation de la station permettant le mesure de la piézométrie ou de la qualité chimique de la nappe phréatique.
@@ -67,8 +67,8 @@ Point de localisation de la station permettant le mesure de la piézométrie ou 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/image/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_POINT_MESURE_NAPPE.png" width="50"/> | Centre | Libre | [EAU_POINT_MESURE_NAPPE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_POINT_MESURE_NAPPE.svg) |
-| **TRVX** | ![point](/image/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_POINT_MESURE_NAPPE.png" width="50"/> | Centre | Libre | [EAU_POINT_MESURE_NAPPE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_POINT_MESURE_NAPPE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_POINT_MESURE_NAPPE.png" width="50"/> | Centre | Libre | [EAU_POINT_MESURE_NAPPE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_POINT_MESURE_NAPPE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_POINT_MESURE_NAPPE.png" width="50"/> | Centre | Libre | [EAU_POINT_MESURE_NAPPE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_POINT_MESURE_NAPPE.svg) |
 
 # Enceinte
 Ce qui entoure un lieu pour en délimiter ou en défendre l'accès.
@@ -76,8 +76,8 @@ Ce qui entoure un lieu pour en délimiter ou en défendre l'accès.
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![surface](/image/symbole/polygon-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/enceinte_surface.svg"  width="50"/> | NA | NA |  |
-| **TRVX** | ![surface](/image/symbole/polygon-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/enceinte_surface.svg"  width="50"/> | NA | NA |  |
+| **EXP** | ![surface](/images/symbole/polygon-pt-svgrepo-com.svg) | <img src="/images/symbole/enceinte_surface.svg"  width="50"/> | NA | NA |  |
+| **TRVX** | ![surface](/images/symbole/polygon-pt-svgrepo-com.svg) | <img src="/images/symbole/enceinte_surface.svg"  width="50"/> | NA | NA |  |
 
 # Emprise Génie Civil
 Limite extérieure du Génie Civil de l'ouvrage. Peut se superposer avec des objets ponctuels / linéaires représentant les ouvrages / équipements et réseaux associés.
@@ -85,5 +85,5 @@ Limite extérieure du Génie Civil de l'ouvrage. Peut se superposer avec des obj
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![surface](/image/symbole/polygon-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/empriseGC_surface.svg"  width="50"/> | NA | NA |  |
-| **TRVX** | ![surface](/image/symbole/polygon-pt-svgrepo-com.svg) | <img src="/image/symbole/symbole/empriseGC_surface.svg"  width="50"/> | NA | NA |  |
+| **EXP** | ![surface](/images/symbole/polygon-pt-svgrepo-com.svg) | <img src="/images/symbole/empriseGC_surface.svg"  width="50"/> | NA | NA |  |
+| **TRVX** | ![surface](/images/symbole/polygon-pt-svgrepo-com.svg) | <img src="/images/symbole/empriseGC_surface.svg"  width="50"/> | NA | NA |  |
