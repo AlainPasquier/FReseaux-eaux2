@@ -11,9 +11,9 @@ AEP : Assemblage de tuyaux et de leurs pièces de raccord, intégré dans le dom
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----|--------|:--------:|:--------:|--------|
-| **ENS** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/conduite.svg" width="50"/>  | NA | NA |  |
-| **EXP** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/conduite.svg" width="50"/> | NA | NA |  |
-| **TRVX** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | <img src="/images/symbole/conduite.svg" width="50"/> | NA | NA |  |
+| **ENS** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | [](/images/symbole/conduite.svg) | NA | NA |  |
+| **EXP** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | [](/images/symbole/conduite.svg) | NA | NA |  |
+| **TRVX** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | [](/images/symbole/conduite.svg) | NA | NA |  |
 
 # Conduite de réseau privé
 Ouvrage souterrain d’écoulement des eaux, non intégré dans le domaine public de la collectivité. Guide de gestion patrimoniale Onema / Astee.
