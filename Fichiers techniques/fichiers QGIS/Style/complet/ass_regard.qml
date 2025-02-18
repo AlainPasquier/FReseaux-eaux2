@@ -1726,10 +1726,10 @@
           <Option type="Map">
             <Option name="map" type="List">
               <Option type="Map">
-                <Option name="échelle fixe" type="QString" value="echelle"/>
+                <Option name="échelle fixe" type="QString" value="Échelle"/>
               </Option>
               <Option type="Map">
-                <Option name="échelle mobile" type="QString" value="echelle_mobile"/>
+                <Option name="échelle mobile" type="QString" value="Échelle_mobile"/>
               </Option>
               <Option type="Map">
                 <Option name="échelon simple" type="QString" value="echelon_simple"/>

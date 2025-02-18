@@ -1,15 +1,18 @@
 ---
 name: Symbologie
 index: 0
+TOC: 0
 ---
 
 # Symbologie
 
 Symbologie SIG Eau / Assainissement du groupe de travail Standards SIG de l'Astee (Association Scientifique et Technique pour l'Eau et l'assainissement).
 
-Ce travail est mis à disposition selon les termes de la licence _Creative Commons Attribution 4.0 International_.
+Ce travail est mis à disposition selon les termes de la licence _ETALABV2_.
 
-1. [Légende des tableaux](01-Légende-des-tableaux)
-1. [Symboles communs](02-Symboles-Communs)
-1. [Symboles Assainissement](03-Symboles-Assainissement)
-1. [Symboles Eau Potable](04-Symboles-Eau-Potable)
+Vous trouverez dans ces pages :
+
+1. Légende des tableaux
+2. Symboles communs
+3. Symboles Assainissement
+4. Symboles Eau Potable
