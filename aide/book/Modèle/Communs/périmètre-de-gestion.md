@@ -1,0 +1,24 @@
+`Commune` `AEP` `ASS` `perimetre_gestion` :link:> `emprise`
+
+Les tables sont identiques pour AEP et ASS.
+
+# type de périmètre
+
+Ceci de permet de caractériser l'emprise dessinée.
+
+Il peut s'agir d'une périmètre de cloture (entendu ici comme une barrière physique : cloture simple, rigide, muret, mur, roncier....).
+
+L'enceinte est un espace clos mais pas par une barrière indépendante, il peut s'agir par exemple de bâtiment ou de génie civil.
+
+Le type administratif correspond à un périmètre délimité par un acte administratif ou légal. Il s'agit ici des parcelles, d'une convention d'occupation, d'une servitude...Ce périmètre est soit réel soit fictif.
+
+A noter que les périmètre de gestion peuvent se superposer, exemple :
+Une installation est sur une parcelle, la cloture n'est pas sur la limite de propriété, et l'ouvrage est interdit à l'accès.
+
+![perimètre](https://github.com/cnigfr/StaR-Eau/blob/main/Documentation/image_documentation/modele/perimetre_gestion.png)
+
+# type d'accès et sûreté
+
+Ici peut-être indiqué si l'emprise est accessible librement ou non.
+
+L'accès restreint est moins restrictif que l'accès sous autorisation, qui autorise que le personnel dûment autorisé.
