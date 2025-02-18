@@ -1,7 +1,7 @@
 {
-  "name": "Aide Star-Eau",
+  "name": "Aide StaR-Eau",
   "version": "2024",
-  "description": "Aide pour la prise en main et l'exploitation du modèle SatR-Eau",
+  "description": "Aide pour la prise en main et l'exploitation du modèle StaR-Eau",
   "search": true,
   "qrcode": false,
   "author": {
@@ -24,7 +24,7 @@
       "label": "Question",
       "links": [
         {
-          "label": "Isuue Github",
+          "label": "Issue Github",
           "href": "https://github.com/cnigfr/StaR-Eau/issues"
         }
       ]
