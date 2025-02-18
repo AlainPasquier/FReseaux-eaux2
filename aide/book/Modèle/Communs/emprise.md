@@ -1,12 +1,13 @@
-`Principale` `table emprise`
-
-> [!CAUTION]
-> les pages de ce wiki n'ont pas fait l'objet de validation en commission, elles sont ici servies pour exemple et réflexions lors des saisies d'essais
+---
+name: canalisation
+index: 1
+---
 
 Table mère des autres tables surfaciques.
 
-> [!WARNING]
-> **NE PAS INSCRIRE D’ÉLÉMENTS DIRECTEMENT DEDANS**
+:::alert{warm}
+**NE PAS INSCRIRE D’ÉLÉMENTS DIRECTEMENT DEDANS**
+:::
 
 Cette table n'a pas vocation à être chargée dans les projets.
 

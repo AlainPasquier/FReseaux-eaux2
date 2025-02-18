@@ -1,12 +1,13 @@
-`Principale` `table canalisation`
-
-> [!CAUTION]
-> les pages de ce wiki n'ont pas fait l'objet de validation en commission, elles sont ici servies pour exemple et réflexions lors des saisies d'essais
+---
+name: canalisation
+index: 1
+---
 
 Table mère des autres tables linéaires. Elle a gardé son nom du RAEPA V1.
 
-> [!WARNING]
-> **NE PAS INSCRIRE D’ÉLÉMENTS DIRECTEMENT DEDANS**
+:::alert{warn}
+**NE PAS INSCRIRE D’ÉLÉMENTS DIRECTEMENT DEDANS**
+:::
 
 Cette table n'a pas vocation à être chargée dans les projets.
 
@@ -18,7 +19,7 @@ Ces champs doivent comporter l'identifiant unique noeud_reseau, ceci permet de v
 
 # matériau
 
-Voir la [page dédiée](materiau)
+Voir la [page dédiée](/Modèle/materiau)
 
 # [mode de circulation](https://github.com/cnigfr/StaR-Eau/blob/main/Standard%20StaR-Eau/listes%20valeurs/listes_completes/com_mode_circulation.csv)
 
