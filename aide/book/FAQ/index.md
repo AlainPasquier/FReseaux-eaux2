@@ -5,6 +5,17 @@ toc: hide
 ---
 # Questions fréquentes et autres explications
 
+
+::tile{title="Comment utiliser les tables mère et monter différentes bases de données ?" href="https://alainpasquier.github.io/FReseaux-eaux2/Mod%C3%A8le/montage_en_base" icon="https://www.astee.org/app/uploads/2018/12/domain_eau_potable.svg"}
+
+::tile{title="Comment saisir les dimensions des ouvrages ou canalisations" href="https://alainpasquier.github.io/FReseaux-eaux2/Mod%C3%A8le/montage_en_base" icon="https://www.astee.org/app/uploads/2018/12/domain_metiers.svg"}
+
+::tile{title="Comment saisir les dates ?" href="https://github.com/cnigfr/StaR-Eau/wiki/donnee_generale#gestion-des-dates" icon="https://www.astee.org/app/uploads/2018/12/domain_metiers.svg"}
+
+https://www.astee.org/app/uploads/2018/12/domain_eau_potable.svg
+https://www.astee.org/app/uploads/2018/12/domain_metiers.svg
+https://www.astee.org/app/uploads/2018/12/domain_eau_pluviale.svg
+
 ## :paperclip:  Comment utiliser les tables mère et monter différentes bases de données ?
 [Réponse](https://alainpasquier.github.io/FReseaux-eaux2/Mod%C3%A8le/montage_en_base)
 
