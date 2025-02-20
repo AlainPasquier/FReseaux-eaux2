@@ -1,5 +1,5 @@
 ---
-name: Représenter les équipements
+name: Représenter DO
 index: 1
 ---
 

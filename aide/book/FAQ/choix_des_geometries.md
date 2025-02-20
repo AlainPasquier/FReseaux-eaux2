@@ -1,5 +1,5 @@
 ---
-name: CHoix des géométries
+name: Choix des géométries
 index: 1
 ---
 
