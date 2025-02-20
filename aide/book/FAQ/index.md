@@ -11,7 +11,7 @@ toc: hide
 
 ::tile{title="Comment utiliser les tables mère et monter différentes bases de données ?" href="https://alainpasquier.github.io/FReseaux-eaux2/Mod%C3%A8le/montage_en_base"}
 
-::tile{title="Pourquoi ne pas fournir de gabarit ou le modèle en **.shp** ?" href="FAQ/Format_de_fichier"}
+::tile{title="Pourquoi ne pas fournir de gabarit ou le modèle en **.shp** ?" href="/FAQ/Format_de_fichier"}
 
 ::tile{title="Pourquoi des géométries simples ?" href=""}
 
@@ -31,7 +31,7 @@ toc: hide
 
 ::tile{title="Comment est saisie une réhabilitation de canalisation ?" href=""}
 
-::tile{title="" href=""}
+::tile{title="cc" href=""}
 :::
 
 ## Assainissement
@@ -48,11 +48,11 @@ toc: hide
 ## Eau potable
 :::tiles
 
-::tile{title="" href=""}
+::tile{title="cc" href=""}
 
-::tile{title="" href=""}
+::tile{title="cc" href=""}
 
-::tile{title="" href=""}
+::tile{title="cc" href=""}
 
 :::
 ----
