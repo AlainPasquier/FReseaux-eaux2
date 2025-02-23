@@ -1,7 +1,6 @@
 ---
 name: FAQ
 index: 0
-toc: false
 ---
 
 # Questions fréquentes et autres explications
