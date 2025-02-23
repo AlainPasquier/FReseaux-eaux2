@@ -1,6 +1,7 @@
 ---
 name: Saisie réhabilitation
 index: 1
+hide: true
 ---
 
 # Comment est saisie une réhabilitation ponctuelle ou complete d'une canalisation ?

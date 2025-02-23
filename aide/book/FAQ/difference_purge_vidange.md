@@ -1,6 +1,7 @@
 ---
 name: Différence Purge/vidange
 index: 1
+hide: true
 ---
 
 ## Purge

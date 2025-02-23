@@ -1,6 +1,7 @@
 ---
 name: Gestion des versions
 index: 1
+hide: true
 ---
 
 # Gestions des versions

@@ -1,6 +1,7 @@
 ---
 name: Gestion des identifiants
 index: 1
+hide: true
 ---
 
 Il existe plusieurs champs d'identifiant dans le modèle.

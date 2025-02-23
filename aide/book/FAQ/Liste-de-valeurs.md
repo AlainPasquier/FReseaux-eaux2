@@ -1,6 +1,7 @@
 ---
 name: Gestion listes de valeurs
 index: 1
+hide: true
 ---
 # Liste ou domaine de valeurs[^1]
 

@@ -1,6 +1,7 @@
 ---
 name: Représenter DO
 index: 1
+hide: true
 ---
 
 # Comment représenter les équipements et autres liaisons ?
