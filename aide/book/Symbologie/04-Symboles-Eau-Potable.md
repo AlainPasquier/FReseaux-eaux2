@@ -92,8 +92,8 @@ Ouvrage enterré comportant le point de comptage
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](/images/symbole/AEP_REGARDbrcht.png" width="30"/> | centre | non | |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](/images/symbole/AEP_REGARDbrcht.png" width="30"/> | centre | non |  |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](/images/symbole/AEP_REGARDbrcht.png) | centre | non | |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](/images/symbole/AEP_REGARDbrcht.png) | centre | non |  |
 
 # Regard de façade
 Ouvrage non enterré comportant le point de comptage

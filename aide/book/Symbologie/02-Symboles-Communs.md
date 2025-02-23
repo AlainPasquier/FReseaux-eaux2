@@ -49,7 +49,7 @@ Armoire regroupant différents systèmes participant à la distribution d’une 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![EAU_ARMOIRE_ELEC](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_ARMOIRE_ELEC.png?raw=true | Centre | Libre | [EAU_ARMOIRE_ELEC](https://gitlab.com/star-eau/symbologie/-/blob/3d90b3d8ab26e79cf3f5f17ce252e1c8010bba7d/collections/assainissement/svg/EAU_ARMOIRE_ELEC.svg)|
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![EAU_ARMOIRE_ELEC](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_ARMOIRE_ELEC.png?raw=true) | Centre | Libre | [EAU_ARMOIRE_ELEC](https://gitlab.com/star-eau/symbologie/-/blob/3d90b3d8ab26e79cf3f5f17ce252e1c8010bba7d/collections/assainissement/svg/EAU_ARMOIRE_ELEC.svg)|
 | **TRVX** | ![surface](/images/symbole/polygon-pt-svgrepo-com.svg) | ![](/images/symbole/empriseGC_surface.svg) | NA | NA |  |
 
 # Pluviomètre
