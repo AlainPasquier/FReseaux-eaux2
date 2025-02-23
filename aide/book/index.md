@@ -1,8 +1,10 @@
 ---
-name: bienvenue
+name: Accueil
+premaid: accueil
+index: 0
 ---
 
-# Bienvenue
+# Bienvenu
 
 ![logo](/logo/logo.png)
 
