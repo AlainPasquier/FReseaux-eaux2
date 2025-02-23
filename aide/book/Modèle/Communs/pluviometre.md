@@ -1,6 +1,11 @@
-`Commune` `pluviometre` `table indépendante`
+---
+name: Pluviomètre
+index: 10
+---
+# Pluviomètre
 
-On entend par pluviomètre, tous les appareils servant à la mesure des précipitations météorologiques : pluviomètre ou pluviographe
+On entend par pluviomètre, tous les appareils servant à la mesure des précipitations météorologiques : pluviomètre ou pluviographe. Le pluviographe est un pluviomètre comprenant un dispositif d'enregistrement continu de la hauteur d'eau des précipitations.
+
 
 # type
 La liste est issue de [wikipédia](https://fr.wikipedia.org/wiki/Pluviom%C3%A8tre)

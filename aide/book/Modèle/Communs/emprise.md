@@ -2,6 +2,7 @@
 name: emprise
 index: 1
 ---
+# Emprise
 
 Table mère des autres tables surfaciques.
 

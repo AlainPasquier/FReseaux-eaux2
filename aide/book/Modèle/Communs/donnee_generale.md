@@ -2,6 +2,7 @@
 name: Données générales
 index: 4
 ---
+# Données générales
 
 Table mère des données communes à toutes les tables.
 

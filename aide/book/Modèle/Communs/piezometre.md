@@ -1,4 +1,8 @@
-`Commune` `piezometre` `table indépendante`
+---
+name: Piézomètre
+index: 10
+---
+# Piézomètre
 
 # référence BSS
 
@@ -21,9 +25,10 @@ Ceci permet l'accès aux fiches, par exemple :
 
 ***
 
-> [!TIP]
-> Une [action QGIS](https://docs.qgis.org/3.34/fr/docs/user_manual/working_with_vector/vector_properties.html#defining-actions) peut être créée pour ouvrir automatiquement les fiches grâce aux liens du type : 
-> 
-> `https://ades.eaufrance.fr/Fiche/PtEau?Code=[%ref_bss%]` si du type 02761X0032/PZ
-> 
-> `http://ficheinfoterre.brgm.fr/InfoterreFiche/ficheBss.action?id=[%ref_bss%]` si du type BSS000VHWC
+:::alert{tinfo}
+Une [action QGIS](https://docs.qgis.org/3.34/fr/docs/user_manual/working_with_vector/vector_properties.html#defining-actions) peut être créée pour ouvrir automatiquement les fiches grâce aux liens du type : 
+
+`https://ades.eaufrance.fr/Fiche/PtEau?Code=[%ref_bss%]` si du type 02761X0032/PZ
+
+`http://ficheinfoterre.brgm.fr/InfoterreFiche/ficheBss.action?id=[%ref_bss%]` si du type BSS000VHWC
+:::

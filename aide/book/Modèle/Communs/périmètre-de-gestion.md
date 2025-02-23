@@ -1,4 +1,8 @@
-`Commune` `AEP` `ASS` `perimetre_gestion` :link:> `emprise`
+---
+name: Périmètre de gestion
+index: 10
+---
+# Périmètre de Gestion
 
 Les tables sont identiques pour AEP et ASS.
 

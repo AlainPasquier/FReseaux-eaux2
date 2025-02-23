@@ -1,8 +1,10 @@
-`ASS` `AEP` `aep/ass_piece` :link: `noeud_reseau`
-
-`ASS` `AEP` `aep/ass_piece_hors_topo` `indépendante`
+---
+name: Pièce
+index: 10
+---
 
 # Type de Pièces dans les Réseaux de Canalisations
+
 Dans les réseaux de canalisations, les pièces jouent un rôle crucial en tant qu'éléments de liaison entre les canalisations ou les ouvrages.
 
 Elles comprennent divers accessoires tels que les coudes, les raccords, les cônes, les tés, et les bouchons. Ces pièces peuvent être classées en deux catégories : **topologiques** et **non topologiques**.
@@ -16,7 +18,7 @@ Cette distinction permet de différencier les pièces qui influent sur le tracé
 Il est important de noter que le rattachement à un nœud dépend des bases existantes, des pratiques et de la taille des pièces, ce qui explique l'existence et la similarité des 2 tables.
 
 Exemple de Classification des Pièces :
-| piece | plutôt topologique |  |
+| pièce | plutôt topologique |  |
 | ------ | ------ | ------ |
 |   coude   | non     |      |
 |   raccord   |  non    |      |

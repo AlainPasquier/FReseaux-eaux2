@@ -1,4 +1,7 @@
-`Commune` `AEP` `ASS` `protection_mecanique` `table indépendante`
+---
+name: Protection Mécanique
+index: 10
+---
 
 Les tables sont identiques pour AEP et ASS.
 
@@ -12,16 +15,16 @@ Il existe plusieurs type de protection :
 
 - fourreau : autre tuyau ou TPC ou autre dans lequel passe la canalisation
 
-![tpc](https://elydan.eu/wp-content/uploads/2019/04/Tube-pe100-polybleu-pregain%C3%A9.jpg)
+![tpc](https://uploads.gedimat.fr/VIGNETTE/0000121/761881.jpg "https://www.gedimat.fr/")
 
 - galerie : ouvrage conséquent qui permet le passage de plusieurs canalisations ou autres réseaux
 
-  ![Par Audriusa — Travail personnel, CC BY-SA 3.0](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Schiffbau_tunnel.jpg/640px-Schiffbau_tunnel.jpg)
+  ![Par Audriusa — Travail personnel, CC BY-SA 3.0](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Schiffbau_tunnel.jpg/640px-Schiffbau_tunnel.jpg "Par Audriusa — Travail personnel, CC BY-SA 3.0")
 
 - coffrage :
   besoin photo, merci !
 
-# materiau
+# matériau
 
 La liste est identique à la liste commune.
 
