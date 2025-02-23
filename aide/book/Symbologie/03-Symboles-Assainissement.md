@@ -10,15 +10,15 @@ Ensemble des installations et dispositifs permettant d'épurer les eaux usées e
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_STEU.png) | Centre | non | [ASS_STEU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_STEU.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_STEU.png) | Centre | non | [ASS_STEU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_STEU.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_STEU.png?raw=true) | Centre | non | [ASS_STEU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_STEU.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_STEU.png?raw=true) | Centre | non | [ASS_STEU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_STEU.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Bassin à ciel ouvert
 Ouvrage de stockage des eaux usées et/ou pluviales non enterré
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_BASSINCO.png) | Centre | non | [ASS_BASSINCO](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINCO.svg)<br>[ASS_BASSINCO_M](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINCO_M.svg)<br>[ASS_BASSINCO_C](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINCO_C.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_BASSINCO.png?raw=true) | Centre | non | [ASS_BASSINCO](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINCO.svg)<br>[ASS_BASSINCO_M](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINCO_M.svg)<br>[ASS_BASSINCO_C](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINCO_C.svg) |
 | **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_BASSINCO.png) | Centre | non | [ASS_BASSINCO](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINCO.svg)<br> [ASS_BASSINCO_M](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINCO_M.svg)<br> [ASS_BASSINCO_C](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINCO_C.svg) |
 | **TRVX** | - | - | - | - | - |
 
@@ -27,8 +27,8 @@ Ouvrage de stockage des eaux usées et/ou pluviales souterrain
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_BASSINE.png) | Centre | non | [ASS_BASSINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE.svg)<br>[ASS_BASSINE_M](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE_M.svg)<br>[ASS_BASSINE_C](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE_C.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_BASSINE.png) | Centre | non | [ASS_BASSINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE.svg)<br>[ASS_BASSINE_M](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE_M.svg)<br>[ASS_BASSINE_C](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE_C.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_BASSINE.png?raw=true) | Centre | non | [ASS_BASSINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE.svg)<br>[ASS_BASSINE_M](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE_M.svg)<br>[ASS_BASSINE_C](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE_C.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_BASSINE.png?raw=true) | Centre | non | [ASS_BASSINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE.svg)<br>[ASS_BASSINE_M](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE_M.svg)<br>[ASS_BASSINE_C](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_BASSINE_C.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Chambre de dépollution
@@ -36,8 +36,8 @@ Ouvrage destiné à piéger des particules par sédimentation - Également appel
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_CHAMBREDEPOLLUTION.png) | Centre | non | [ASS_CHAMBREDEPOLLUTION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_CHAMBREDEPOLLUTION.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_CHAMBREDEPOLLUTION.png) | Centre | non | [ASS_CHAMBREDEPOLLUTION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_CHAMBREDEPOLLUTION.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_CHAMBREDEPOLLUTION.png?raw=true) | Centre | non | [ASS_CHAMBREDEPOLLUTION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_CHAMBREDEPOLLUTION.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_CHAMBREDEPOLLUTION.png?raw=true) | Centre | non | [ASS_CHAMBREDEPOLLUTION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_CHAMBREDEPOLLUTION.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Puits d'infiltration
@@ -45,8 +45,8 @@ Dispositif permettant l'évacuation directe des eaux pluviales dans le sol.
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_PUITSINFILTRATION.png) | Centre | non | [ASS_PUITSINFILTRATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_PUITSINFILTRATION.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_PUITSINFILTRATION.png) | Centre | non | [ASS_PUITSINFILTRATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_PUITSINFILTRATION.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_PUITSINFILTRATION.png?raw=true) | Centre | non | [ASS_PUITSINFILTRATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_PUITSINFILTRATION.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_PUITSINFILTRATION.png?raw=true) | Centre | non | [ASS_PUITSINFILTRATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_PUITSINFILTRATION.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Regard
@@ -55,8 +55,8 @@ Ouvrage vertical d'accès au réseau
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_REGARD.png) | Centre | non | [ASS_REGARD](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_REGARD.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_REGARD.png) | Centre | non | [ASS_REGARD](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_REGARD.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_REGARD.png?raw=true) | Centre | non | [ASS_REGARD](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_REGARD.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_REGARD.png)?raw=true | Centre | non | [ASS_REGARD](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_REGARD.svg) |
 
 # Avaloir
 Équipement dédié à la récupération d'eaux de pluies de ruissellement ou de surface d'une voirie, ou d'une zone déterminée, pour les reconcentrer vers le réseau ou un milieu naturel

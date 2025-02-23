@@ -34,7 +34,3 @@ avec
 * **Pt d'insertion** : Point d'insertion des objets ponctuels
 * **Orientation** : Orientation des objets ponctuels (degré entre 0° et 180° ou entre -90° et 90° selon logiciels de SIG)
 * **Nom du fichier svg** : Nom du fichier SVG à utiliser comme symbole la représentation des objets ponctuels ou nom du fichier pour les objets linéaires et surfaciques
-
-test
-
-![test](https://cdn.pixabay.com/photo/2020/09/04/20/09/cartoon-5544856_1280.jpg)
