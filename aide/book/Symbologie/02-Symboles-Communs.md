@@ -30,8 +30,8 @@ Ouvrage souterrain d’écoulement des eaux, n’étant plus en service, toujour
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----|--------|:--------:|:--------:|--------|
 | **ENS** |  - | - | - | - | - |
-| **EXP** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | ![](/images/symbole/abandonne_nb.svg")  | NA | NA |  |
-| **TRVX** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | ![](/images/symbole/abandonne_nb.svg") | NA | NA |  |
+| **EXP** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | ![](/images/symbole/abandonne_nb.svg) | NA | NA |  |
+| **TRVX** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | ![](/images/symbole/abandonne_nb.svg) | NA | NA |  |
 
 # Fourreau
 Élément de protection souterrain (gaine) enveloppant les canalisations à certains endroit
@@ -40,8 +40,8 @@ Composant EAU et ASS. Représente le diamètre extérieur du fourreau.
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----|--------|:--------:|:--------:|--------|
 | **ENS** |  - | - | - | - | - |
-| **EXP** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | ![](/images/symbole/fourreau_nb.svg") | NA | NA |  |
-| **TRVX** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | ![](/images/symbole/fourreau_nb.svg") | NA | NA |  |
+| **EXP** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | ![](/images/symbole/fourreau_nb.svg) | NA | NA |  |
+| **TRVX** | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) | ![](/images/symbole/fourreau_nb.svg) | NA | NA |  |
 
 # Armoire électrique / télécommunication
 Armoire regroupant différents systèmes participant à la distribution d’une installation électrique ou aux liaisons de communication. Se référer aux standards de représentation des réseaux électriques / télécoms pour les câbles associés.
@@ -49,7 +49,7 @@ Armoire regroupant différents systèmes participant à la distribution d’une 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![EAU_ARMOIRE_ELEC](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_ARMOIRE_ELEC.png)| Centre | Libre | [EAU_ARMOIRE_ELEC](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_ARMOIRE_ELEC.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![EAU_ARMOIRE_ELEC](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/EAU_ARMOIRE_ELEC.png) | Centre | Libre | [EAU_ARMOIRE_ELEC](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg/EAU_ARMOIRE_ELEC.svg) |
 | **TRVX** | ![surface](/images/symbole/polygon-pt-svgrepo-com.svg) | ![](/images/symbole/empriseGC_surface.svg) | NA | NA |  |
 
 # Pluviomètre

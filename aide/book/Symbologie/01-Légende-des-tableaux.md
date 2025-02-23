@@ -6,6 +6,9 @@ toc: hide
 
 # Légende des tableaux
 
+* **titre  = Objet** : Nom des objets représentés dans les bases de données géographiques Assainissement et Eau potable
+* **Définitions** : contient la description des objets (définition), la source de la définition et des précisions sur l'objet
+
 Les tableaux se présente comme suit :
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
@@ -13,8 +16,7 @@ Les tableaux se présente comme suit :
 
 avec
 
-* **Objets** : Nom des objets représentés dans les bases de données géographiques Assainissement et AEP
-* **Définitions** : contient la description des objets (définition), la source de la définition et des précisions sur l'objet
+
 * **Échelle**
    * **ENS** (Plan d'ensemble) - Type de représentation des objets à grande et très grande échelle
    * **EXP** (Exploitation) - Représentation des objets à grande échelle **(entre 1/500 et 1/5000)**
