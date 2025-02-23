@@ -10,8 +10,8 @@ Installation de forage ou prise d’eau de surface. Peut comprendre les puits de
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PRISE_EAU.png" width="50"/> | bas triangle | non | [AEP_PRISE_EAU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PRISE_EAU.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PRISE_EAU.png" width="50"/> | bas triangle | non | [AEP_PRISE_EAU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PRISE_EAU.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PRISE_EAU.png) | bas triangle | non | [AEP_PRISE_EAU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PRISE_EAU.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PRISE_EAU.png) | bas triangle | non | [AEP_PRISE_EAU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PRISE_EAU.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Usine de traitement
@@ -19,8 +19,8 @@ Ouvrage de production d’eau potable. NF EN 805. Inclut les équipements spéci
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_USINE_TRAITEMENT.png" width="50"/> | centre | non | [AEP_USINE_TRAITEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_USINE_TRAITEMENT.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_USINE_TRAITEMENT.png" width="50"/> | centre | non | [AEP_USINE_TRAITEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_USINE_TRAITEMENT.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_USINE_TRAITEMENT.png) | centre | non | [AEP_USINE_TRAITEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_USINE_TRAITEMENT.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_USINE_TRAITEMENT.png) | centre | non | [AEP_USINE_TRAITEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_USINE_TRAITEMENT.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Réservoir enterré
@@ -28,8 +28,8 @@ Ouvrage destiné au stockage de l’eau, enterré et semi-enterré. NF EN 805.
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_RESERVOIR.png" width="50"/> | centre | non | [AEP_RESERVOIR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_RESERVOIR.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_RESERVOIR.png" width="50"/> | centre | non | [AEP_RESERVOIR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_RESERVOIR.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_RESERVOIR.png) | centre | non | [AEP_RESERVOIR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_RESERVOIR.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_RESERVOIR.png) | centre | non | [AEP_RESERVOIR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_RESERVOIR.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Réservoir sur tour
@@ -37,8 +37,8 @@ Ouvrage destiné au stockage de l’eau, enterré et semi-enterré. NF EN 805.
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_RESERVOIR_TOUR.png" width="50"/> | centre | non | [AEP_RESERVOI_TOUR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_RESERVOIR_TOUR.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_RESERVOIR_TOUR.png" width="50"/> | centre | non | [AEP_RESERVOIR_TOUR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_RESERVOIR_TOUR.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_RESERVOIR_TOUR.png) | centre | non | [AEP_RESERVOI_TOUR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_RESERVOIR_TOUR.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_RESERVOIR_TOUR.png) | centre | non | [AEP_RESERVOIR_TOUR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_RESERVOIR_TOUR.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Station de pompage – sans stockage
@@ -46,8 +46,8 @@ installation de pompage prévue pour assurer les débits et pressions voulus dan
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_POMPAGE.png" width="50"/> | centre | non | [AEP_STATION_POMPAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_POMPAGE.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_POMPAGE.png" width="50"/> | centre | non | [AEP_STATION_POMPAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_POMPAGE.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_POMPAGE.png) | centre | non | [AEP_STATION_POMPAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_POMPAGE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_POMPAGE.png) | centre | non | [AEP_STATION_POMPAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_POMPAGE.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Station de pompage – avec stockage
@@ -55,8 +55,8 @@ installation de pompage prévue pour assurer les débits et pressions voulus dan
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_POMPAGE_STOCK.png" width="50"/> | centre | non | [AEP_STATION_POMPAGE_STOCK](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_POMPAGE_STOCK.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_POMPAGE_STOCK.png" width="50"/> | centre | non | [AEP_STATION_POMPAGE_STOCK](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_POMPAGE_STOCK.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_POMPAGE_STOCK.png) | centre | non | [AEP_STATION_POMPAGE_STOCK](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_POMPAGE_STOCK.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_POMPAGE_STOCK.png) | centre | non | [AEP_STATION_POMPAGE_STOCK](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_POMPAGE_STOCK.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Station de désinfection
@@ -64,8 +64,8 @@ Site de stockage des produits et de régulation du processus d’injection des p
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_DESINFECTION.png" width="50"/> | centre | non | [AEP_STATION_DESINFECTION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_DESINFECTION.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_DESINFECTION.png" width="50"/> | centre | non | [AEP_STATION_DESINFECTION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_DESINFECTION.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_DESINFECTION.png) | centre | non | [AEP_STATION_DESINFECTION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_DESINFECTION.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_DESINFECTION.png) | centre | non | [AEP_STATION_DESINFECTION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_DESINFECTION.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Station d'alerte
@@ -73,8 +73,8 @@ Station de mesure sur eau brute en amont d’une prise d’eau.Inclut les préle
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_ALERTE.png" width="50"/> | centre | non | [AEP_STATION_ALERTE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_ALERTE.svg) |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_ALERTE.png" width="50"/> | centre | non | [AEP_STATION_ALERTE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_ALERTE.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_ALERTE.png) | centre | non | [AEP_STATION_ALERTE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_ALERTE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_STATION_ALERTE.png) | centre | non | [AEP_STATION_ALERTE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_STATION_ALERTE.svg) |
 | **TRVX** | - | - | - | - | - |
 
 # Regard
@@ -83,8 +83,8 @@ Ouvrage maçonné permettant l’accès au réseau (canalisation ou ouvrage)
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGARD.png" width="50"/> | centre | libre | [AEP_REGARD](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGARD.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGARD.png" width="50"/> | centre | libre | [AEP_REGARD](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGARD.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGARD.png) | centre | libre | [AEP_REGARD](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGARD.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGARD.png) | centre | libre | [AEP_REGARD](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGARD.svg) |
 
 # Regard de branchement
 Ouvrage enterré comportant le point de comptage
@@ -92,8 +92,8 @@ Ouvrage enterré comportant le point de comptage
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="/images/symbole/AEP_REGARDbrcht.png" width="30"/> | centre | non | |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="/images/symbole/AEP_REGARDbrcht.png" width="30"/> | centre | non |  |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](/images/symbole/AEP_REGARDbrcht.png" width="30"/> | centre | non | |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](/images/symbole/AEP_REGARDbrcht.png" width="30"/> | centre | non |  |
 
 # Regard de façade
 Ouvrage non enterré comportant le point de comptage
@@ -101,8 +101,8 @@ Ouvrage non enterré comportant le point de comptage
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_FACADE.png" width="50"/> | centre-bas | non | [AEP_FACADE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_FACADE.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_FACADE.png" width="50"/> | centre-bas | non | [AEP_FACADE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_FACADE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_FACADE.png) | centre-bas | non | [AEP_FACADE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_FACADE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_FACADE.png) | centre-bas | non | [AEP_FACADE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_FACADE.svg) |
 
 # Purge/vidange - coffre de
 Placée au point bas, permet la vidange des conduites. Cahier OIEau
@@ -110,8 +110,8 @@ Placée au point bas, permet la vidange des conduites. Cahier OIEau
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PURGE.png" width="50"/> | centre cercle | libre | [AEP_PURGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PURGE.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PURGE.png" width="50"/> | centre cercle | libre | [AEP_PURGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PURGE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PURGE.png) | centre cercle | libre | [AEP_PURGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PURGE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PURGE.png) | centre cercle | libre | [AEP_PURGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PURGE.svg) |
 
 # Ventouse - coffre de
 Placée sur les points hauts du réseau, assure l'évacuation de l'air contenu dans les conduites. Cahier OIEau
@@ -119,8 +119,8 @@ Placée sur les points hauts du réseau, assure l'évacuation de l'air contenu d
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_VENTOUSE.png" width="50"/> | bas | perpendiculaire sens cana | [AEP_VENTOUSE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_VENTOUSE.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_VENTOUSE.png" width="50"/> | bas | perpendiculaire sens cana | [AEP_VENTOUSE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_VENTOUSE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_VENTOUSE.png) | bas | perpendiculaire sens cana | [AEP_VENTOUSE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_VENTOUSE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_VENTOUSE.png) | bas | perpendiculaire sens cana | [AEP_VENTOUSE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_VENTOUSE.svg) |
 
 # Vanne de réseau
 Elément mobile permettant de laisser libre ou d’empêcher le passage de l’eau. De sectorisation, d’isolement. Ouverte ou fermée. A différencier des vannes de régulation / réduction de débit / pression (autre symbologie). Cahier OIEau
@@ -128,8 +128,8 @@ Elément mobile permettant de laisser libre ou d’empêcher le passage de l’e
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_VANNES_RESEAU.png" width="50"/> | centre | sens cana | [AEP_VANNES_RESEAU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_VANNES_RESEAU.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_VANNES_RESEAU.png" width="50"/> | centre | sens cana | [AEP_VANNES_RESEAU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_VANNES_RESEAU.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_VANNES_RESEAU.png) | centre | sens cana | [AEP_VANNES_RESEAU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_VANNES_RESEAU.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_VANNES_RESEAU.png) | centre | sens cana | [AEP_VANNES_RESEAU](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_VANNES_RESEAU.svg) |
 
 # Régulateur de pression
 Organe permettant de réduire ou stabiliser une pression
@@ -137,8 +137,8 @@ Organe permettant de réduire ou stabiliser une pression
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGULATEUR_DEBIT_PRESSION.png" width="50"/> | centre | sens cana | [AEP_REGULATEUR_DEBIT_PRESSION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGULATEUR_DEBIT_PRESSION.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGULATEUR_DEBIT_PRESSION.png" width="50"/> | centre | sens cana | [AEP_REGULATEUR_DEBIT_PRESSION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGULATEUR_DEBIT_PRESSION.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGULATEUR_DEBIT_PRESSION.png) | centre | sens cana | [AEP_REGULATEUR_DEBIT_PRESSION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGULATEUR_DEBIT_PRESSION.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGULATEUR_DEBIT_PRESSION.png) | centre | sens cana | [AEP_REGULATEUR_DEBIT_PRESSION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGULATEUR_DEBIT_PRESSION.svg) |
 
 # Régulateur de débit
 Organe permettant de réduire ou stabiliser un débit. Cahier OIEau
@@ -146,8 +146,8 @@ Organe permettant de réduire ou stabiliser un débit. Cahier OIEau
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGULATEUR_DEBIT_PRESSION.png" width="50"/> | centre | sens cana | [AEP_REGULATEUR_DEBIT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGULATEUR_DEBIT_PRESSION.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGULATEUR_DEBIT_PRESSION.png" width="50"/> | centre | sens cana | [AEP_REGULATEUR_DEBIT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGULATEUR_DEBIT_PRESSION.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGULATEUR_DEBIT_PRESSION.png) | centre | sens cana | [AEP_REGULATEUR_DEBIT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGULATEUR_DEBIT_PRESSION.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_REGULATEUR_DEBIT_PRESSION.png) | centre | sens cana | [AEP_REGULATEUR_DEBIT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGULATEUR_DEBIT_PRESSION.svg) |
 
 # Clapet anti-retour
 Organe n’autorisant le passage de l’eau que dans un seul sens. Le trait plein représente le sens dans lequel l'eau ne peut pas passer. Cahier OIEau
@@ -155,8 +155,8 @@ Organe n’autorisant le passage de l’eau que dans un seul sens. Le trait plei
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_CLAPET.png" width="50"/> | centre | sens cana | [AEP_CLAPET](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGULATEUR_DEBIT.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_CLAPET.png" width="50"/> | centre | sens cana | [AEP_CLAPET](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_CLAPET.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_CLAPET.png) | centre | sens cana | [AEP_CLAPET](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_REGULATEUR_DEBIT.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_CLAPET.png) | centre | sens cana | [AEP_CLAPET](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_CLAPET.svg) |
 
 # Plaque Pleine
 Plaque permettant d’obstruer une canalisation.
@@ -164,8 +164,8 @@ Plaque permettant d’obstruer une canalisation.
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PLAQUE_PLEINE.png" width="50"/> | centre | perpendiculaire sens cana | [AEP_PLAQUE_PLEINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PLAQUE_PLEIN.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PLAQUE_PLEINE.png" width="50"/> | centre | perpendiculaire sens cana | [AEP_PLAQUE_PLEINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PLAQUE_PLEIN.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PLAQUE_PLEINE.png) | centre | perpendiculaire sens cana | [AEP_PLAQUE_PLEINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PLAQUE_PLEIN.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PLAQUE_PLEINE.png) | centre | perpendiculaire sens cana | [AEP_PLAQUE_PLEINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PLAQUE_PLEIN.svg) |
 
 # Poteau Incendie
 Prise pour usage d’incendie en forme de colonne en saillie par rapport au niveau du sol, prévue essentiellement pour l’alimentation d’eau pour la lutte contre l’incendie et qui peut aussi être utilisée pour le service public de l’eau. NF EN 14384
@@ -173,8 +173,8 @@ Prise pour usage d’incendie en forme de colonne en saillie par rapport au nive
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POTEAU_INCENDIE.png" width="50"/> | centre | libre | [AEP_POTEAU_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POTEAU_INCENDIE.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POTEAU_INCENDIE.png" width="50"/> | centre | libre | [AEP_POTEAU_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POTEAU_INCENDIE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POTEAU_INCENDIE.png) | centre | libre | [AEP_POTEAU_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POTEAU_INCENDIE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POTEAU_INCENDIE.png) | centre | libre | [AEP_POTEAU_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POTEAU_INCENDIE.svg) |
 
 # Bouche Incendie
 Prise pour usage d’incendie installée dans une chambre enterrée avec un coffre de surface, prévue essentiellement pour l’alimentation d’eau pour la lutte contre l’incendie et qui peut aussi être utilisée pour le service public de l’eau. NF EN 14339
@@ -182,8 +182,8 @@ Prise pour usage d’incendie installée dans une chambre enterrée avec un coff
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_INCENDIE.png" width="50"/> | centre | libre | [AEP_BOUCHE_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_INCENDIE.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_INCENDIE.png" width="50"/> | centre | libre | [AEP_BOUCHE_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_INCENDIE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_INCENDIE.png) | centre | libre | [AEP_BOUCHE_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_INCENDIE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_INCENDIE.png) | centre | libre | [AEP_BOUCHE_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_INCENDIE.svg) |
 
 # Point d'aspiration
 Point d’aspiration d’eau naturelle accessible aux services de défense incendie. Fiche technique DECI.
@@ -191,8 +191,8 @@ Point d’aspiration d’eau naturelle accessible aux services de défense incen
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_ASPIRATION.png" width="50"/> | centre | libre | [AEP_ASPIRATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_ASPIRATION.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_ASPIRATION.png" width="50"/> | centre | libre | [AEP_ASPIRATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_ASPIRATION.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_ASPIRATION.png) | centre | libre | [AEP_ASPIRATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_ASPIRATION.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_ASPIRATION.png) | centre | libre | [AEP_ASPIRATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_ASPIRATION.svg) |
 
 # Citerne Incendie
 Réserve d'eau destinée à la défense incendie.
@@ -200,8 +200,8 @@ Réserve d'eau destinée à la défense incendie.
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_CITERNE_INCENDIE.png" width="50"/> | centre | libre | [AEP_CITERNE_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_CITERNE_INCENDIE.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_CITERNE_INCENDIE.png" width="50"/> | centre | libre | [AEP_CITERNE_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_CITERNE_INCENDIE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_CITERNE_INCENDIE.png) | centre | libre | [AEP_CITERNE_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_CITERNE_INCENDIE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_CITERNE_INCENDIE.png) | centre | libre | [AEP_CITERNE_INCENDIE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_CITERNE_INCENDIE.svg) |
 
 # Bouche de lavage
 Prise d'eau située sur la voirie dans le but de la laver.
@@ -209,8 +209,8 @@ Prise d'eau située sur la voirie dans le but de la laver.
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_LAVAGE.png" width="50"/> | centre | libre | [AEP_BOUCHE_LAVAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_LAVAGE.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_LAVAGE.png" width="50"/> | centre | libre | [AEP_BOUCHE_LAVAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_LAVAGE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_LAVAGE.png) | centre | libre | [AEP_BOUCHE_LAVAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_LAVAGE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_LAVAGE.png) | centre | libre | [AEP_BOUCHE_LAVAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_LAVAGE.svg) |
 
 # Bouche d'arrosage
 Appareil de puisage permettant le branchement au niveau du sol du matériel mobile des services d'espaces verts.
@@ -218,8 +218,8 @@ Appareil de puisage permettant le branchement au niveau du sol du matériel mobi
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_ARROSAGE.png" width="50"/> | centre | libre | [AEP_BOUCHE_ARROSAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_ARROSAGE.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_LAVAGE.png" width="50"/> | centre | libre | [AEP_BOUCHE_ARROSAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_ARROSAGE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_ARROSAGE.png) | centre | libre | [AEP_BOUCHE_ARROSAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_ARROSAGE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BOUCHE_LAVAGE.png) | centre | libre | [AEP_BOUCHE_ARROSAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BOUCHE_ARROSAGE.svg) |
 
 # Borne fontaine
 Appareil public permettant la distribution d’eau  à usage commun (ex : quartier). Fontainerie à volant ou à bouton.
@@ -227,8 +227,8 @@ Appareil public permettant la distribution d’eau  à usage commun (ex : quart
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BORNE_FONTAINE.png" width="50"/> | bas du cercle | libre | [AEP_BORNE_FONTAINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BORNE_FONTAINE.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BORNE_FONTAINE.png" width="50"/> | bas du cercle | libre | [AEP_BORNE_FONTAINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BORNE_FONTAINE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BORNE_FONTAINE.png) | bas du cercle | libre | [AEP_BORNE_FONTAINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BORNE_FONTAINE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BORNE_FONTAINE.png) | bas du cercle | libre | [AEP_BORNE_FONTAINE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BORNE_FONTAINE.svg) |
 
 # Poteau / borne de puisage / bouche remplissage
 Appareil de puisage à « gros » débit.
@@ -236,8 +236,8 @@ Appareil de puisage à « gros » débit.
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BORNE_PUISAGE.png" width="50"/> | bas du cercle | non | [AEP_BORNE_PUISAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BORNE_PUISAGE.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BORNE_PUISAGE.png" width="50"/> | bas du cercle | non | [AEP_BORNE_PUISAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BORNE_PUISAGE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BORNE_PUISAGE.png) | bas du cercle | non | [AEP_BORNE_PUISAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BORNE_PUISAGE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_BORNE_PUISAGE.png) | bas du cercle | non | [AEP_BORNE_PUISAGE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_BORNE_PUISAGE.svg) |
 
 # Point de chloration
 Prise en charge permettant l’introduction de solution désinfectante dans le réseau.
@@ -245,8 +245,8 @@ Prise en charge permettant l’introduction de solution désinfectante dans le r
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POINT_CHLORATION.png" width="50"/> | bas | non | [AEP_POINT_CHLORATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POINT_CHLORATION.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POINT_CHLORATION.png" width="50"/> | bas | non | [AEP_POINT_CHLORATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POINT_CHLORATION.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POINT_CHLORATION.png) | bas | non | [AEP_POINT_CHLORATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POINT_CHLORATION.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POINT_CHLORATION.png) | bas | non | [AEP_POINT_CHLORATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POINT_CHLORATION.svg) |
 
 # Point de prélèvement
 Prise en charge permettant un prélèvement pour mesure / analyse.
@@ -254,8 +254,8 @@ Prise en charge permettant un prélèvement pour mesure / analyse.
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POINT_PRELEVEMENT.png" width="50"/> | centre | non | [AEP_POINT_PRELEVEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POINT_PRELEVEMENT.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POINT_PRELEVEMENT.png" width="50"/> | centre | non | [AEP_POINT_PRELEVEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POINT_PRELEVEMENT.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POINT_PRELEVEMENT.png) | centre | non | [AEP_POINT_PRELEVEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POINT_PRELEVEMENT.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_POINT_PRELEVEMENT.png) | centre | non | [AEP_POINT_PRELEVEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_POINT_PRELEVEMENT.svg) |
 
 # Compteur de sectorisation / débitmètre
 Capteur permettant la mesure de débit / volume sur canalisation d’adduction / distribution.
@@ -263,8 +263,8 @@ Capteur permettant la mesure de débit / volume sur canalisation d’adduction /
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_DEBIT.png" width="50"/> | centre | non | [AEP_COMPTEUR_DEBIT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_DEBIT.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_DEBIT.png" width="50"/> | centre | non | [AEP_COMPTEUR_DEBIT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_DEBIT.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_DEBIT.png) | centre | non | [AEP_COMPTEUR_DEBIT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_DEBIT.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_DEBIT.png) | centre | non | [AEP_COMPTEUR_DEBIT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_DEBIT.svg) |
 
 # Compteur de branchement
 Capteur permettant la mesure de débit / volume sur canalisation de branchement. Concerne également les compteurs d’individualisation ou généraux.
@@ -272,8 +272,8 @@ Capteur permettant la mesure de débit / volume sur canalisation de branchement.
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_BRANCHEMENT.png" width="50"/> | centre | non | [AEP_COMPTEUR_BRANCHEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_BRANCHEMENT.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_BRANCHEMENT.png" width="50"/> | centre | non | [AEP_COMPTEUR_BRANCHEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_BRANCHEMENT.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_BRANCHEMENT.png) | centre | non | [AEP_COMPTEUR_BRANCHEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_BRANCHEMENT.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_BRANCHEMENT.png) | centre | non | [AEP_COMPTEUR_BRANCHEMENT](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_BRANCHEMENT.svg) |
 
 # Détecteur acoustique
 Capteur permettant de détecter les fuites.
@@ -281,8 +281,8 @@ Capteur permettant de détecter les fuites.
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_DETECTEUR.png" width="50"/> | centre | non | [AEP_COMPTEUR_DETECTEUR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_DETECTEUR.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_DETECTEUR.png" width="50"/> | centre | non | [AEP_COMPTEUR_DETECTEUR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_DETECTEUR.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_DETECTEUR.png) | centre | non | [AEP_COMPTEUR_DETECTEUR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_DETECTEUR.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_COMPTEUR_DETECTEUR.png) | centre | non | [AEP_COMPTEUR_DETECTEUR](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_COMPTEUR_DETECTEUR.svg) |
 
 # Système de protection cathodique
 Ensemble des composants associés à la fourniture d’une protection externe contre la corrosion et à sa surveillance. NF EN 12954.
@@ -290,5 +290,5 @@ Ensemble des composants associés à la fourniture d’une protection externe co
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
-| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PROTECTION_CATHODIQUE.png" width="50"/> | centre | non | [AEP_PROTECTION_CATHODIQUE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PROTECTION_CATHODIQUE.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | <img src="https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PROTECTION_CATHODIQUE.png" width="50"/> | centre | non | [AEP_PROTECTION_CATHODIQUE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PROTECTION_CATHODIQUE.svg) |
+| **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PROTECTION_CATHODIQUE.png) | centre | non | [AEP_PROTECTION_CATHODIQUE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PROTECTION_CATHODIQUE.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/PNG/AEP_PROTECTION_CATHODIQUE.png) | centre | non | [AEP_PROTECTION_CATHODIQUE](https://github.com/cnigfr/StaR-Eau/blob/main/collections/eau_potable/svg_nb/AEP_PROTECTION_CATHODIQUE.svg) |

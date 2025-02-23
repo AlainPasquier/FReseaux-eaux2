@@ -6,9 +6,15 @@ toc: hide
 
 # Légende des tableaux
 
-Nom de la colonne et sa description / contenu
+Les tableaux se présente comme suit :
+
+| Échelle | Type | symbole | point insertion | orienté | nom fichier |
+|:-------------:|:----|--------|:--------:|:--------:|--------|
+
+avec
+
 * **Objets** : Nom des objets représentés dans les bases de données géographiques Assainissement et AEP
-* **Définitions** : contient descriptions des objets (définition), la source de la définition et des précisions sur l'objet
+* **Définitions** : contient la description des objets (définition), la source de la définition et des précisions sur l'objet
 * **Échelle**
    * **ENS** (Plan d'ensemble) - Type de représentation des objets à grande et très grande échelle
    * **EXP** (Exploitation) - Représentation des objets à grande échelle **(entre 1/500 et 1/5000)**
@@ -18,7 +24,7 @@ Nom de la colonne et sa description / contenu
   
 | type | symbole |
 | ---- | ---- |
-|Point | ![point](/images/symbole/point-svgrepo-com.svg) |
+| Point | ![point](/images/symbole/point-svgrepo-com.svg) |
 | Ligne | ![ligne](/images/symbole/polyline-pt-svgrepo-com.svg) |
 | Surface | ![polygone](/images/symbole/polygon-pt-svgrepo-com.svg) |
 
