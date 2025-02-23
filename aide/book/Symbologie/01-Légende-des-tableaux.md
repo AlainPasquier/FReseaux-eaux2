@@ -1,7 +1,7 @@
 ---
 name: Légende des tableaux
 index: 0
-toc: hide
+toc: false
 ---
 
 # Légende des tableaux
@@ -9,7 +9,7 @@ toc: hide
 * **titre  = Objet** : Nom des objets représentés dans les bases de données géographiques Assainissement et Eau potable
 * **Définitions** : contient la description des objets (définition), la source de la définition et des précisions sur l'objet
 
-Les tableaux se présente comme suit :
+Les tableaux se présentent comme suit :
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----|--------|:--------:|:--------:|--------|

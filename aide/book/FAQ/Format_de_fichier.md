@@ -1,6 +1,7 @@
 ---
 name: Format des fichiers
 index: 1
+hide: true
 ---
 
 La réponse est fourni directement par ESRI sur les limitations du format .shp

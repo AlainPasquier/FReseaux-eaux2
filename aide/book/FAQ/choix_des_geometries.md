@@ -1,6 +1,7 @@
 ---
 name: Choix des géométries
 index: 1
+hide: true
 ---
 
 # Choix des géométries
