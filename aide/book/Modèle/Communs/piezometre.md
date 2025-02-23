@@ -1,10 +1,10 @@
 ---
-name: Piézomètre
+name: piezometre
 index: 10
 ---
 # Piézomètre
 
-# référence BSS
+## référence BSS
 
 La référence vient du BRGM, est de type : 
 * BSS000VHWC

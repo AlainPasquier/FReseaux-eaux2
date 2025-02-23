@@ -1,15 +1,14 @@
 ---
-name: Protection Mécanique
+name: protection_mecanique
 index: 10
 ---
-
 Les tables sont identiques pour AEP et ASS.
 
 # Protection mécanique
 
 Sont compris dans cette table, tous les éléments protégeant les conduites dans le sol ou autre
 
-# type
+## type
 
 Il existe plusieurs type de protection :
 
@@ -24,11 +23,11 @@ Il existe plusieurs type de protection :
 - coffrage :
   besoin photo, merci !
 
-# matériau
+## matériau
 
 La liste est identique à la liste commune.
 
-# table de liaison avec les canalisations
+## table de liaison avec les canalisations
 
 Une table est prévue pour indiquer quelles sont les canalisations incluses ou passant dans ou sous la protection. Cette table permet la saisie des identifiants.
 Elle indique également le nombre de conduite transitant dans la protection.

@@ -1,7 +1,9 @@
 ---
-name: Point géolocalisation
+name: point_geolocalisation
 index: 10
 ---
+Les tables sont identiques pour AEP et ASS.
+
 # Point de géolocalisation
 
 Point geolocalisation ou communément appelé point "GPS", permettent d'avoir des points de référence pour le tracé des conduites.

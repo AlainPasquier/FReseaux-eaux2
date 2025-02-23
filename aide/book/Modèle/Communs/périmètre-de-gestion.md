@@ -1,12 +1,13 @@
 ---
-name: Périmètre de gestion
+name: perimetre_gestion
 index: 10
 ---
-# Périmètre de Gestion
-
 Les tables sont identiques pour AEP et ASS.
 
-# type de périmètre
+# Périmètre de Gestion
+
+
+## type de périmètre
 
 Ceci de permet de caractériser l'emprise dessinée.
 
@@ -21,7 +22,7 @@ Une installation est sur une parcelle, la cloture n'est pas sur la limite de pro
 
 ![perimètre](https://github.com/cnigfr/StaR-Eau/blob/main/Documentation/image_documentation/modele/perimetre_gestion.png)
 
-# type d'accès et sûreté
+## type d'accès et sûreté
 
 Ici peut-être indiqué si l'emprise est accessible librement ou non.
 

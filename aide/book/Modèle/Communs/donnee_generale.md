@@ -1,5 +1,5 @@
 ---
-name: Données générales
+name: donnees_generales
 index: 4
 ---
 # Données générales

@@ -2,6 +2,7 @@
 name: canalisation
 index: 1
 ---
+# canalisation
 
 Table mère des autres tables linéaires. Elle a gardé son nom du RAEPA V1.
 
@@ -13,15 +14,15 @@ Cette table n'a pas vocation à être chargée dans les projets.
 
 Elle comprend les champs communs à toutes les canalisations.
 
-# nœud initial et nœud terminal
+## nœud initial et nœud terminal
 
 Ces champs doivent comporter l'identifiant unique noeud_reseau, ceci permet de vérifier la topologie et permettre sa reconstruction si nécessaire.
 
-# matériau
+## matériau
 
 Voir la [page dédiée](/Modèle/materiau)
 
-# [mode de circulation](https://github.com/cnigfr/StaR-Eau/blob/main/Standard%20StaR-Eau/listes%20valeurs/listes_completes/com_mode_circulation.csv)
+## mode de circulation
 
 Le mode de circulation détermine comment les eaux se déplace dans la conduite.
 
@@ -33,17 +34,17 @@ Le schéma suivant :
 
 ![mode_circulation](https://github.com/user-attachments/assets/ff242bab-0125-4497-9b5e-4514b087ed11)
 
-# [type de pose](https://github.com/cnigfr/StaR-Eau/blob/main/Standard%20StaR-Eau/listes%20valeurs/listes_completes/com_type_pose.csv)
+## type de pose
 
 La liste proposée est issue de France Sans Tranchée Technologies [FSTT](https://www.fstt.org/le-sans-tranchee/#18e031320a5ef347c), à laquelle a été ajouté le type de pose en tranchée ouverte.
 
 Elle recoupe aussi bien les travaux de pose de réseaux neufs, que les travaux de réhabilitation.
 
-# [raison de pose](https://github.com/cnigfr/StaR-Eau/blob/main/Standard%20StaR-Eau/listes%20valeurs/listes_completes/com_raison_pose.csv)
+## raison de pose
 
-La raison de pose est comme son nom l'indique le pourquoi de la pose. Ceci est important pour le calcul des indicateurs et permet de différencier les extensions de réseaux de la réhabilitation ou renouvellement.
+La raison de pose est comme son nom l'indique le "pourquoi" de la pose. Ceci est important pour le calcul des indicateurs et permet de différencier les extensions de réseaux de la réhabilitation ou renouvellement.
 
-# diamètre équivalent
+## diamètre équivalent
 
 Ce diamètre équivalent ou nominale permet de fixer une seule dimension de conduite, de manière courante et pour faciliter la compréhension, l'exploitation ou le dimensionnement. Ainsi, ici peuvent indiqué indifféremment le diamètre intérieur ou extérieur : on parlera d'un 400 béton ou d'un 200 PVC…
 
@@ -59,7 +60,7 @@ Ce champs sert aussi pour la modélisation ou les calculs, notamment dans le cas
 | T 180 | 1392                     |
 | T 200 | 1547                     |
 
-# [revêtement interieur](https://github.com/cnigfr/StaR-Eau/blob/main/Standard%20StaR-Eau/listes%20valeurs/listes_completes/com_revetement_interieur.csv)
+## revêtement intérieur
 
 Le revêtement intérieur correspond soit :
 

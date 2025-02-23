@@ -1,5 +1,5 @@
 ---
-name: Dimension
+name: dimension
 index : 5
 ---
 # Dimension
