@@ -20,7 +20,7 @@ Le type administratif correspond à un périmètre délimité par un acte admini
 A noter que les périmètre de gestion peuvent se superposer, exemple :
 Une installation est sur une parcelle, la cloture n'est pas sur la limite de propriété, et l'ouvrage est interdit à l'accès.
 
-![perimètre](https://github.com/cnigfr/StaR-Eau/blob/main/Documentation/image_documentation/modele/perimetre_gestion.png)
+![perimètre](https://github.com/cnigfr/StaR-Eau/blob/main/Documentation/image_documentation/modele/perimetre_gestion.png?raw=true)
 
 ## type d'accès et sûreté
 
