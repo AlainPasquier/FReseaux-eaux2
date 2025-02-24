@@ -45,7 +45,7 @@ Dispositif permettant l'évacuation directe des eaux pluviales dans le sol.
 
 | Échelle | Type | symbole | point insertion | orienté | nom fichier |
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
-| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_PUITSINFILTRATION.png?raw=true =50x50) | Centre | non | [ASS_PUITSINFILTRATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_PUITSINFILTRATION.svg) |
+| **ENS** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_PUITSINFILTRATION.png?raw=true) | Centre | non | [ASS_PUITSINFILTRATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_PUITSINFILTRATION.svg) |
 | **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_PUITSINFILTRATION.png?raw=true) | Centre | non | [ASS_PUITSINFILTRATION](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_PUITSINFILTRATION.svg) |
 | **TRVX** | - | - | - | - | - |
 
@@ -56,7 +56,7 @@ Ouvrage vertical d'accès au réseau
 |:-------------:|:----:|:--------:|:--------:|:--------:|--------|
 | **ENS** | - | - | - | - | - |
 | **EXP** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_REGARD.png?raw=true) | Centre | non | [ASS_REGARD](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_REGARD.svg) |
-| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_REGARD.png?raw=true)?raw=true | Centre | non | [ASS_REGARD](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_REGARD.svg) |
+| **TRVX** | ![point](/images/symbole/point-svgrepo-com.svg) | ![](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/PNG/ASS_REGARD.png?raw=true) | Centre | non | [ASS_REGARD](https://github.com/cnigfr/StaR-Eau/blob/main/collections/assainissement/svg_nb/ASS_REGARD.svg) |
 
 # Avaloir
 Équipement dédié à la récupération d'eaux de pluies de ruissellement ou de surface d'une voirie, ou d'une zone déterminée, pour les reconcentrer vers le réseau ou un milieu naturel
