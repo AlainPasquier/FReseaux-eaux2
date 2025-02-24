@@ -11,10 +11,10 @@ code | valeur | description
 
 - **code** : le code est l'identifiant de la liste. Il n'a pas été choisi de coder numériquement les listes de valeurs pour 2 raisons :
 
-  * Il est plus lisible, même sans avoir les métadonnées, de lire les données des tables. Dans le carde d'un échange incomplet, les valeurs peuvent être déduites des codes.
-  * la maintenance des listes, l'ajout, suppression ou la personnalisation de liste est facilitée. Exemple, si vous ajouté une valeur dans la liste, il n'y a pas besoin de se demander si le 12 ou 58 existe déjà, ou de réserver des chiffres pour les modifications futures.
-    Si une valeur est retiré, le fait qu'il manque un code, ne vous fait pas vous demander s'il s'agit d'un saut voulu, d'une erreur, de le réutiliser par mégarde, ou être obligé d'indiquer une valeur "supprimé" ou "gelé" dans la valeur et la description
-- **valeur** : la valeur est la description courte de la valeur, Peut servir pour affichage
+  * Il est plus lisible, même sans avoir les métadonnées, de lire les données des tables. Dans le cadre d'un échange incomplet, les valeurs peuvent être déduites des codes.
+  * la maintenance des listes, l'ajout, suppression ou la personnalisation de liste est facilitée. Exemple, si vous ajoutez une valeur dans la liste, il n'y a pas besoin de se demander si le 12 ou 58 existe déjà, ou de réserver des chiffres pour les modifications futures.
+    Si une valeur est retirée, le fait qu'il manque un code, ne vous fait pas vous demander s'il s'agit d'un saut voulu, d'une erreur, de le réutiliser par mégarde, ou être obligé d'indiquer une valeur "supprimée" ou "gelée" dans la valeur et la description
+- **valeur** : la valeur est la description courte de la valeur, peut servir pour affichage
 - **description** : il s'agit de la définition ou de la description longue de la valeur.
 
 ## Personnalisation des listes
@@ -23,9 +23,9 @@ Sur la base des listes fournies, vous pouvez personnaliser les listes afin de mi
 
 Par exemple, si vous êtes gestionnaire d'eau potable uniquement, vous pouvez retirer des listes communes tous les éléments qui concernent l'assainissement.
 
-Vous pouvez ajouter des valeurs qui sont propres à votre collectivité. Il est toutefois demandé de ne pas modifier les descriptions existantes pour que lors  d'échanges, les termes restent identiques. **Ne pas supprimer ou substituer de code avec vos propres valeurs**.
+Vous pouvez ajouter des valeurs qui sont propres à votre collectivité. Il est toutefois demandé de ne pas modifier les descriptions existantes pour que lors d'échanges, les termes restent identiques. **Ne pas supprimer ou substituer de code avec vos propres valeurs**.
 
-Par ailleurs, si une valeur de portée nationale vient à manquer, merci de nous soumettre votre proposition (en ISSUE) d'ajout en indiquant la valeur, sa description longue, son contexte et son usage.
+Par ailleurs, si une valeur de portée nationale vient à manquer, merci de nous soumettre votre proposition (question en haut de page) d'ajout en indiquant la valeur, sa description longue, son contexte et son usage.
 
 ## Qualification de l'inconnu
 
