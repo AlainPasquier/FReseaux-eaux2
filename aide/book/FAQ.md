@@ -10,7 +10,7 @@ index: 1
 
 ::tile{title="Comment utiliser les tables mère et monter différentes bases de données ?" href="FAQ/montage_en_base" icon="https://www.svgrepo.com/show/508018/database.svg"}
 
-::tile{title="Pourquoi ne pas fournir de gabarit ou le modèle en **.shp** ?" href="/FAQ/Format_de_fichier" icon="https://www.svgrepo.com/show/508034/document-text.svg"}
+::tile{title="Pourquoi ne pas fournir de gabarit ou le modèle en .shp ?" href="/FAQ/Format_de_fichier" icon="https://www.svgrepo.com/show/508034/document-text.svg"}
 
 ::tile{title="Pourquoi des géométries simples ?" href="FAQ/choix_des_geometries" icon="https://www.svgrepo.com/show/507973/chart-bubble.svg"}
 
