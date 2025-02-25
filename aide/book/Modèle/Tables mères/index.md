@@ -1,4 +1,4 @@
 ---
-name: Tables Méres
+name: Tables Mères
 index: 0
 ---

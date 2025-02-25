@@ -3,7 +3,8 @@ name: Modèle
 index: 4
 ---
 
-Vous êtes dans la partie 
+Vous êtes dans la partie
+
 # Modèle de données StaR-Eau
 
 * [Modele](mcd-modele)
