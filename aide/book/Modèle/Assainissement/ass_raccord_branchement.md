@@ -1,6 +1,10 @@
-`ASS` `ass_raccord` :link: `noeud_reseau`
+---
+name: ass_raccord_branchement
+index: 
+---
+# Raccord de branchement
 
-Les raccords sont les pièces qui permettent la connexion entre la canalisation de branchement et la canlisation principale.
+Les raccords sont les pièces qui permettent la connexion entre la canalisation de branchement et la canalisation principale.
 **Ils ne sont pas topologiques, non coupants ou non sécants, avec la canalisation principale**
 
 # type de raccords
@@ -9,17 +13,19 @@ Les raccords sont les pièces qui permettent la connexion entre la canalisation 
 
 piquage consiste à percer le collecteur à un diamètre correspondant à celui du branchement
 
-![source DDTM](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgH_unCVDsiZtZbhw6SHjQ30sIJf7n27yfGA&s)
+![source DDTM](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgH_unCVDsiZtZbhw6SHjQ30sIJf7n27yfGA&s "piquage direct (pas bien)") 
 
 ## culotte
 
 Culotte en forme de Y
 
-![source www.soval.fr](https://www.soval.fr/wp-content/uploads/2018/02/SOUPL-T-ASS-CULOTTE-EEE.png)
+![culotte en y](https://www.e-genieclimatique.com/wordpress/wp-content/uploads/2017/11/culotte-a-45%C2%B0-triple-emboitage-150x150.jpg "https://www.e-genieclimatique.com/")
 
 ## té de branchement
 
 culotte de branchement en forme de T
+
+![culotte](https://www.e-genieclimatique.com/wordpress/wp-content/uploads/2017/11/culotte-87%C2%B030-embranchement-simple-MF-150x150.jpg "https://www.e-genieclimatique.com/") 
 
 ## selle de piquage
 
@@ -34,9 +40,9 @@ culotte de branchement en forme de T
 Il est conseillé d'utiliser la référence unique issue de la table mère canalisation.
 Ceci permet de localiser et de répertorier rapidement les branchements présents sur les tronçons de canalisation.
 
-> [!tip]
-> une requête simple permet de connaître le nombre de branchements sur un tronçon.
-
-```sql
+:::alert
+une requête simple permet de connaître le nombre de branchements sur un tronçon.
+`
 SELECT ref_canalisation, COUNT(1) FROM ass_raccord GROUP BY ref_canalisation
-```
+`
+:::
