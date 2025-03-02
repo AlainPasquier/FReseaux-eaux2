@@ -20,7 +20,6 @@
     "brand": "#0060b6"
   },
   "allowDangerousHtml": true,
-  "styles": "/style.css",
   "links": [
     {
       "label": "Question",

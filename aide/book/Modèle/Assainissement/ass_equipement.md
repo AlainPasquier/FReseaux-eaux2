@@ -1,5 +1,6 @@
 ---
 name: ass_equipement
+style: /style.css
 index: 1
 ---
 

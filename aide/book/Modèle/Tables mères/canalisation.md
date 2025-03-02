@@ -50,7 +50,7 @@ Ce diamètre équivalent ou nominale permet de fixer une seule dimension de cond
 
 Ce champs sert aussi pour la modélisation ou les calculs, notamment dans le cas d'ovoïde, ou le diamètre équivalent sera le diamètre d'une section circulaire équivalente.
 
-> à titre d'exemple ([source](https://travaux-publics.blogspot.com/2012/03/correspondance-des-sections-ovoide_09.html))
+à titre d'exemple ([source](https://travaux-publics.blogspot.com/2012/03/correspondance-des-sections-ovoide_09.html))
 
 | Norme | Diamètre équivalent (mm) |
 | :---- | :----------------------- |
