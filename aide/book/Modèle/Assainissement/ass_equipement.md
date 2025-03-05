@@ -1,7 +1,7 @@
 ---
 name: ass_equipement
 styles: 
-    - /public/style.css
+    - style.css
 index: 1
 ---
 
