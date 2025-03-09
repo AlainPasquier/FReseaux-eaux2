@@ -18,7 +18,8 @@ Cette table n'a pas vocation à être chargée dans les projets.
 
 Ce champ présent dans toutes les tables permet d'établir si l'élément est fictif ou virtuel. Cela peut être le cas pour un cheminement complexe de canalisation dans une installation, mais dont la représentation est symbolique et permet la continuité hydraulique. voir aussi [déversoir d'orage](/FAQ/deversoir_orage)
 
-![cana fictive](images/modele/cana_fictive1.png)
+![cana fictive dans un ouvrage](images/modele/cana_fictive1.png)
+
 ---
 
 # Gestion des dates
