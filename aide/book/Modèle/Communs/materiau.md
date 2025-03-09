@@ -5,7 +5,7 @@ index: 10
 
 # Matériau
 
-**Materiau constitutif des élements.**
+**Matériau constitutif des éléments.**
 
 Cette liste est composé de la fusion de plusieurs liste déjà présentes dans d'autre standard ou norme.
 Il a été préféré de conserver un maximum d'item pour pouvoir correspondre entre les modèles.

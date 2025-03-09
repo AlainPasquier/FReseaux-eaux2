@@ -26,7 +26,7 @@ index: 1
 
 ::tile{title="Pourquoi y-a-t-il des pièces topo et hors topo ?" href="Modèle/Communs/piece"}
 
-::tile{title="Comment saisir les dates ?" href="Modèle/Modèle/Tables mères/donnee_generale#gestion-des-dates" icon="https://www.svgrepo.com/show/507965/calendar-alt.svg"}
+::tile{title="Comment saisir les dates ?" href="Modèle/Tables mères/donnee_generale#gestion-des-dates" icon="https://www.svgrepo.com/show/507965/calendar-alt.svg"}
 
 ::tile{title="Comment est saisie une réhabilitation de canalisation ?" href="FAQ/rehabilitation_reseau"}
 

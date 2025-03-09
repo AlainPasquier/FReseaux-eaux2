@@ -10,8 +10,8 @@ hide: true
 
 Schéma d'un ouvrage
 
-![deversoir_degrilleur1](https://github.com/user-attachments/assets/263d7518-a87f-43aa-8036-71f1702ba383)
+![deversoir_degrilleur1](images/modele/deversoir_degrilleur1.png)
 
-Sa représentation dans le modéle
+Sa représentation dans le modèle
 
-![deversoir_degrilleur2](https://github.com/user-attachments/assets/38dfcc23-ffa3-4710-aa22-739361c15318)
+![deversoir_degrilleur2](images/modele/deversoir_degrilleur2.png)
