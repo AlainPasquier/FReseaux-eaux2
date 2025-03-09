@@ -1,6 +1,6 @@
 ---
 name: ass_regard
-index: 10
+index: 1
 ---
 # Regard Assainissement
 

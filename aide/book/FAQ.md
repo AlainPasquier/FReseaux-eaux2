@@ -24,23 +24,22 @@ index: 1
 
 ::tile{title="Comment saisir les dimensions des ouvrages ou canalisations" href="Modèle/Tables mères/dimensions" icon="https://www.svgrepo.com/show/507909/align-horizontal-center.svg"}
 
-::tile{title="Pourquoi y-a-t-il des pièces topo et hors topo ?" href="https://github.com/cnigfr/StaR-Eau/wiki/piece#type-de-pi%C3%A8ces-dans-les-r%C3%A9seaux-de-canalisations"}
+::tile{title="Pourquoi y-a-t-il des pièces topo et hors topo ?" href="Modèle/Communs/piece"}
 
-::tile{title="Comment saisir les dates ?" href="https://github.com/cnigfr/StaR-Eau/wiki/donnee_generale#gestion-des-dates"}
+::tile{title="Comment saisir les dates ?" href="Modèle/Modèle/Tables mères/donnee_generale#gestion-des-dates" icon="https://www.svgrepo.com/show/507965/calendar-alt.svg"}
 
-::tile{title="Comment est saisie une réhabilitation de canalisation ?" href=""}
+::tile{title="Comment est saisie une réhabilitation de canalisation ?" href="FAQ/rehabilitation_reseau"}
 
-::tile{title="cc" href=""}
 :::
 
 ## Assainissement
 :::tiles
 
-::tile{title="Comment saisir un branchement assainissement ?" href="231591"}
+::tile{title="Comment saisir un branchement assainissement ?" href="Modèle/Assainissement/ass_canalisation_branchement"}
 
-::tile{title="Comment représenter un déversoir d'orage ?" href="dxq"}
+::tile{title="Comment représenter un déversoir d'orage ?" href="FAQ/deversoir_orage.md"}
 
-::tile{title="comment représenter une noue et les engouffrements ?" href="sqsd"}
+::tile{title="comment représenter une noue et les engouffrements ?" href="FAQ/noue_infiltration.md"}
 
 :::
 

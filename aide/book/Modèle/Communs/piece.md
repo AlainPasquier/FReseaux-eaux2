@@ -23,7 +23,7 @@ Exemple de Classification des Pièces :
 |   coude   | non     |      |
 |   raccord   |  non    |      |
 |   té  |  oui    |   est forcément à un noeud car 3 canalisations   |
-|   cône   |  oui    |  induit un changement de diametre   |
+|   cône   |  oui    |  induit un changement de diamètre   |
 |   bouchon   |   oui   |   bloque la circulation de l'eau   |
 
 # Rattachement à la Canalisation

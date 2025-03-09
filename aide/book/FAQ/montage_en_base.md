@@ -1,3 +1,10 @@
+---
+name: Différents montages en base
+index: 1
+hide: true
+---
+# Comment utiliser les tables 'mère' et monter différentes bases de données ?
+
 # Les différentes façons de concevoir la base "StaR-Eau"
 
 Suivant les gestions techniques ou politiques de gestion de base des différents maîtres d'ouvrage ou gestionnaires, le montage en base de données peut revêtir plusieurs possibilités que le standard tente de satisfaire.

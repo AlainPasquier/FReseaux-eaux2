@@ -3,9 +3,12 @@ name: Gestion listes de valeurs
 index: 1
 hide: true
 ---
-# Liste ou domaine de valeurs[^1]
 
-Les listes sont établies suivant 3 entrées
+# Comment fonctionnent les listes de valeurs ?
+
+## Liste ou domaine de valeurs[^1]
+
+Les listes sont établies suivant 3 entrées.
 
 code | valeur | description
 
@@ -29,7 +32,7 @@ Par ailleurs, si une valeur de portée nationale vient à manquer, merci de nous
 
 ## Qualification de l'inconnu
 
-Les listes (sauf [com_materiau](materiau) et com_precision) sont systématiquement complétées avec des valeurs permettant de qualifier l'absence de d'attributs. On évitera de laisser des valeurs vide (NULL) pour éviter le questionnement sur l'existence ou non de la donnée.
+Les listes (sauf [com_materiau](Communs/materiau) et com_precision) sont systématiquement complétées avec des valeurs permettant de qualifier l'absence de d'attributs. On évitera de laisser des valeurs vide (NULL) pour éviter le questionnement sur l'existence ou non de la donnée.
 
 Pour cela, sur la base des pratiques IGN, 4 lignes sont systématiquement ajoutées :
 

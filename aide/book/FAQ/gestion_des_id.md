@@ -4,6 +4,8 @@ index: 1
 hide: true
 ---
 
+# Pourquoi autant d'ID et comment cela fonctionne ?
+
 Il existe plusieurs champs d'identifiant dans le modèle.
 
 Le modèle développé pour PostGIS fonctionne en héritage. Cette fonction n'est pas gérée par toutes les bases de données. 

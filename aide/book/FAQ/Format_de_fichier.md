@@ -4,6 +4,8 @@ index: 1
 hide: true
 ---
 
+# Pourquoi ne pas fournir de gabarit ou le modèle en .shp ?
+
 La réponse est fourni directement par ESRI sur les limitations du format .shp
 
 https://desktop.arcgis.com/fr/arcmap/latest/manage-data/shapefiles/geoprocessing-considerations-for-shapefile-output.htm

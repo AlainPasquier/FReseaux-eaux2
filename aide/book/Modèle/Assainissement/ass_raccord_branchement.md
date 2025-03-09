@@ -1,6 +1,6 @@
 ---
 name: ass_raccord_branchement
-index: 
+index: 1
 ---
 # Raccord de branchement
 

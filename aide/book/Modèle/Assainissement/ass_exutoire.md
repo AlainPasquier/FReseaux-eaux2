@@ -1,11 +1,14 @@
-`ass` `table ass_exutoire` :link: `noeud_reseau`
+---
+name: ass_exutoire
+index: 1
+---
 
-# Point de rejet dans le milieu récepteur
+# Les exutoires = Point de rejet dans le milieu récepteur
 
 ## destination ([ass_destination](https://github.com/cnigfr/StaR-Eau/blob/main/Standard%20StaR-Eau/listes%20valeurs/listes_completes/ass_destination.csv))
 
 La destination est soit :
-- articielle : réseau pluvial, retenue...
+- artificielle : réseau pluvial, retenue...
 - naturelle : cours d'eau, plan d'eau, mer... 
 
 ## code_topage

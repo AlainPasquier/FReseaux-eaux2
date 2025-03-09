@@ -7,7 +7,7 @@ index: 4
 Table mère des données communes à toutes les tables.
 
 :::alert{warn}
-**NE PAS INSCRIRE D’ÉLÉMENTS DIRECTEMENT DEDANS**
+**NE PAS INSCRIRE D’ÉLÉMENTS DIRECTEMENT DANS CETTE TABLE**
 :::
 
 Cette table n'a pas vocation à être chargée dans les projets.
@@ -18,13 +18,12 @@ Cette table n'a pas vocation à être chargée dans les projets.
 
 Ce champ présent dans toutes les tables permet d'établir si l'élément est fictif ou virtuel. Cela peut être le cas pour un cheminement complexe de canalisation dans une installation, mais dont la représentation est symbolique et permet la continuité hydraulique. voir aussi [deversoir d'orage](deversoir_orage)
 
-![fictive2](https://github.com/user-attachments/assets/900027e4-7b9c-4146-8772-1db4cf879654)
-
+![cana fictive](images/modele/cana_fictive1.png)
 ---
 
 # Gestion des dates
 
-![gestion des dates](https://github.com/cnigfr/StaR-Eau/blob/main/Documentation/image_documentation/modele/gestion%20des%20dates.png)
+![gestion des dates](images/modele/gestion des dates.png)
 
 ---
 

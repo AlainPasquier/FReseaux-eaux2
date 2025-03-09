@@ -1,3 +1,8 @@
+---
+name: aep_point_mesure
+index: 1
+---
+# Point de mesure = Comptage
 Le terme "point de mesure" a été préféré à "compteur" afin d'inclure tous les appareils de mesure de volume, de débit... qui ne sont pas des compteurs. La notion de compteur est normalement utilisée pour quantifier une consommation.
 
 ## type de point de mesure

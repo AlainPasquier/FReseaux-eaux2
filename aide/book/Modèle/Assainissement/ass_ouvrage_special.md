@@ -1,4 +1,7 @@
-`ASS` `ass_ouvrage_special` :link: `noeud_reseau`
+---
+name: ass_ouvrage_special
+index: 1
+---
 
 # Ouvrage spécial
 
@@ -9,4 +12,6 @@ Il s'agit notamment des ouvrages de chute ou dissipation.
 **cf. page 209 et suivante du memento technique 2017 : https://www.astee.org/publications/memento-technique-2017/**
 
 # représentation
-Leur représentation n'a pas été définie à ce jour. Certains ouvrage étnt ponctuels, d'autres pouvant être linéaire.
+Afin de répondre aux différentes possibilités d'implantation d'ouvrage, la table existe avec les 3 géométries (point, ligne,surface).
+
+Ils peuvent compléter par des appareillage réseaux ou du génie civil.

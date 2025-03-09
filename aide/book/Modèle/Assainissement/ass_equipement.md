@@ -4,8 +4,9 @@ styles:
     - style.css
 index: 1
 ---
+# Équipements
 
-Les équipements sont tous les éléments de gestion des canalisations.
+Les équipements sont tous les appareils de gestion des canalisations.
 
 Ils sont forcément topologiques.
 

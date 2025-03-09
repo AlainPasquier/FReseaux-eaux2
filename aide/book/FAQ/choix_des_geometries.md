@@ -4,7 +4,7 @@ index: 1
 hide: true
 ---
 
-# Choix des géométries
+# Pourquoi des géométries simples ?
 
 Choix des types "simples" au lieu de géométries "multi". Exemple avec les polygones, valable aussi pour **point/multipoint, ligne/multipligne**
 
