@@ -37,20 +37,16 @@ index: 1
 
 ::tile{title="Comment saisir un branchement assainissement ?" href="Modèle/Assainissement/ass_canalisation_branchement"}
 
-::tile{title="Comment représenter un déversoir d'orage ?" href="FAQ/deversoir_orage.md"}
+::tile{title="Comment représenter un déversoir d'orage ?" href="FAQ/deversoir_orage"}
 
-::tile{title="comment représenter une noue et les engouffrements ?" href="FAQ/noue_infiltration.md"}
+::tile{title="comment représenter une noue et les engouffrements ?" href="FAQ/noue_infiltration"}
 
 :::
 
 ## Eau potable
 :::tiles
 
-::tile{title="cc" href=""}
-
-::tile{title="cc" href=""}
-
-::tile{title="cc" href=""}
+::tile{title="en attente" href=""}
 
 :::
 ----
