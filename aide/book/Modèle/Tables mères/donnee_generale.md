@@ -16,14 +16,14 @@ Cette table n'a pas vocation à être chargée dans les projets.
 
 # Champ fictif
 
-Ce champ présent dans toutes les tables permet d'établir si l'élément est fictif ou virtuel. Cela peut être le cas pour un cheminement complexe de canalisation dans une installation, mais dont la représentation est symbolique et permet la continuité hydraulique. voir aussi [deversoir d'orage](deversoir_orage)
+Ce champ présent dans toutes les tables permet d'établir si l'élément est fictif ou virtuel. Cela peut être le cas pour un cheminement complexe de canalisation dans une installation, mais dont la représentation est symbolique et permet la continuité hydraulique. voir aussi [déversoir d'orage](/FAQ/deversoir_orage)
 
-![cana fictive](images/modele/cana_fictive1.png)
+![cana fictive](/images/modele/cana_fictive1.png)
 ---
 
 # Gestion des dates
 
-![gestion des dates](images/modele/gestion des dates.png)
+![gestion des dates](/images/modele/gestion des dates.png)
 
 ---
 
@@ -59,7 +59,7 @@ La base est, de plus, téléchargeable pour constituer une liste de valeurs.
 # Origine création ou mise à jour
 
 **Cette liste est en discussion**
-Elle a été établit sur 2 critères : source de la donnée et méthode de collecte et suivant 3 critères : fiable, peu fiable, non fiable ou inexistant(e)
+Elle a été établie sur 2 critères : source de la donnée et méthode de collecte et suivant 3 critères : **fiable**, **peu fiable**, **non fiable** ou inexistant(e)
 
 | code                | valeurs                    | description                                     | source                           | collecte                           |
 | ------------------- | -------------------------- | ----------------------------------------------- | -------------------------------- | ---------------------------------- |
