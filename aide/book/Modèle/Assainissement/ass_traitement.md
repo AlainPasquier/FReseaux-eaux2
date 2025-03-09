@@ -1,5 +1,5 @@
 ---
-name: ass_exutoire
+name: ass_traitement
 index: 1
 ---
 # Traitement

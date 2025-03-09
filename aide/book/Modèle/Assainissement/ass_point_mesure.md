@@ -1,5 +1,6 @@
 ---
 name: ass_point_mesure
+index: 1
 ---
 
 # Point de mesure

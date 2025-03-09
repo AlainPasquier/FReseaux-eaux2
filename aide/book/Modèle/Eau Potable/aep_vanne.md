@@ -1,6 +1,6 @@
 ---
 name: aep_vanne
-index: 10
+index: 1
 ---
 
 
@@ -11,4 +11,4 @@ Les vannes de branchement sont la table *aep_vanne_branchement*
 
 ## sens fermeture
 
-![fsh-fah300](https://github.com/user-attachments/assets/0a79ecc0-2d1e-4e4f-8ac2-f02c67b81ec4)
+![fsh-fah300](images/modele/fsh-fah.png)
