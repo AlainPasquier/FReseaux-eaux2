@@ -1,7 +1,6 @@
 ---
 name: nom de la page
-
-index: 1
+index: 100
 ---
 # titre
 
@@ -10,8 +9,7 @@ index: 1
 style:
     -style.css
 -->
-
-
-<!--aide sur https://hyperbook.openpatch.org/-->
+Template pour aide à la création de page. Copier coller les premières lignes.
+aide sur https://hyperbook.openpatch.org
 
 
