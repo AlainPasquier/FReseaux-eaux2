@@ -6,7 +6,8 @@ index: 0
 
 # Bienvenue
 
-![logo](images/logo/logo.png)
+![logo](images/logo/logo.png) ![astee](images/logo/astee.jpg)
+
 
 La documentation du travail du groupe Réseaux-Eau du Standards SIG de l'Astee (Association Scientifique et Technique pour l'Eau et l'assainissement) est mis à disposition selon les termes de la licence _ETALAB V2_
 
