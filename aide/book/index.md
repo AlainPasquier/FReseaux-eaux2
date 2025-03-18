@@ -20,21 +20,18 @@ Vous trouverez différents chapitre :
 - Symboles communs
 - Symboles Assainissement
 - Symboles Eau Potable
+
 ---
 
 # Modèle de données StaR-Eau
-
-- [Vue globale du Modèle](mcd-modele)
+## Documents techniques
+- [Vue globale du Modèle](/Modèle/mcd-modele)
 - voir le modèle détaillé avec [SchemaSpy](https://schemaspy.org/) : [SchemaSpy Stareau](https://stareau.pasq.fr/schema/index.html)
-- [gestion des versions](gestion_des_versions)
-
----
+- [Gestion des versions](/FAQ/gestion_des_versions)
 
 ## Aide à la saisie
-
 :::alert{warn}
 les pages de ce wiki n'ont pas fait l'objet de validation en commission, elles sont ici servies pour exemple et réflexions lors des saisies d'essais. Elles seront complétées au fur et à mesure des mises à jour.
 :::
 
-- une [FAQ(foire aux questions)](FAQ)
-- [table des matières](table_matiere)
+<----- Table des matières dans le menu à gauche <-----
