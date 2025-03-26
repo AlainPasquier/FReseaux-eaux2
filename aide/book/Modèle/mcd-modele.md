@@ -16,3 +16,7 @@ index : 10
 ![vue globale](https://github.com/cnigfr/StaR-Eau/blob/main/Documentation/Mod%C3%A9le/modelisation/branchement/Branchement_vue_globale.jpg?raw=true "vue globale")
 
 ![vue mld](https://github.com/cnigfr/StaR-Eau/blob/main/Documentation/Mod%C3%A9le/modelisation/branchement/Branchement_vue_globale_mld.jpg?raw=true "vue mld")
+
+:::sqlide{height=500 db=https://github.com/cnigfr/StaR-Eau/blob/main/Fichiers%20techniques/gabarits%20gpkg/assainissement.gpkg}
+SELECT * from fluss;
+::::
